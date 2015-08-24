@@ -2,13 +2,20 @@
 <meta charset="utf-8">
 <style>
 
-.borders{
+/*.ridings{
 stroke: #00001d;
   stroke-width: .5px;
   fill: white;
-   /* stroke-dasharray: 1,1;  */
   stroke-linejoin: round;
   stroke-linecap: round;
+}*/
+
+.ridings {
+  fill: #222;
+}
+
+.ridings :hover {
+  fill: orange;
 }
 
 </style>
@@ -29,21 +36,25 @@ var svg = d3.select("body").append("svg")
 var path = d3.geo.path()
     .projection(null);
 
-d3.json("../data/ca.json", function(error, ca) {
+d3.json("../data/ca_w_prop.json", function(error, ca) {
   if (error) return console.error(error);
-  console.log(ca);
+  // console.log(ca);
 
   var features = topojson.feature(ca, ca.objects.FED_CA_2_1_en);
+  // console.log(features.features);
 
+  for (var i = 0; i < features.features.length; i++) {
+    console.log(features.features[i].properties.ENNAME)
+  };
   svg.append("g")
-      .attr("class", "municipalities")
+      .attr("class", "ridings")
     .selectAll("path")
       .data(features.features)
     .enter().append("path")
       .attr("d", path)
-            .attr("class", "borders")
+      // .attr("class", "ridings")
     .append("title")
-      .text(function(d) { return d.properties.name; });
+      .text(function(d) { return d.properties.ENNAME; });
 
 });
 
