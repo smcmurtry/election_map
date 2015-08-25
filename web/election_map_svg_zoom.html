@@ -51,10 +51,10 @@ var svg = d3.select("body").append("svg")
 
 var g = svg.append("g");
 
-svg.append("rect")
-    .attr("class", "overlay")
-    .attr("width", width)
-    .attr("height", height);
+// svg.append("rect")
+    // .attr("class", "overlay")
+    // .attr("width", width)
+    // .attr("height", height);
 
 svg
     .call(zoom)
@@ -62,8 +62,19 @@ svg
 
 d3.json("../data/ca_w_prop.json", function(error, ca) {
   if (error) throw error;
-
+  var feature = topojson.feature(ca, ca.objects.FED_CA_2_1_en);
+  console.log(feature.features)
+  
   g.append("path")
+    // .attr("class", "riding")
+  
+    // .selectAll("path")
+      // .data(feature.features)
+    // .enter().append("path")
+      // .attr("d", path)
+    // .append("title")
+      // .text(function(d) { return d.properties.ENNAME; });
+
       .datum(topojson.feature(ca, ca.objects.FED_CA_2_1_en))
       .attr("class", "riding")
       .attr("d", path);

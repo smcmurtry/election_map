@@ -3,7 +3,7 @@
 <style>
 
 canvas {
-  background: #eee;
+  background: white;
 }
 
 </style>
@@ -12,8 +12,13 @@ canvas {
 <body>
 <script>
 
+var party_colours = {'NDP': 'orange', 'Conservative': 'blue', 'Liberal': 'red',
+                     'Green': 'green', 'Bloc': 'lightblue', 'other': 'grey'};
+
+var colour = d3.scale.category20();
+
 var width = 960,
-    height = 960;
+    height = 800;
 
 var scale,
     translate,
@@ -31,7 +36,7 @@ var simplify = d3.geo.transform({
 var zoom = d3.behavior.zoom()
     .translate([0, 0])
     .scale(1)
-    .scaleExtent([1, 8]);
+    .scaleExtent([1, 50]); // the higher the 2nd number, the more you can zoom in
 
 var canvas = d3.select("body").append("canvas")
     .attr("width", width)
@@ -49,37 +54,59 @@ var path = d3.geo.path()
 d3.json("../data/ca_w_prop.json", function(error, ca) {
   if (error) throw error;
 
-  topojson.presimplify(ca);
+  d3.json("../data/fake_predictions.json", function(predictions) {
 
-  var land = topojson.feature(ca, ca.objects.FED_CA_2_1_en),
-      boundary = topojson.mesh(ca, ca.objects.FED_CA_2_1_en);
+    topojson.presimplify(ca);
 
-  canvas
-      .call(zoom.on("zoom", zoomed))
-      .call(zoom.event);
+    var land = topojson.feature(ca, ca.objects.FED_CA_2_1_en),
+        boundary = topojson.mesh(ca, ca.objects.FED_CA_2_1_en);
 
-  function zoomed() {
-    translate = zoom.translate();
-    scale = zoom.scale();
-    area = 1 / scale / scale;
-    console.log(area)
+    console.log(land);
 
-    context.clearRect(0, 0, width, height);
+    // var provs = [];
+    // for (var i = land.features.length - 1; i >= 0; i--) {
+    //   var _prov = land.features[i].properties.PROVCODE;
+    //   if (provs.indexOf(_prov) == -1) {
+    //     provs.push(_prov);
+    //   }
+    // };
 
-    context.save();
+    canvas
+        .call(zoom.on("zoom", zoomed))
+        .call(zoom.event);
 
-    context.beginPath();
-    path(land);
-    context.fillStyle = "#000";
-    context.fill();
+    function zoomed() {
+      translate = zoom.translate();
+      scale = zoom.scale();
+      area = 1 / scale / scale;
+      // console.log(area)
 
-    context.beginPath();
-    path(boundary);
-    context.strokeStyle = "#fff";
-    context.stroke();
+      context.clearRect(0, 0, width, height);
 
-    context.restore();
-  }
+      context.save();
+
+      for (var i = land.features.length - 1; i >= 0; i--) {
+        context.beginPath();
+        // path(land);
+        path(land.features[i]);
+        // context.fillStyle = "#000";
+        var id = land.features[i].properties.FEDNUM;
+        // console.log(predictions[+id])
+        // context.fillStyle = colour(land.features[i].properties.PROVCODE);
+        context.fillStyle = party_colours[predictions[+id]['leader']]
+        context.fill();
+      };
+
+      context.beginPath();
+      path(boundary);
+      context.strokeStyle = "#fff";
+      context.stroke();
+
+      context.restore();
+    }
+
+  });  
+
 });
 
 d3.select(self.frameElement).style("height", height + "px");
