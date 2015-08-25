@@ -12,8 +12,8 @@ canvas {
 <body>
 <script>
 
-var party_colours = {'NDP': 'orange', 'Conservative': 'blue', 'Liberal': 'red',
-                     'Green': 'green', 'Bloc': 'lightblue', 'other': 'grey'};
+var party_colours = {'NDP': '#F78320', 'Conservative': '#263893', 'Liberal': '#D71921',
+                     'Green': '#3D9B35', 'Bloc': '#00A7EC', 'Other': 'grey'};
 
 var colour = d3.scale.category20();
 
@@ -61,15 +61,7 @@ d3.json("../data/ca_w_prop.json", function(error, ca) {
     var land = topojson.feature(ca, ca.objects.FED_CA_2_1_en),
         boundary = topojson.mesh(ca, ca.objects.FED_CA_2_1_en);
 
-    console.log(land);
-
-    // var provs = [];
-    // for (var i = land.features.length - 1; i >= 0; i--) {
-    //   var _prov = land.features[i].properties.PROVCODE;
-    //   if (provs.indexOf(_prov) == -1) {
-    //     provs.push(_prov);
-    //   }
-    // };
+    // console.log(land);
 
     canvas
         .call(zoom.on("zoom", zoomed))
@@ -79,7 +71,6 @@ d3.json("../data/ca_w_prop.json", function(error, ca) {
       translate = zoom.translate();
       scale = zoom.scale();
       area = 1 / scale / scale;
-      // console.log(area)
 
       context.clearRect(0, 0, width, height);
 
@@ -87,11 +78,8 @@ d3.json("../data/ca_w_prop.json", function(error, ca) {
 
       for (var i = land.features.length - 1; i >= 0; i--) {
         context.beginPath();
-        // path(land);
         path(land.features[i]);
-        // context.fillStyle = "#000";
         var id = land.features[i].properties.FEDNUM;
-        // console.log(predictions[+id])
         // context.fillStyle = colour(land.features[i].properties.PROVCODE);
         context.fillStyle = party_colours[predictions[+id]['leader']]
         context.fill();
