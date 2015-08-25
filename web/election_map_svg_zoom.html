@@ -38,7 +38,7 @@ var width = 960,
     height = 960;
 
 var zoom = d3.behavior.zoom()
-    .scaleExtent([1, 8])
+    .scaleExtent([1, 50])
     .on("zoom", zoomed);
 
 var path = d3.geo.path()
@@ -51,6 +51,7 @@ var svg = d3.select("body").append("svg")
 
 var g = svg.append("g");
 
+// this is so the pan works even when the mouse isn't over an svg riding element
 // svg.append("rect")
     // .attr("class", "overlay")
     // .attr("width", width)
@@ -65,19 +66,18 @@ d3.json("../data/ca_w_prop.json", function(error, ca) {
   var feature = topojson.feature(ca, ca.objects.FED_CA_2_1_en);
   console.log(feature.features)
   
-  g.append("path")
-    // .attr("class", "riding")
-  
-    // .selectAll("path")
-      // .data(feature.features)
-    // .enter().append("path")
-      // .attr("d", path)
+  g.append("g")
+    .attr("class", "riding")
+    .selectAll("path")
+      .data(feature.features)
+    .enter().append("path")
+      .attr("d", path)
     // .append("title")
       // .text(function(d) { return d.properties.ENNAME; });
 
-      .datum(topojson.feature(ca, ca.objects.FED_CA_2_1_en))
-      .attr("class", "riding")
-      .attr("d", path);
+      // .datum(topojson.feature(ca, ca.objects.FED_CA_2_1_en))
+      // .attr("class", "riding")
+      // .attr("d", path);
 
   g.append("path")
       .datum(topojson.mesh(ca, ca.objects.FED_CA_2_1_en))
