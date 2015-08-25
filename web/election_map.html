@@ -18,6 +18,12 @@ stroke: #00001d;
   fill: orange;
 }
 
+.riding-boundary {
+  fill: none;
+  stroke: #fff;
+  pointer-events: none;
+}
+
 </style>
 <body>
 <script src="d3.v3.min.js"></script>
@@ -41,11 +47,11 @@ d3.json("../data/ca_w_prop.json", function(error, ca) {
   // console.log(ca);
 
   var features = topojson.feature(ca, ca.objects.FED_CA_2_1_en);
-  // console.log(features.features);
+  console.log(features.features);
 
-  for (var i = 0; i < features.features.length; i++) {
-    console.log(features.features[i].properties.ENNAME)
-  };
+  // for (var i = 0; i < features.features.length; i++) {
+  //   console.log(features.features[i].properties.ENNAME)
+  // };
   svg.append("g")
       .attr("class", "ridings")
     .selectAll("path")
@@ -55,6 +61,11 @@ d3.json("../data/ca_w_prop.json", function(error, ca) {
       // .attr("class", "ridings")
     .append("title")
       .text(function(d) { return d.properties.ENNAME; });
+
+    svg.append("path")
+      .datum(topojson.mesh(ca, ca.objects.FED_CA_2_1_en))
+      .attr("class", "riding-boundary")
+      .attr("d", path);
 
 });
 
