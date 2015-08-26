@@ -16,7 +16,8 @@ body {
 .tooltip {
   width: 350px;
   background-color: white;
-  opacity: 0.9;
+  /*opacity: 0.9;*/
+  height: 78px;
 }
 
 .tail {
@@ -61,7 +62,7 @@ body {
 var party_colours = {'ndp': '#F78320', 'con': '#263893', 'lib': '#D71921',
                      'grn': '#3D9B35', 'blc': '#00A7EC', 'oth': 'grey'};
 
-data = {"con":{"low": '40.9', "med": '40.0', 'high': '40.0'}, 
+dataz = {"con":{"low": '40.9', "med": '40.0', 'high': '40.0'}, 
         "lib":{"low": '40.9', "med": '40.0', 'high': '40.0'},
         "ndp":{"low": '40.9', "med": '40.0', 'high': '40.0'},
         "blc":{"low": '40.9', "med": '40.0', 'high': '40.0'},
@@ -70,47 +71,58 @@ data = {"con":{"low": '40.9', "med": '40.0', 'high': '40.0'},
         "main":{"leader": "ndp", "likelyhood": '84%'}
 };
 
-var tooltip = d3.select("body")
-  .append("div").attr('class', 'tooltip');
+draw_tooltip(400,300, dataz);
 
-var inner_div = tooltip.append("div").attr("class", 'inner-div');
+function draw_tooltip(x, y, data) {
 
-tooltip.append("div").attr("class", "tail");
-inner_div.append("div").attr("class", "riding-name").text("Fleetwood - Port Kells");
+  var tooltip = d3.select("body").append("div").attr('class', 'tooltip');
+  var tail = d3.select("body").append("div").attr("class", "tail");
 
-var prediction_table = inner_div.append("table").attr("class", "prediction-table");
+  var inner_div = tooltip.append("div").attr("class", 'inner-div');
 
-var row1 = prediction_table.append("tr").attr("class", "small-row");
-var row2 = prediction_table.append("tr").attr("class", "big-row");
-var row3 = prediction_table.append("tr").attr("class", "small-row");
+  inner_div.append("div").attr("class", "riding-name").text("Fleetwood - Port Kells");
 
-row1.append("td").attr("class", "label").text("High / Haut");
-row2.append("td").attr("class", "label").text("");
-row3.append("td").attr("class", "label").text("Low / Bas");
+  var prediction_table = inner_div.append("table").attr("class", "prediction-table");
 
-parties = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
-for (var i = 0; i < parties.length; i++) {
-  row1.append("td")
-      .attr("class", "col")
-      .style("color", party_colours[parties[i]])
-      .text(data[parties[i]].high);
+  var row1 = prediction_table.append("tr").attr("class", "small-row");
+  var row2 = prediction_table.append("tr").attr("class", "big-row");
+  var row3 = prediction_table.append("tr").attr("class", "small-row");
+
+  row1.append("td").attr("class", "label").text("High / Haut");
+  row2.append("td").attr("class", "label").text("");
+  row3.append("td").attr("class", "label").text("Low / Bas");
+
+  parties = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
+  for (var i = 0; i < parties.length; i++) {
+    row1.append("td")
+        .attr("class", "col")
+        .style("color", party_colours[parties[i]])
+        .text(data[parties[i]].high);
+
+    row2.append("td")
+        .attr("class", "col")
+        .style("color", party_colours[parties[i]])
+        .text(data[parties[i]].med);
+
+    row3.append("td")
+        .attr("class", "col")
+        .style("color", party_colours[parties[i]])
+        .text(data[parties[i]].low);
+  };
 
   row2.append("td")
-      .attr("class", "col")
-      .style("color", party_colours[parties[i]])
-      .text(data[parties[i]].med);
+      .attr("class", "col main-prediction")
+      .style("background-color", party_colours[data.main.leader])
+      .text(data.main.likelyhood);
 
-  row3.append("td")
-      .attr("class", "col")
-      .style("color", party_colours[parties[i]])
-      .text(data[parties[i]].low);
-};
+  tooltip.style("transform", "translate("+ x + "px," + y + "px)");
+  tooltip.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
+  tooltip.style("-webkit-transform", "translate("+ x + "px," + y + "px)"); // Safari
 
+  tail.style("transform", "translate("+ x + "px," + y + "px)");
+  tail.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
+  tail.style("-webkit-transform", "translate("+ x + "px," + y + "px)"); // Safari
 
-row2.append("td")
-    .attr("class", "col main-prediction")
-    .style("background-color", party_colours[data.main.leader])
-    .text(data.main.likelyhood);
-
+}
 
 </script>
