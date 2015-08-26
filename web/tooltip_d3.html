@@ -8,17 +8,18 @@ body {
   background-color: black;
 }
 
+.tooltip {
+  width: 23em;
+  height: 6em;
+  background-color: white;
+  position: absolute;
+}
+
 .inner-div {
   width: 95%;
   height: 90%;
   margin: 0 auto;
   padding-top: 0.5em;
-}
-
-.tooltip {
-  width: 23em;
-  height: 6em;
-  background-color: white;
 }
 
 .tail {
@@ -70,12 +71,26 @@ dataz = {"con":{"low": '40.9', "med": '40.0', 'high': '40.0'},
         "main":{"leader": "ndp", "likelyhood": '84%'}
 };
 
+// initialize tooltip
+var tooltip = d3.select("body")
+                .append("div")
+                .attr('class', 'tooltip')
+                .style("display", "none");
+
+var svg = d3.select("body").append("svg")
+    .attr("width", 800)
+    .attr("height", 500)
+    .style("background-color", "grey")
+  .append("g");
+
+// draw tooltip
 draw_tooltip(200,100, dataz);
 
+// hide tooltip
+tooltip.style("display", "none");
+
 function draw_tooltip(x, y, data) {
-
-  var tooltip = d3.select("body").append("div").attr('class', 'tooltip');
-
+  tooltip.style("display", "block");
   var inner_div = tooltip.append("div").attr("class", 'inner-div');
   var tail = tooltip.append("div").attr("class", "tail");
 

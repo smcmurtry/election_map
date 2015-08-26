@@ -1,31 +1,30 @@
 body {
   font-family: Helvetica, sans-serif;
   font-size:16px;
-  /*background-color: black;*/
-}
-
-.inner-div {
-  width: 340px;
-  margin: 0 auto;
+  background-color: black;
 }
 
 .tooltip {
-  width: 350px;
+  width: 23em;
+  height: 6em;
   background-color: white;
-  /*opacity: 0.9;*/
-  height: 78px;
   position: absolute;
 }
 
+.inner-div {
+  width: 95%;
+  height: 90%;
+  margin: 0 auto;
+  padding-top: 0.5em;
+}
+
 .tail {
+    margin-top: 0px;
+    margin-left: 45%;
     width: 0px;
     height: 0px;
     border: 10px solid;
     border-color: white transparent transparent transparent;
-    position:absolute;
-    top: 85px;
-    left: 170px;
-    /*opacity: 0.9;*/
 }
 
 .big-row {
