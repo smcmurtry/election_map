@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size:16px;
+  background-color: black;
+}
+
+.inner-div {
+  width: 340px;
+  margin: 0 auto;
+}
+
+.tooltip {
+  width: 350px;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.tail {
+    width: 0px;
+    height: 0px;
+    border: 10px solid;
+    border-color: white transparent transparent transparent;
+    position:absolute;
+    top: 85px;
+    left: 170px;
+    /*opacity: 0.9;*/
+}
+
+.big-row {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.small-row {
+  font-size: 12px;
+}
+
+.main-prediction {
+  background-color: #F78320;
+  color: white;
+  width: 50px;
+}
+
+.riding-name { font-weight: bold; text-align: center;}
+
+.label {color: black; text-align: right;}
+.con {color: #263893;}
+.lib {color: #D71921;}
+.ndp {color: #F78320;}
+.blc {color: #00A7EC;}
+.grn {color: #3D9B35;}
+.oth {color: grey;}
+
+.col { text-align: center; }
+
+</style>
+
+<body>
+<!-- <div class='tooltip'> -->
+  <!-- <div class='inner-div'> -->
+    <!-- <div class='riding-name'>Fleetwood - Port Kells</div> -->
+    <!-- <table class="prediction-table"> -->
+<!--       <tr class='small-row'>
+        <td class='label'>High / Haut</td>
+        <td class='col con'>20.0</td>
+        <td class='col lib'>10.0</td> 
+        <td class='col ndp'>20.0</td>
+        <td class='col blc'>50.0</td> 
+        <td class='col grn'>90.0</td>
+        <td class='col oth'>90.0</td>
+      </tr>
+      <tr class='big-row'>
+        <td class='label'></td>
+        <td class='col con'>10.0</td> 
+        <td class='col lib'>20.0</td>
+        <td class='col ndp'>10.0</td> 
+        <td class='col blc'>20.0</td>
+        <td class='col grn'>50.0</td> 
+        <td class='col oth'>90.0</td>
+        <td class='col main-prediction'>90%</td>
+      </tr>
+      <tr class='small-row'>
+        <td class='label'>Low / Bas</td>
+        <td class='col con'>40.0</td>
+        <td class='col lib'>10.0</td> 
+        <td class='col ndp'>20.0</td>
+        <td class='col blc'>50.0</td> 
+        <td class='col grn'>90.0</td> 
+        <td class='col oth'>89.0</td>
+      </tr> -->
+  <!-- </table> -->
+  <!-- </div> -->
+  <!-- <div class='tail'></div> -->
+<!-- </div> -->
+</body>
+
+<script src="d3.v3.min.js"></script>
+<script>
+
+var tooltip = d3.select("body")
+  .append("div").attr('class', 'tooltip');
+
+var inner_div = tooltip.append("div").attr("class", 'inner-div')
+tooltip.append("div").attr("class", "tail");
+inner_div.append("div").attr("class", "riding-name").text("Fleetwood - Port Kells");
+var prediction_table = inner_div.append("table").attr("class", "prediction-table");
+var row1 = prediction_table.append("tr").attr("class", "small-row");
+var row2 = prediction_table.append("tr").attr("class", "big-row");
+var row3 = prediction_table.append("tr").attr("class", "small-row");
+
+row1.append("td").attr("class", "label").text("High / Haut")
+row2.append("td").attr("class", "label").text("")
+row3.append("td").attr("class", "label").text("Low / Bas")
+
+row1.append("td").attr("class", "col con").text("40.0")
+row2.append("td").attr("class", "col con").text("40.0")
+row3.append("td").attr("class", "col con").text("40.0")
+
+row1.append("td").attr("class", "col lib").text("40.0")
+row2.append("td").attr("class", "col lib").text("40.0")
+row3.append("td").attr("class", "col lib").text("40.0")
+
+row1.append("td").attr("class", "col ndp").text("40.0")
+row2.append("td").attr("class", "col ndp").text("40.0")
+row3.append("td").attr("class", "col ndp").text("40.0")
+
+row1.append("td").attr("class", "col blc").text("40.0")
+row2.append("td").attr("class", "col blc").text("40.0")
+row3.append("td").attr("class", "col blc").text("40.0")
+
+row1.append("td").attr("class", "col grn").text("40.0")
+row2.append("td").attr("class", "col grn").text("40.0")
+row3.append("td").attr("class", "col grn").text("40.0")
+
+row1.append("td").attr("class", "col oth").text("40.0")
+row2.append("td").attr("class", "col oth").text("40.0")
+row3.append("td").attr("class", "col oth").text("40.0")
+
+row2.append("td").attr("class", "col main-prediction").text("90%")
+
+
+</script>
