@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="tooltip.css"/>
+
 <style>
 
 svg {
@@ -35,13 +37,24 @@ svg {
 <body>
 <script>
 
-
+dataz = {"con":{"low": '40.9', "med": '40.0', 'high': '40.0'}, 
+        "lib":{"low": '40.9', "med": '40.0', 'high': '40.0'},
+        "ndp":{"low": '40.9', "med": '40.0', 'high': '40.0'},
+        "blc":{"low": '40.9', "med": '40.0', 'high': '40.0'},
+        "grn":{"low": '40.9', "med": '40.0', 'high': '40.0'},
+        "oth":{"low": '40.9', "med": '40.0', 'high': '40.0'},
+        "main":{"leader": "ndp", "likelyhood": '84%'}
+};
 
 var width = window.innerWidth - 30,//960,
     height = window.innerHeight - 30;//600;
 
-var party_colours = {'NDP': '#F78320', 'Conservative': '#263893', 'Liberal': '#D71921',
+var party_colours2 = {'NDP': '#F78320', 'Conservative': '#263893', 'Liberal': '#D71921',
                      'Green': '#3D9B35', 'Bloc': '#00A7EC', 'Other': 'grey'};
+
+
+var party_colours = {'ndp': '#F78320', 'con': '#263893', 'lib': '#D71921',
+                     'grn': '#3D9B35', 'blc': '#00A7EC', 'oth': 'grey'};
 
 var zoom = d3.behavior.zoom()
     .scaleExtent([1, 50])
@@ -56,6 +69,7 @@ var svg = d3.select("body").append("svg")
   .append("g");
 
 var g = svg.append("g");
+var p;
 
 // this is so the pan works even when the mouse isn't over an svg riding element
 // svg.append("rect")
@@ -65,7 +79,18 @@ var g = svg.append("g");
 
 svg
     .call(zoom)
-    .call(zoom.event);
+    .call(zoom.event)
+    .on("mousemove", function() { 
+      var pos = d3.mouse(this);
+      var x = pos[0]/10,
+          y = pos[1]/10;
+      d3.selectAll(".tooltip").remove();
+      d3.selectAll(".tail").remove();
+
+      console.log(pos);
+      draw_tooltip(0, 0, dataz);  
+    });
+
 
 d3.json("../data/ca_w_prop.json", function(error, ca) {
   if (error) throw error;
@@ -82,36 +107,14 @@ d3.json("../data/ca_w_prop.json", function(error, ca) {
         .attr("d", path)
         .attr("fill", function(d) { 
           var leader = predictions[d.properties.FEDNUM]['leader'];
-          return party_colours[leader];
+          return party_colours2[leader];
         })
         .on("mouseover", function(d) {
-          console.log(d);
-          
-          var tooltip = d3.select("body")
-            .append("div")
-            .attr("class", 'tooltip')
-            .style("position", "absolute")
-            .style("top", 100 + 'px')
-            .style("left", 200 + 'px')
-            .style("background-color", 'grey')
-
-          tooltip.append("div")
-            .text(d.properties.ENNAME)
-
-          var p = predictions[d.properties.FEDNUM];
-          tooltip.append("div")
-            .text(p['leader'] + ': ' + p['likelyhood'] + '%')
-            // .style("height", 50 + 'px')
-            // .style("width", 50 + 'px')
-            // .text("abc")
-
-
+          p = predictions[d.properties.FEDNUM];
         })
-        .on("mouseout", function(d) {
-          d3.selectAll(".tooltip").remove();
-        })
-      // .append("title")
-      //   .text(function(d) { return d.properties.ENNAME; });
+        // .on("mouseout", function(d) {
+          // d3.selectAll(".tooltip").remove();
+        // })
 
     g.append("path")
         .datum(topojson.mesh(ca, ca.objects.FED_CA_2_1_en))
@@ -124,6 +127,75 @@ d3.json("../data/ca_w_prop.json", function(error, ca) {
 function zoomed() {
   g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
 }
+
+// function draw_tooltip() {
+//   var tooltip = d3.select("body")
+//             .append("div")
+//             .attr("class", 'tooltip')
+//             .style("position", "absolute")
+//             .style("top", 100 + 'px')
+//             .style("left", 200 + 'px')
+//             .style("background-color", 'grey')
+
+//           // tooltip.append("div")
+//           //   .text(d.properties.ENNAME)
+
+//           tooltip.append("div")
+//             .text(p['leader'] + ': ' + p['likelyhood'] + '%')
+// }
+
+function draw_tooltip(x, y, data) {
+
+  var tooltip = d3.select("body").append("div").attr('class', 'tooltip');
+  var tail = d3.select("body").append("div").attr("class", "tail");
+
+  var inner_div = tooltip.append("div").attr("class", 'inner-div');
+
+  inner_div.append("div").attr("class", "riding-name").text("Fleetwood - Port Kells");
+
+  var prediction_table = inner_div.append("table").attr("class", "prediction-table");
+
+  var row1 = prediction_table.append("tr").attr("class", "small-row");
+  var row2 = prediction_table.append("tr").attr("class", "big-row");
+  var row3 = prediction_table.append("tr").attr("class", "small-row");
+
+  row1.append("td").attr("class", "label").text("High / Haut");
+  row2.append("td").attr("class", "label").text("");
+  row3.append("td").attr("class", "label").text("Low / Bas");
+
+  parties = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
+  for (var i = 0; i < parties.length; i++) {
+    row1.append("td")
+        .attr("class", "col")
+        .style("color", party_colours[parties[i]])
+        .text(data[parties[i]].high);
+
+    row2.append("td")
+        .attr("class", "col")
+        .style("color", party_colours[parties[i]])
+        .text(data[parties[i]].med);
+
+    row3.append("td")
+        .attr("class", "col")
+        .style("color", party_colours[parties[i]])
+        .text(data[parties[i]].low);
+  };
+
+  row2.append("td")
+      .attr("class", "col main-prediction")
+      .style("background-color", party_colours[data.main.leader])
+      .text(data.main.likelyhood);
+
+  tooltip.style("transform", "translate("+ x + "px," + y + "px)");
+  tooltip.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
+  tooltip.style("-webkit-transform", "translate("+ x + "px," + y + "px)"); // Safari
+
+  tail.style("transform", "translate("+ x + "px," + y + "px)");
+  tail.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
+  tail.style("-webkit-transform", "translate("+ x + "px," + y + "px)"); // Safari
+
+}
+
 
 d3.select(self.frameElement).style("height", height + "px");
 

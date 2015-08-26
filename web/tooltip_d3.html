@@ -9,26 +9,25 @@ body {
 }
 
 .inner-div {
-  width: 340px;
+  width: 95%;
+  height: 90%;
   margin: 0 auto;
+  padding-top: 0.5em;
 }
 
 .tooltip {
-  width: 350px;
+  width: 23em;
+  height: 6em;
   background-color: white;
-  /*opacity: 0.9;*/
-  height: 78px;
 }
 
 .tail {
+    margin-top: 0px;
+    margin-left: 45%;
     width: 0px;
     height: 0px;
     border: 10px solid;
     border-color: white transparent transparent transparent;
-    position:absolute;
-    top: 85px;
-    left: 170px;
-    /*opacity: 0.9;*/
 }
 
 .big-row {
@@ -71,14 +70,14 @@ dataz = {"con":{"low": '40.9', "med": '40.0', 'high': '40.0'},
         "main":{"leader": "ndp", "likelyhood": '84%'}
 };
 
-draw_tooltip(400,300, dataz);
+draw_tooltip(200,100, dataz);
 
 function draw_tooltip(x, y, data) {
 
   var tooltip = d3.select("body").append("div").attr('class', 'tooltip');
-  var tail = d3.select("body").append("div").attr("class", "tail");
 
   var inner_div = tooltip.append("div").attr("class", 'inner-div');
+  var tail = tooltip.append("div").attr("class", "tail");
 
   inner_div.append("div").attr("class", "riding-name").text("Fleetwood - Port Kells");
 
@@ -118,10 +117,6 @@ function draw_tooltip(x, y, data) {
   tooltip.style("transform", "translate("+ x + "px," + y + "px)");
   tooltip.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
   tooltip.style("-webkit-transform", "translate("+ x + "px," + y + "px)"); // Safari
-
-  tail.style("transform", "translate("+ x + "px," + y + "px)");
-  tail.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
-  tail.style("-webkit-transform", "translate("+ x + "px," + y + "px)"); // Safari
 
 }
 

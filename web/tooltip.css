@@ -1,0 +1,49 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size:16px;
+  /*background-color: black;*/
+}
+
+.inner-div {
+  width: 340px;
+  margin: 0 auto;
+}
+
+.tooltip {
+  width: 350px;
+  background-color: white;
+  /*opacity: 0.9;*/
+  height: 78px;
+  position: absolute;
+}
+
+.tail {
+    width: 0px;
+    height: 0px;
+    border: 10px solid;
+    border-color: white transparent transparent transparent;
+    position:absolute;
+    top: 85px;
+    left: 170px;
+    /*opacity: 0.9;*/
+}
+
+.big-row {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.small-row {
+  font-size: 12px;
+}
+
+.main-prediction {
+  color: white;
+  width: 50px;
+}
+
+.riding-name { font-weight: bold; text-align: center;}
+
+.label {color: black; text-align: right;}
+
+.col { text-align: center; }
