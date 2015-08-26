@@ -24,7 +24,8 @@ svg {
 }
 
 .riding :hover {
-  fill: orange;
+  /*fill: orange;*/
+  opacity: 0.5;
 }
 
 
@@ -34,8 +35,13 @@ svg {
 <body>
 <script>
 
-var width = 960,
-    height = 960;
+
+
+var width = window.innerWidth - 30,//960,
+    height = window.innerHeight - 30;//600;
+
+var party_colours = {'NDP': '#F78320', 'Conservative': '#263893', 'Liberal': '#D71921',
+                     'Green': '#3D9B35', 'Bloc': '#00A7EC', 'Other': 'grey'};
 
 var zoom = d3.behavior.zoom()
     .scaleExtent([1, 50])
@@ -63,26 +69,56 @@ svg
 
 d3.json("../data/ca_w_prop.json", function(error, ca) {
   if (error) throw error;
-  var feature = topojson.feature(ca, ca.objects.FED_CA_2_1_en);
-  console.log(feature.features)
-  
-  g.append("g")
-    .attr("class", "riding")
-    .selectAll("path")
-      .data(feature.features)
-    .enter().append("path")
-      .attr("d", path)
-    // .append("title")
-      // .text(function(d) { return d.properties.ENNAME; });
+  d3.json("../data/fake_predictions.json", function(predictions) {
 
-      // .datum(topojson.feature(ca, ca.objects.FED_CA_2_1_en))
-      // .attr("class", "riding")
-      // .attr("d", path);
+    var feature = topojson.feature(ca, ca.objects.FED_CA_2_1_en);
+    console.log(feature.features)
+    
+    g.append("g")
+      .attr("class", "riding")
+      .selectAll("path")
+        .data(feature.features)
+      .enter().append("path")
+        .attr("d", path)
+        .attr("fill", function(d) { 
+          var leader = predictions[d.properties.FEDNUM]['leader'];
+          return party_colours[leader];
+        })
+        .on("mouseover", function(d) {
+          console.log(d);
+          
+          var tooltip = d3.select("body")
+            .append("div")
+            .attr("class", 'tooltip')
+            .style("position", "absolute")
+            .style("top", 100 + 'px')
+            .style("left", 200 + 'px')
+            .style("background-color", 'grey')
 
-  g.append("path")
-      .datum(topojson.mesh(ca, ca.objects.FED_CA_2_1_en))
-      .attr("class", "boundary")
-      .attr("d", path);
+          tooltip.append("div")
+            .text(d.properties.ENNAME)
+
+          var p = predictions[d.properties.FEDNUM];
+          tooltip.append("div")
+            .text(p['leader'] + ': ' + p['likelyhood'] + '%')
+            // .style("height", 50 + 'px')
+            // .style("width", 50 + 'px')
+            // .text("abc")
+
+
+        })
+        .on("mouseout", function(d) {
+          d3.selectAll(".tooltip").remove();
+        })
+      // .append("title")
+      //   .text(function(d) { return d.properties.ENNAME; });
+
+    g.append("path")
+        .datum(topojson.mesh(ca, ca.objects.FED_CA_2_1_en))
+        .attr("class", "boundary")
+        .attr("d", path);
+
+  });
 });
 
 function zoomed() {
