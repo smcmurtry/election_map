@@ -83,18 +83,23 @@ var svg = d3.select("body").append("svg")
     .style("background-color", "grey")
   .append("g");
 
+d3.json("../data/fake_predictions.json", function(predictions) {
+  datas = predictions[10001];
 // draw tooltip
-draw_tooltip(200,100, dataz);
+draw_tooltip(200,100, datas);
 
 // hide tooltip
-tooltip.style("display", "none");
+// tooltip.style("display", "none");
+
+})
+
 
 function draw_tooltip(x, y, data) {
   tooltip.style("display", "block");
   var inner_div = tooltip.append("div").attr("class", 'inner-div');
   var tail = tooltip.append("div").attr("class", "tail");
 
-  inner_div.append("div").attr("class", "riding-name").text("Fleetwood - Port Kells");
+  inner_div.append("div").attr("class", "riding-name").text(data['ENNAME']);
 
   var prediction_table = inner_div.append("table").attr("class", "prediction-table");
 
@@ -111,23 +116,23 @@ function draw_tooltip(x, y, data) {
     row1.append("td")
         .attr("class", "col")
         .style("color", party_colours[parties[i]])
-        .text(data[parties[i]].high);
+        .text(data.details[parties[i]].high);
 
     row2.append("td")
         .attr("class", "col")
         .style("color", party_colours[parties[i]])
-        .text(data[parties[i]].med);
+        .text(data.details[parties[i]].med);
 
     row3.append("td")
         .attr("class", "col")
         .style("color", party_colours[parties[i]])
-        .text(data[parties[i]].low);
+        .text(data.details[parties[i]].low);
   };
 
   row2.append("td")
       .attr("class", "col main-prediction")
-      .style("background-color", party_colours[data.main.leader])
-      .text(data.main.likelyhood);
+      .style("background-color", party_colours[data.leader])
+      .text(data.likelyhood + '%');
 
   tooltip.style("transform", "translate("+ x + "px," + y + "px)");
   tooltip.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
