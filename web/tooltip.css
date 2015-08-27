@@ -5,8 +5,9 @@ body {
 }
 
 .tooltip {
-  width: 23em;
-  height: 6em;
+  opacity: 0.9;
+  width: 355px;
+  height: 110px;
   background-color: white;
   position: absolute;
 }
@@ -20,7 +21,7 @@ body {
 
 .tail {
     margin-top: 0px;
-    margin-left: 45%;
+    margin-left: 47%;
     width: 0px;
     height: 0px;
     border: 10px solid;
@@ -41,7 +42,11 @@ body {
   width: 50px;
 }
 
-.riding-name { font-weight: bold; text-align: center;}
+.riding-name { 
+  font-weight: bold;
+  text-align: center;
+  height: 2em;
+}
 
 .label {color: black; text-align: right;}
 
