@@ -96,7 +96,7 @@ svg2.call(zoom)
 d3.json(data_path + "ca_w_prop.json", function(error, ca) {
   if (error) throw error;
 
-  d3.csv(data_path + 'eric_riding_name_dict.csv', function (dict) {
+  d3.csv(data_path + 'riding_name_dict.csv', function (dict) {
     var d2 = {};
     for (var i = 0; i < dict.length; i++) {
       d2[dict[i].riding] = {"FEDNUM": dict[i].FEDNUM, 
