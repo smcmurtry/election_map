@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<!-- <meta charset="windows-1252"> -->
 <link rel="stylesheet" type="text/css" href="tooltip.css"/>
 
 <style>
@@ -90,13 +91,10 @@ svg2.call(zoom)
       var pos = d3.mouse(this);
       tooltip_w = +d3.select(".tooltip").style("width").slice(0, -2);
       tooltip_h = +d3.select(".tooltip").style("height").slice(0, -2);
-      
       var x = pos[0] - 0.50*tooltip_w,
           y = pos[1] - 1.15*tooltip_h;
-
-      update_tooltip(x, y, data);  
-    });
-
+      if(typeof data != 'undefined') { update_tooltip(x, y, data); }
+      });
 
 d3.json(data_path + "ca_w_prop_1.json", function(error, ca) {
   if (error) throw error;
@@ -104,7 +102,8 @@ d3.json(data_path + "ca_w_prop_1.json", function(error, ca) {
   d3.csv(data_path + 'eric_riding_name_dict.csv', function (dict) {
     var d2 = {};
     for (var i = 0; i < dict.length; i++) {
-      d2[dict[i].riding] = dict[i].FEDNUM;
+      d2[dict[i].riding] = {"FEDNUM": dict[i].FEDNUM, 
+                            "riding_utf8": dict[i].riding_utf8};
     };
 
     d3.text(data_path + 'Ridings_Aug_28.txt', function(dat) {
@@ -112,10 +111,7 @@ d3.json(data_path + "ca_w_prop_1.json", function(error, ca) {
 
       d3.tsv.parseRows(dat, function(pdata) {
         var results = pdata.filter(function(x) { return x == ''; });
-        
-        if (results.length < 2) {
-          rows.push(pdata); 
-        }
+        if (results.length < 2) { rows.push(pdata); }
       });
 
       var predictions = {};
@@ -125,8 +121,9 @@ d3.json(data_path + "ca_w_prop_1.json", function(error, ca) {
         dataz['name'] = name;
         dataz['likelyhood'] = rows[riding*3+1][8];
         dataz['details'] = {};
-        dataz['FEDNUM'] = +d2[name];
-        // dataz['ENNAME'] = 
+        dataz['FEDNUM'] = +d2[name].FEDNUM;
+        dataz['riding_utf8'] = d2[name].riding_utf8;
+
         var max = 0;
         var leader;
         for (var i = 0; i < parties.length; i++) {
@@ -140,12 +137,8 @@ d3.json(data_path + "ca_w_prop_1.json", function(error, ca) {
           }
         };
         dataz['leader'] = leader;
-        predictions[+d2[name]] = dataz;
+        predictions[+d2[name].FEDNUM] = dataz;
       }
-      console.log(ca);
-
-  
-  // d3.json(data_path + "fake_predictions.json", function(predictions) {
 
     var feature = topojson.feature(ca, ca.objects.FED_CA_2_1_en),
         boundary = topojson.mesh(ca, ca.objects.FED_CA_2_1_en);
@@ -181,11 +174,9 @@ d3.json(data_path + "ca_w_prop_1.json", function(error, ca) {
         .datum(boundary)
         .attr("class", "boundary")
         .attr("d", path);
-  // });
 
     });
-  })
-
+  });
 });
 
 function zoomed() {
@@ -195,7 +186,8 @@ function zoomed() {
 
 function update_tooltip(x, y, data) {
 
-  tooltip.select(".riding-name").text(data['name']); //['ENNAME']);
+  tooltip.select(".riding-name").text(data['riding_utf8']); //['ENNAME']);
+  // console.log([data['riding_utf8']])
   for (var i = 0; i < parties2display.length; i++) {
     var p = parties2display[i];
     row1.select("." + p)
