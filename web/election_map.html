@@ -41,7 +41,8 @@ svg {
 
 var data_path = '../data/'; // dir_election_map/
 
-var parties = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
+var parties = ['con', 'lib', 'ndp', 'blc', 'unk', 'grn', 'oth'];
+var parties2display = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
 
 var width = window.innerWidth - 30,//960,
     height = window.innerHeight - 30;//600;
@@ -99,7 +100,52 @@ svg2.call(zoom)
 
 d3.json(data_path + "ca_w_prop_1.json", function(error, ca) {
   if (error) throw error;
-  d3.json(data_path + "fake_predictions.json", function(predictions) {
+
+  d3.csv(data_path + 'eric_riding_name_dict.csv', function (dict) {
+    var d2 = {};
+    for (var i = 0; i < dict.length; i++) {
+      d2[dict[i].riding] = dict[i].FEDNUM;
+    };
+
+    d3.text(data_path + 'Ridings_Aug_28.txt', function(dat) {
+      var rows = [];
+
+      d3.tsv.parseRows(dat, function(pdata) {
+        var results = pdata.filter(function(x) { return x == ''; });
+        
+        if (results.length < 2) {
+          rows.push(pdata); 
+        }
+      });
+
+      var predictions = {};
+      for (var riding = 0; riding < 338; riding++) {
+        var dataz = {};
+        var name = rows[riding*3+1][0];
+        dataz['name'] = name;
+        dataz['likelyhood'] = rows[riding*3+1][8];
+        dataz['details'] = {};
+        dataz['FEDNUM'] = +d2[name];
+        // dataz['ENNAME'] = 
+        var max = 0;
+        var leader;
+        for (var i = 0; i < parties.length; i++) {
+          dataz['details'][parties[i]] = {};
+          dataz['details'][parties[i]]['low'] = rows[riding*3][i+1];
+          dataz['details'][parties[i]]['med'] = rows[riding*3+1][i+1];
+          dataz['details'][parties[i]]['high'] = rows[riding*3+2][i+1];
+          if (max < +rows[riding*3+1][i+1]) {
+            max = +rows[riding*3+1][i+1];
+            leader = parties[i];
+          }
+        };
+        dataz['leader'] = leader;
+        predictions[+d2[name]] = dataz;
+      }
+      console.log(ca);
+
+  
+  // d3.json(data_path + "fake_predictions.json", function(predictions) {
 
     var feature = topojson.feature(ca, ca.objects.FED_CA_2_1_en),
         boundary = topojson.mesh(ca, ca.objects.FED_CA_2_1_en);
@@ -135,7 +181,11 @@ d3.json(data_path + "ca_w_prop_1.json", function(error, ca) {
         .datum(boundary)
         .attr("class", "boundary")
         .attr("d", path);
-  });
+  // });
+
+    });
+  })
+
 });
 
 function zoomed() {
@@ -145,19 +195,20 @@ function zoomed() {
 
 function update_tooltip(x, y, data) {
 
-  tooltip.select(".riding-name").text(data['ENNAME']);
-  for (var i = 0; i < parties.length; i++) {
-    row1.select("." + parties[i])
-        .text(data.details[parties[i]].high);
-    row2.select("." + parties[i])
-        .text(data.details[parties[i]].med);
-    row3.select("." + parties[i])
-        .text(data.details[parties[i]].low);
+  tooltip.select(".riding-name").text(data['name']); //['ENNAME']);
+  for (var i = 0; i < parties2display.length; i++) {
+    var p = parties2display[i];
+    row1.select("." + p)
+        .text(data.details[p].high);
+    row2.select("." + p)
+        .text(data.details[p].med);
+    row3.select("." + p)
+        .text(data.details[p].low);
   }
 
   row2.select(".main-prediction")
       .style("background-color", party_colours[data.leader])
-      .text(data.likelyhood + '%');
+      .text(data.likelyhood); // + '%');
 
   tooltip.style("transform", "translate("+ x + "px," + y + "px)");
   tooltip.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
@@ -186,19 +237,19 @@ function draw_tooltip() {
   row2.append("td").attr("class", "label").text("");
   row3.append("td").attr("class", "label").text("Low / Bas");
 
-  for (var i = 0; i < parties.length; i++) {
-
+  for (var i = 0; i < parties2display.length; i++) {
+    var p = parties2display[i];
     row1.append("td")
-        .attr("class", "col " + parties[i])
-        .style("color", party_colours[parties[i]]);
+        .attr("class", "col " + p)
+        .style("color", party_colours[p]);
 
     row2.append("td")
-        .attr("class", "col " + parties[i])
-        .style("color", party_colours[parties[i]]);
+        .attr("class", "col " + p)
+        .style("color", party_colours[p]);
 
     row3.append("td")
-        .attr("class", "col " + parties[i])
-        .style("color", party_colours[parties[i]]);
+        .attr("class", "col " + p)
+        .style("color", party_colours[p]);
   };
 
   row2.append("td")

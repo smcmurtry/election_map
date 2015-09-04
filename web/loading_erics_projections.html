@@ -3,5 +3,69 @@
 
 <script src="d3.v3.min.js"></script>
 <script>
+var parties = ['con', 'lib', 'ndp', 'blc', 'unk', 'grn', 'oth'];
+
+
+// data format: d = {FEDNUM: dataz_1, FEDNUM: dataz_2, ...}
+// dataz = {"ENNAME": "abc",
+//          "FEDNUM": 124,
+//          "leader": "ndp",
+//          "likelyhood": "81%",
+//          "details":
+//         {"con":{"low": '40.9', "med": '40.0', 'high': '40.0'}, 
+//         "lib":{"low": '40.9', "med": '40.0', 'high': '40.0'},
+//         "ndp":{"low": '40.9', "med": '40.0', 'high': '40.0'},
+//         "blc":{"low": '40.9', "med": '40.0', 'high': '40.0'},
+//         "grn":{"low": '40.9', "med": '40.0', 'high': '40.0'},
+//         "oth":{"low": '40.9', "med": '40.0', 'high': '40.0'}}
+//          }
+
+var data_path = '../data/';
+
+d3.csv(data_path + 'eric_riding_name_dict.csv', function (dict) {
+  var d2 = {};
+  for (var i = 0; i < dict.length; i++) {
+    d2[dict[i].riding] = dict[i].FEDNUM;
+  };
+
+  d3.text(data_path + 'Ridings_Aug_28.txt', function(data) {
+    var rows = [];
+
+    d3.tsv.parseRows(data, function(pdata) {
+      var results = pdata.filter(function(x) { return x == ''; });
+      
+      if (results.length < 2) {
+        rows.push(pdata); 
+      }
+    });
+
+    var data = {};
+    for (var riding = 0; riding < 338; riding++) {
+      var dataz = {};
+      var name = rows[riding*3+1][0];
+
+      dataz['likelyhood'] = rows[riding*3+1][8];
+      dataz['details'] = {};
+      dataz['FEDNUM'] = +d2[name];
+      // dataz['ENNAME'] = 
+      var max = 0;
+      var leader;
+      for (var i = 0; i < parties.length; i++) {
+        dataz['details'][parties[i]] = {};
+        dataz['details'][parties[i]]['low'] = rows[riding*3][i+1];
+        dataz['details'][parties[i]]['med'] = rows[riding*3+1][i+1];
+        dataz['details'][parties[i]]['high'] = rows[riding*3+2][i+1];
+        if (max < +rows[riding*3+1][i+1]) {
+          max = +rows[riding*3+1][i+1];
+          leader = parties[i];
+        }
+      };
+      dataz['leader'] = leader;
+      data[+d2[name]] = dataz;
+    }
+    console.log(data);
+
+  });
+})
 
 </script>
