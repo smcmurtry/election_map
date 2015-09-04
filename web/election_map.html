@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<!-- <meta charset="windows-1252"> -->
 <link rel="stylesheet" type="text/css" href="tooltip.css"/>
-
 <style>
 
 body {
@@ -28,11 +26,6 @@ svg {
   pointer-events: all;
   z-index: 10;
 }
-
-.overlay-riding :hover {
-  opacity: 1;
-}
-
 
 </style>
 <script src="d3.v3.min.js"></script>
@@ -93,8 +86,10 @@ svg2.call(zoom)
       tooltip_h = +d3.select(".tooltip").style("height").slice(0, -2);
       var x = pos[0] - 0.50*tooltip_w,
           y = pos[1] - 1.15*tooltip_h;
-      if(typeof data != 'undefined') { update_tooltip(x, y, data); }
-      });
+      if(typeof data != 'undefined') { 
+        update_tooltip(x, y, data); 
+      }
+    });
 
 d3.json(data_path + "ca_w_prop_1.json", function(error, ca) {
   if (error) throw error;
@@ -164,10 +159,15 @@ d3.json(data_path + "ca_w_prop_1.json", function(error, ca) {
         .on("mouseover", function(d) {
           tooltip.style("display", "block");
           data = predictions[d.properties.FEDNUM];
-          d3.select(this).style("opacity", 1)
+          d3.selectAll(".riding")
+            .filter(function(d) { return d.properties.FEDNUM == data.FEDNUM; })
+            .attr("opacity", 0.5)
         })
         .on("mouseout", function(d) {
           tooltip.style("display", "none");
+          d3.selectAll(".riding")
+            .filter(function(d) { return d.properties.FEDNUM == data.FEDNUM; })
+            .attr("opacity", 1)
         })
 
     g.append("path")
@@ -187,7 +187,6 @@ function zoomed() {
 function update_tooltip(x, y, data) {
 
   tooltip.select(".riding-name").text(data['riding_utf8']); //['ENNAME']);
-  // console.log([data['riding_utf8']])
   for (var i = 0; i < parties2display.length; i++) {
     var p = parties2display[i];
     row1.select("." + p)
