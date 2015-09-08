@@ -11,13 +11,14 @@ svg {
   background: white;
 }
 
-.boundary {
+/*.boundary {
   fill: none;
   stroke: #fff;
+  stroke-width:0.5;
   stroke-linejoin: round;
   stroke-linecap: round;
   vector-effect: non-scaling-stroke;
-}
+}*/
 
 .overlay {
   position: absolute;
@@ -28,6 +29,9 @@ svg {
 }
 
 </style>
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" /> 
 <script src="d3.v3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
 <body>
@@ -93,17 +97,17 @@ svg2.call(zoom)
       }
     });
 
-d3.json(data_path + "ca_w_prop.json", function(error, ca) {
+d3.json(data_path + "ca_only_land.json", function(error, ca) {
   if (error) throw error;
-
-  d3.csv(data_path + 'riding_name_dict.csv', function (dict) {
+  console.log(ca)
+  d3.csv(data_path + 'riding_name_dict_2.csv', function (dict) {
     var d2 = {};
     for (var i = 0; i < dict.length; i++) {
       d2[dict[i].riding] = {"FEDNUM": dict[i].FEDNUM, 
                             "riding_utf8": dict[i].riding_utf8};
     };
 
-    d3.text(data_path + 'Ridings_Aug_28.txt', function(dat) {
+    d3.text('https://raw.githubusercontent.com/smcmurtry/election_map/master/data/current_projections.txt', function(dat) {//data_path + 'Ridings_Aug_28.txt', function(dat) {
       var rows = [];
 
       d3.tsv.parseRows(dat, function(pdata) {
@@ -137,8 +141,8 @@ d3.json(data_path + "ca_w_prop.json", function(error, ca) {
         predictions[+d2[name].FEDNUM] = dataz;
       }
 
-    var feature = topojson.feature(ca, ca.objects.FED_CA_2_1_en),
-        boundary = topojson.mesh(ca, ca.objects.FED_CA_2_1_en);
+    var feature = topojson.feature(ca, ca.objects.intersection_3); //FED_CA_2_1_en),
+        // boundary = topojson.mesh(ca, ca.objects.intersection_3);//FED_CA_2_1_en);
 
     g.append("g")
       .selectAll("path")
@@ -171,10 +175,10 @@ d3.json(data_path + "ca_w_prop.json", function(error, ca) {
             .attr("opacity", 1)
         })
 
-    g.append("path")
-        .datum(boundary)
-        .attr("class", "boundary")
-        .attr("d", path);
+    // g.append("path")
+    //     .datum(boundary)
+    //     .attr("class", "boundary")
+    //     .attr("d", path);
 
     initialize_zoom();
 
