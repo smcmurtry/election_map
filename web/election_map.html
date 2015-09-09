@@ -11,15 +11,6 @@ svg {
   background: white;
 }
 
-/*.boundary {
-  fill: none;
-  stroke: #fff;
-  stroke-width:0.5;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-  vector-effect: non-scaling-stroke;
-}*/
-
 .overlay {
   position: absolute;
   opacity: 0;
@@ -33,9 +24,39 @@ svg {
 <meta http-equiv="expires" content="0" />
 <meta http-equiv="pragma" content="no-cache" /> 
 <script src="d3.v3.min.js"></script>
+<script src="spin.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
 <body>
+    <div id="spin"></div>
+    <div id="map-cont"></div>
+</body>
 <script>
+
+var opts = {
+  lines: 13 // The number of lines to draw
+, length: 28 // The length of each line
+, width: 14 // The line thickness
+, radius: 42 // The radius of the inner circle
+, scale: 0.5 // Scales overall size of the spinner
+, corners: 1 // Corner roundness (0..1)
+, color: '#000' // #rgb or #rrggbb or array of colors
+, opacity: 0.25 // Opacity of the lines
+, rotate: 0 // The rotation offset
+, direction: 1 // 1: clockwise, -1: counterclockwise
+, speed: 1 // Rounds per second
+, trail: 60 // Afterglow percentage
+, fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
+, zIndex: 2e9 // The z-index (defaults to 2000000000)
+, className: 'spinner' // The CSS class to assign to the spinner
+, top: '50%' // Top position relative to parent
+, left: '50%' // Left position relative to parent
+, shadow: false // Whether to render a shadow
+, hwaccel: false // Whether to use hardware acceleration
+, position: 'absolute' // Element positioning
+}
+var target = document.getElementById('spin')
+var spinner = new Spinner(opts).spin(target);
 
 var data_path = '../data/'; // dir_election_map/
 
@@ -49,6 +70,7 @@ var party_colours = {'ndp': '#F78320', 'con': '#263893', 'lib': '#D71921',
                      'grn': '#3D9B35', 'blc': '#00A7EC', 'oth': 'grey'};
 var init_zoom = 0.16,
     max_zoom = 15;
+var feature;
 
 var zoom = d3.behavior.zoom()
     .scaleExtent([init_zoom, max_zoom])
@@ -69,8 +91,7 @@ draw_tooltip();
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
-    .attr("height", height)
-  .append("g");
+    .attr("height", height);
 
 // this is so the pan works even when the mouse isn't over an svg riding element
 svg2.append("rect")
@@ -88,7 +109,7 @@ svg2.call(zoom)
     .call(zoom.event)
     .on("mousemove", function() { 
       var pos = d3.mouse(this);
-      tooltip_w = +d3.select(".tooltip").style("width").slice(0, -2);
+      tooltip_w = +d3.select(".tooltip").style("width").slice(0, -2); // slice to remove the 'px'
       tooltip_h = +d3.select(".tooltip").style("height").slice(0, -2);
       var x = pos[0] - 0.50*tooltip_w,
           y = pos[1] - 1.15*tooltip_h;
@@ -97,9 +118,9 @@ svg2.call(zoom)
       }
     });
 
+
 d3.json(data_path + "ca_only_land.json", function(error, ca) {
   if (error) throw error;
-  console.log(ca)
   d3.csv(data_path + 'riding_name_dict_2.csv', function (dict) {
     var d2 = {};
     for (var i = 0; i < dict.length; i++) {
@@ -107,81 +128,91 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
                             "riding_utf8": dict[i].riding_utf8};
     };
 
-    d3.text('https://raw.githubusercontent.com/smcmurtry/election_map/master/data/current_projections.txt', function(dat) {//data_path + 'Ridings_Aug_28.txt', function(dat) {
-      var rows = [];
+    d3.text('https://raw.githubusercontent.com/smcmurtry/election_map/master/data/current_projections.txt', function(dat) {
+      var predictions = {};  
+      parse_data();
+      feature = topojson.feature(ca, ca.objects.intersection_3);
+      spinner.stop();
+      draw_map();
+      initialize_zoom();
 
-      d3.tsv.parseRows(dat, function(pdata) {
-        var results = pdata.filter(function(x) { return x == ''; });
-        if (results.length < 2) { rows.push(pdata); }
-      });
+      window.onresize = function(event) {
+        width = window.innerWidth - 30;
+        height = window.innerHeight - 30;
+        svg.attr("width", width)
+           .attr("height", height);
+        svg2.attr("width", width)
+            .attr("height", height);
+        d3.select('.overlay').attr("width", width)
+            .attr("height", height);
+        initialize_zoom();
+      };
 
-      var predictions = {};
-      for (var riding = 0; riding < 338; riding++) {
-        var dataz = {};
-        var name = rows[riding*3+1][0];
-        dataz['name'] = name;
-        dataz['likelyhood'] = rows[riding*3+1][8];
-        dataz['details'] = {};
-        dataz['FEDNUM'] = +d2[name].FEDNUM;
-        dataz['riding_utf8'] = d2[name].riding_utf8;
-
-        var max = 0;
-        var leader;
-        for (var i = 0; i < parties.length; i++) {
-          dataz['details'][parties[i]] = {};
-          dataz['details'][parties[i]]['low'] = rows[riding*3][i+1];
-          dataz['details'][parties[i]]['med'] = rows[riding*3+1][i+1];
-          dataz['details'][parties[i]]['high'] = rows[riding*3+2][i+1];
-          if (max < +rows[riding*3+1][i+1]) {
-            max = +rows[riding*3+1][i+1];
-            leader = parties[i];
-          }
-        };
-        dataz['leader'] = leader;
-        predictions[+d2[name].FEDNUM] = dataz;
-      }
-
-    var feature = topojson.feature(ca, ca.objects.intersection_3); //FED_CA_2_1_en),
-        // boundary = topojson.mesh(ca, ca.objects.intersection_3);//FED_CA_2_1_en);
-
-    g.append("g")
-      .selectAll("path")
-        .data(feature.features)
-      .enter().append("path")
-        .attr("class", "riding")
-        .attr("d", path)
-        .attr("fill", function(d) {
-          var leader = predictions[d.properties.FEDNUM]['leader'];
-          return party_colours[leader];
+      function parse_data() {
+        var rows = [];
+        d3.tsv.parseRows(dat, function(pdata) {
+          var results = pdata.filter(function(x) { return x == ''; });
+          if (results.length < 2) { rows.push(pdata); }
         });
 
-    g2.append("g")
-      .selectAll("path")
-        .data(feature.features)
-      .enter().append("path")
-        .attr("d", path)
-        .attr("class", "overlay-riding")
-        .on("mouseover", function(d) {
-          tooltip.style("display", "block");
-          data = predictions[d.properties.FEDNUM];
-          d3.selectAll(".riding")
-            .filter(function(d) { return d.properties.FEDNUM == data.FEDNUM; })
-            .attr("opacity", 0.5)
-        })
-        .on("mouseout", function(d) {
-          tooltip.style("display", "none");
-          d3.selectAll(".riding")
-            .filter(function(d) { return d.properties.FEDNUM == data.FEDNUM; })
-            .attr("opacity", 1)
-        })
+        for (var riding = 0; riding < 338; riding++) {
+          var dataz = {};
+          var name = rows[riding*3+1][0];
+          dataz['name'] = name;
+          dataz['likelyhood'] = rows[riding*3+1][8];
+          dataz['details'] = {};
+          dataz['FEDNUM'] = +d2[name].FEDNUM;
+          dataz['riding_utf8'] = d2[name].riding_utf8;
 
-    // g.append("path")
-    //     .datum(boundary)
-    //     .attr("class", "boundary")
-    //     .attr("d", path);
+          var max = 0;
+          var leader;
+          for (var i = 0; i < parties.length; i++) {
+            dataz['details'][parties[i]] = {};
+            dataz['details'][parties[i]]['low'] = rows[riding*3][i+1];
+            dataz['details'][parties[i]]['med'] = rows[riding*3+1][i+1];
+            dataz['details'][parties[i]]['high'] = rows[riding*3+2][i+1];
+            if (max < +rows[riding*3+1][i+1]) {
+              max = +rows[riding*3+1][i+1];
+              leader = parties[i];
+            }
+          };
+          dataz['leader'] = leader;
+          predictions[+d2[name].FEDNUM] = dataz;
+        }
+      };
 
-    initialize_zoom();
+      function draw_map() {
+        g.append("g")
+          .selectAll("path")
+            .data(feature.features)
+          .enter().append("path")
+            .attr("class", "riding")
+            .attr("d", path)
+            .attr("fill", function(d) {
+              var leader = predictions[d.properties.FEDNUM]['leader'];
+              return party_colours[leader];
+            });
 
+        g2.append("g")
+          .selectAll("path")
+            .data(feature.features)
+          .enter().append("path")
+            .attr("d", path)
+            .attr("class", "overlay-riding")
+            .on("mouseover", function(d) {
+              tooltip.style("display", "block");
+              data = predictions[d.properties.FEDNUM];
+              d3.selectAll(".riding")
+                .filter(function(d) { return d.properties.FEDNUM == data.FEDNUM; })
+                .attr("opacity", 0.5)
+            })
+            .on("mouseout", function(d) {
+              tooltip.style("display", "none");
+              d3.selectAll(".riding")
+                .filter(function(d) { return d.properties.FEDNUM == data.FEDNUM; })
+                .attr("opacity", 1)
+            })
+      };
     });
   });
 });
@@ -192,7 +223,13 @@ function zoomed() {
 }
 
 function initialize_zoom() {
-  zoom.scale(init_zoom);
+
+  var b = path.bounds(feature),
+      s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height),
+      t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
+
+  zoom.scaleExtent([s, max_zoom]);
+  zoom.scale(s).translate(t);
   g.call(zoom.event);
   g2.call(zoom.event);
 }
@@ -212,11 +249,13 @@ function update_tooltip(x, y, data) {
 
   row2.select(".main-prediction")
       .style("background-color", party_colours[data.leader])
-      .text(data.likelyhood); // + '%');
+      .text(data.likelyhood);
 
   tooltip.style("transform", "translate("+ x + "px," + y + "px)");
   tooltip.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
   tooltip.style("-webkit-transform", "translate("+ x + "px," + y + "px)"); // Safari
+
+
 
 }
 
@@ -260,7 +299,6 @@ function draw_tooltip() {
       .attr("class", "col main-prediction");
 
 }
-
 
 d3.select(self.frameElement).style("height", height + "px");
 
