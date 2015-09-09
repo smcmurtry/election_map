@@ -2,7 +2,8 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="tooltip.css"/>
 <style>
-
+    html, body { overflow: hidden; height: 100% }
+    body { margin:0; padding:0; }
 body {
   background-color: white;
 }
@@ -23,7 +24,8 @@ svg {
 <meta http-equiv="cache-control" content="max-age=0" />
 <meta http-equiv="expires" content="0" />
 <meta http-equiv="pragma" content="no-cache" /> 
-<script src="d3.v3.min.js"></script>
+<!-- <script src="d3.v3.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
 <script src="spin.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
@@ -63,8 +65,8 @@ var data_path = '../data/'; // dir_election_map/
 var parties = ['con', 'lib', 'ndp', 'blc', 'unk', 'grn', 'oth'];
 var parties2display = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
 
-var width = window.innerWidth - 30,//960,
-    height = window.innerHeight - 30;//600;
+var width = window.innerWidth,// - 30,//960,
+    height = window.innerHeight;// - 30;//600;
 
 var party_colours = {'ndp': '#F78320', 'con': '#263893', 'lib': '#D71921',
                      'grn': '#3D9B35', 'blc': '#00A7EC', 'oth': 'grey'};
