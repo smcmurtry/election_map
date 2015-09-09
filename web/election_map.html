@@ -25,9 +25,9 @@ svg {
 <meta http-equiv="expires" content="0" />
 <meta http-equiv="pragma" content="no-cache" /> 
 <!-- <script src="d3.v3.min.js"></script> -->
+<!-- <script src="spin.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
-<script src="spin.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
 <body>
     <div id="spin"></div>
@@ -65,8 +65,10 @@ var data_path = '../data/'; // dir_election_map/
 var parties = ['con', 'lib', 'ndp', 'blc', 'unk', 'grn', 'oth'];
 var parties2display = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
 
-var width = window.innerWidth,// - 30,//960,
-    height = window.innerHeight;// - 30;//600;
+var transition_width = 600; // width at which the tooltip stops moving around. in px
+var default_tooltip_w = '355px';
+var width = window.innerWidth;
+var height = window.innerHeight;
 
 var party_colours = {'ndp': '#F78320', 'con': '#263893', 'lib': '#D71921',
                      'grn': '#3D9B35', 'blc': '#00A7EC', 'oth': 'grey'};
@@ -81,7 +83,7 @@ var zoom = d3.behavior.zoom()
 
 var path = d3.geo.path().projection(null);
 
-var tooltip, row1, row2, row3, data;
+var tooltip, tooltip_h, row1, row2, row3, data;
 
 var svg2 = d3.select("body").append("svg")
     .attr("class", "overlay")
@@ -111,8 +113,8 @@ svg2.call(zoom)
     .call(zoom.event)
     .on("mousemove", function() { 
       var pos = d3.mouse(this);
-      tooltip_w = +d3.select(".tooltip").style("width").slice(0, -2); // slice to remove the 'px'
-      tooltip_h = +d3.select(".tooltip").style("height").slice(0, -2);
+      var tooltip_w = +d3.select(".tooltip").style("width").slice(0, -2); // slice to remove the 'px'
+      // var tooltip_h = +d3.select(".tooltip").style("height").slice(0, -2);
       var x = pos[0] - 0.50*tooltip_w,
           y = pos[1] - 1.15*tooltip_h;
       if(typeof data != 'undefined') { 
@@ -139,8 +141,9 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
       initialize_zoom();
 
       window.onresize = function(event) {
-        width = window.innerWidth - 30;
-        height = window.innerHeight - 30;
+        width = window.innerWidth;
+        height = window.innerHeight;
+        transition_tooltip();
         svg.attr("width", width)
            .attr("height", height);
         svg2.attr("width", width)
@@ -225,10 +228,11 @@ function zoomed() {
 }
 
 function initialize_zoom() {
+  var init_height = height<=transition_width ? height-tooltip_h : height;
 
   var b = path.bounds(feature),
-      s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height),
-      t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
+      s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / init_height),
+      t = [(width - s * (b[1][0] + b[0][0])) / 2, (init_height - s * (b[1][1] + b[0][1])) / 2];
 
   zoom.scaleExtent([s, max_zoom]);
   zoom.scale(s).translate(t);
@@ -253,10 +257,11 @@ function update_tooltip(x, y, data) {
       .style("background-color", party_colours[data.leader])
       .text(data.likelyhood);
 
-  tooltip.style("transform", "translate("+ x + "px," + y + "px)");
-  tooltip.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
-  tooltip.style("-webkit-transform", "translate("+ x + "px," + y + "px)"); // Safari
-
+  if (width > transition_width) {
+    tooltip.style("transform", "translate("+ x + "px," + y + "px)");
+    tooltip.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
+    tooltip.style("-webkit-transform", "translate("+ x + "px," + y + "px)"); // Safari
+  }
 
 
 }
@@ -299,6 +304,21 @@ function draw_tooltip() {
 
   row2.append("td")
       .attr("class", "col main-prediction");
+  
+  tooltip_h = +d3.select(".tooltip").style("height").slice(0, -2);
+  transition_tooltip();
+
+}
+
+function transition_tooltip() {
+  if (width <= transition_width) {
+    tooltip.style("width", "100%");
+    tooltip.style("transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)");
+    tooltip.style("-ms-transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)"); // IE 9
+    tooltip.style("-webkit-transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)"); // Safari
+  } else {
+    tooltip.style("width", default_tooltip_w);
+  }
 
 }
 

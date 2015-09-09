@@ -10,6 +10,7 @@ body {
   height: 110px;
   background-color: white;
   position: absolute;
+  text-align: center;
 }
 
 .inner-div {
@@ -17,6 +18,10 @@ body {
   height: 90%;
   margin: 0 auto;
   padding-top: 0.5em;
+}
+
+.prediction-table {
+  margin: 0 auto;
 }
 
 .tail {
