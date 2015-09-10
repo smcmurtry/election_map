@@ -33,7 +33,6 @@ body {
 
 .prediction-table {
   margin: 0 auto;
-  /*width: 90%;*/
 }
 
 .tail {
@@ -85,5 +84,5 @@ svg {
   opacity: 0;
   fill: none;
   pointer-events: all;
-  z-i
+  z-index: 10;
 }

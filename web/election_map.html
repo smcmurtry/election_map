@@ -48,16 +48,7 @@ var transition_width = 600; // width at which the tooltip stops moving around. i
 var isTouchDevice = 'ontouchstart' in document.documentElement;
 // var isTouchDevice = true;
 var width = window.innerWidth;
-var height;
-
-// var userAgent = window.navigator.userAgent;
-// if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
-  // iPad or iPhone
-  // height = window.innerHeight - 44;
-// } else {
-//   // Anything else
-  height = window.innerHeight;
-// }
+var height = window.innerHeight;
 
 var party_colours = {'ndp': '#F78320', 'con': '#263893', 'lib': '#D71921',
                      'grn': '#3D9B35', 'blc': '#00A7EC', 'oth': 'grey'};
@@ -103,7 +94,6 @@ svg2.call(zoom)
     .on("mousemove", function() { 
       var pos = d3.mouse(this);
       var tooltip_w = +d3.select(".tooltip").style("width").slice(0, -2); // slice to remove the 'px'
-      // var tooltip_h = +d3.select(".tooltip").style("height").slice(0, -2);
       var x = pos[0] - 0.50*tooltip_w,
           y = pos[1] - 1.15*tooltip_h;
       if(typeof data != 'undefined') { 
@@ -132,8 +122,6 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
       window.onresize = function(event) {
         width = window.innerWidth;
         height = window.innerHeight;
-  // height = window.innerHeight - 44;
-
         transition_tooltip();
         svg.attr("width", width)
            .attr("height", height);
@@ -301,13 +289,11 @@ function draw_tooltip() {
 function transition_tooltip() {
   if (width <= transition_width || isTouchDevice) {
     tooltip.style("width", "100%");
-    // if (isTouchDevice) { tooltip.style("font-size", '12px'); }
     tooltip.style("transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)");
     tooltip.style("-ms-transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)"); // IE 9
     tooltip.style("-webkit-transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)"); // Safari
   } else {
     tooltip.style("width", '355px');
-    // tooltip.style("font-size", '16px')
   }
 }
 
