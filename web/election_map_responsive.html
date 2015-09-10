@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="election_map.css"/>
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" /> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+<body>
+    <div id="spin"></div>
+    <div id="map-cont"></div>
+</body>
+<script>
+
+var opts = {
+  lines: 13 // The number of lines to draw
+, length: 28 // The length of each line
+, width: 14 // The line thickness
+, radius: 42 // The radius of the inner circle
+, scale: 0.5 // Scales overall size of the spinner
+, corners: 1 // Corner roundness (0..1)
+, color: '#000' // #rgb or #rrggbb or array of colors
+, opacity: 0.25 // Opacity of the lines
+, rotate: 0 // The rotation offset
+, direction: 1 // 1: clockwise, -1: counterclockwise
+, speed: 1 // Rounds per second
+, trail: 60 // Afterglow percentage
+, fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
+, zIndex: 2e9 // The z-index (defaults to 2000000000)
+, className: 'spinner' // The CSS class to assign to the spinner
+, top: '50%' // Top position relative to parent
+, left: '50%' // Left position relative to parent
+, shadow: false // Whether to render a shadow
+, hwaccel: false // Whether to use hardware acceleration
+, position: 'absolute' // Element positioning
+}
+var target = document.getElementById('spin')
+var spinner = new Spinner(opts).spin(target);
+
+var data_path = '../data/'; // dir_election_map/
+
+var parties = ['con', 'lib', 'ndp', 'blc', 'unk', 'grn', 'oth'];
+var parties2display = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
+
+var transition_width = 600; // width at which the tooltip stops moving around. in px
+var isTouchDevice = 'ontouchstart' in document.documentElement;
+// var isTouchDevice = true;
+var default_tooltip_w = '355px';
+var width = window.innerWidth;
+var height;
+
+// var userAgent = window.navigator.userAgent;
+// if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+  // iPad or iPhone
+  // height = window.innerHeight - 44;
+// } else {
+//   // Anything else
+  height = window.innerHeight;
+// }
+
+var party_colours = {'ndp': '#F78320', 'con': '#263893', 'lib': '#D71921',
+                     'grn': '#3D9B35', 'blc': '#00A7EC', 'oth': 'grey'};
+var init_zoom = 0.16,
+    max_zoom = 15;
+var feature;
+
+var zoom = d3.behavior.zoom()
+    .scaleExtent([init_zoom, max_zoom])
+    .on("zoom", zoomed)
+    .size([width, height]);
+
+var path = d3.geo.path().projection(null);
+
+var tooltip, tooltip_h, row1, row2, row3, data;
+
+var svg2 = d3.select("body").append("svg")
+    .attr("class", "overlay")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g");
+
+draw_tooltip();
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+// this is so the pan works even when the mouse isn't over an svg riding element
+svg2.append("rect")
+    .attr("class", "overlay")
+    .attr("width", width)
+    .attr("height", height);
+
+var g = svg.append("g");
+var g2 = svg2.append("g");
+
+svg.call(zoom)
+   .call(zoom.event);
+
+svg2.call(zoom)
+    .call(zoom.event)
+    .on("mousemove", function() { 
+      var pos = d3.mouse(this);
+      var tooltip_w = +d3.select(".tooltip").style("width").slice(0, -2); // slice to remove the 'px'
+      // var tooltip_h = +d3.select(".tooltip").style("height").slice(0, -2);
+      var x = pos[0] - 0.50*tooltip_w,
+          y = pos[1] - 1.15*tooltip_h;
+      if(typeof data != 'undefined') { 
+        update_tooltip(x, y, data); 
+      }
+    });
+
+
+d3.json(data_path + "ca_only_land.json", function(error, ca) {
+  if (error) throw error;
+  d3.csv(data_path + 'riding_name_dict_2.csv', function (dict) {
+    var d2 = {};
+    for (var i = 0; i < dict.length; i++) {
+      d2[dict[i].riding] = {"FEDNUM": dict[i].FEDNUM, 
+                            "riding_utf8": dict[i].riding_utf8};
+    };
+
+    d3.text('https://raw.githubusercontent.com/smcmurtry/election_map/master/data/current_projections.txt', function(dat) {
+      var predictions = {};  
+      parse_data();
+      feature = topojson.feature(ca, ca.objects.intersection_3);
+      spinner.stop();
+      draw_map();
+      initialize_zoom();
+
+      window.onresize = function(event) {
+        width = window.innerWidth;
+        height = window.innerHeight;
+  // height = window.innerHeight - 44;
+
+        transition_tooltip();
+        svg.attr("width", width)
+           .attr("height", height);
+        svg2.attr("width", width)
+            .attr("height", height);
+        d3.select('.overlay').attr("width", width)
+            .attr("height", height);
+        initialize_zoom();
+      };
+
+      function parse_data() {
+        var rows = [];
+        d3.tsv.parseRows(dat, function(pdata) {
+          var results = pdata.filter(function(x) { return x == ''; });
+          if (results.length < 2) { rows.push(pdata); }
+        });
+
+        for (var riding = 0; riding < 338; riding++) {
+          var dataz = {};
+          var name = rows[riding*3+1][0];
+          dataz['name'] = name;
+          dataz['likelyhood'] = rows[riding*3+1][8];
+          dataz['details'] = {};
+          dataz['FEDNUM'] = +d2[name].FEDNUM;
+          dataz['riding_utf8'] = d2[name].riding_utf8;
+
+          var max = 0;
+          var leader;
+          for (var i = 0; i < parties.length; i++) {
+            dataz['details'][parties[i]] = {};
+            dataz['details'][parties[i]]['low'] = rows[riding*3][i+1];
+            dataz['details'][parties[i]]['med'] = rows[riding*3+1][i+1];
+            dataz['details'][parties[i]]['high'] = rows[riding*3+2][i+1];
+            if (max < +rows[riding*3+1][i+1]) {
+              max = +rows[riding*3+1][i+1];
+              leader = parties[i];
+            }
+          };
+          dataz['leader'] = leader;
+          predictions[+d2[name].FEDNUM] = dataz;
+        }
+      };
+
+      function draw_map() {
+        g.append("g")
+          .selectAll("path")
+            .data(feature.features)
+          .enter().append("path")
+            .attr("class", "riding")
+            .attr("d", path)
+            .attr("fill", function(d) {
+              var leader = predictions[d.properties.FEDNUM]['leader'];
+              return party_colours[leader];
+            });
+
+        g2.append("g")
+          .selectAll("path")
+            .data(feature.features)
+          .enter().append("path")
+            .attr("d", path)
+            .attr("class", "overlay-riding")
+            .on("mouseover", function(d) {
+              tooltip.style("display", "block");
+              data = predictions[d.properties.FEDNUM];
+              d3.selectAll(".riding")
+                .filter(function(d) { return d.properties.FEDNUM == data.FEDNUM; })
+                .attr("opacity", 0.5)
+            })
+            .on("mouseout", function(d) {
+              tooltip.style("display", "none");
+              d3.selectAll(".riding")
+                .filter(function(d) { return d.properties.FEDNUM == data.FEDNUM; })
+                .attr("opacity", 1)
+            })
+      };
+    });
+  });
+});
+
+function zoomed() {
+  g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+  g2.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+}
+
+function initialize_zoom() {
+  var init_height = (height<=transition_width || isTouchDevice) ? height-tooltip_h : height;
+
+  var b = path.bounds(feature),
+      s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / init_height),
+      t = [(width - s * (b[1][0] + b[0][0])) / 2, (init_height - s * (b[1][1] + b[0][1])) / 2];
+
+  zoom.scaleExtent([s, max_zoom]);
+  zoom.scale(s).translate(t);
+  g.call(zoom.event);
+  g2.call(zoom.event);
+}
+
+function update_tooltip(x, y, data) {
+
+  tooltip.select(".riding-name").text(data['riding_utf8']); //['ENNAME']);
+  for (var i = 0; i < parties2display.length; i++) {
+    var p = parties2display[i];
+    row1.select("." + p)
+        .text(data.details[p].high);
+    row2.select("." + p)
+        .text(data.details[p].med);
+    row3.select("." + p)
+        .text(data.details[p].low);
+  }
+
+  row2.select(".main-prediction")
+      .style("background-color", party_colours[data.leader])
+      .text(data.likelyhood);
+
+  if (width > transition_width && !isTouchDevice) {
+    tooltip.style("transform", "translate("+ x + "px," + y + "px)");
+    tooltip.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
+    tooltip.style("-webkit-transform", "translate("+ x + "px," + y + "px)"); // Safari
+  }
+
+
+}
+
+function draw_tooltip() {  
+  tooltip = d3.select("body")
+              .append("div")
+              .attr('class', 'tooltip')
+              .style("display", "none");
+
+  var inner_div = tooltip.append("div").attr("class", 'inner-div');
+  var tail = tooltip.append("div").attr("class", "tail");
+
+  inner_div.append("div").attr("class", "riding-name");
+
+  var prediction_table = inner_div.append("table").attr("class", "prediction-table");
+
+  row1 = prediction_table.append("tr").attr("class", "small-row");
+  row2 = prediction_table.append("tr").attr("class", "big-row");
+  row3 = prediction_table.append("tr").attr("class", "small-row");
+
+  row1.append("td").attr("class", "label").text("High / Haut");
+  row2.append("td").attr("class", "label").text("");
+  row3.append("td").attr("class", "label").text("Low / Bas");
+
+  for (var i = 0; i < parties2display.length; i++) {
+    var p = parties2display[i];
+    row1.append("td")
+        .attr("class", "col " + p)
+        .style("color", party_colours[p]);
+
+    row2.append("td")
+        .attr("class", "col " + p)
+        .style("color", party_colours[p]);
+
+    row3.append("td")
+        .attr("class", "col " + p)
+        .style("color", party_colours[p]);
+  };
+
+  row2.append("td")
+      .attr("class", "col main-prediction");
+  
+  tooltip_h = +d3.select(".tooltip").style("height").slice(0, -2);
+  transition_tooltip();
+}
+
+function transition_tooltip() {
+  if (width <= transition_width || isTouchDevice) {
+    tooltip.style("width", "100%");
+    // tooltip.style("height", 0.25*height + "px")
+    tooltip_h = 100;
+    tooltip.style("height", tooltip_h + 'px')// tooltip_h + "px")
+    
+    tooltip.style("transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)");
+    tooltip.style("-ms-transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)"); // IE 9
+    tooltip.style("-webkit-transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)"); // Safari
+  } else {
+    tooltip.style("width", default_tooltip_w);
+  }
+}
+
+d3.select(self.frameElement).style("height", height + "px");
+
+</script>

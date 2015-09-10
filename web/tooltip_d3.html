@@ -1,31 +1,86 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="tooltip.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <style>
 
-html, body { overflow: hidden; height: 100% }
-
-body { margin:0; padding:0; }
+html, body { 
+  overflow: hidden; 
+  height: 100%;
+}
 
 html {
     -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
 
 body {
+  font-family: Helvetica, sans-serif;
   background-color: white;
+  margin:0; 
+  padding:0;
 }
 
-svg {
-  background: white;
-}
-
-.overlay {
+.tooltip {
+  opacity: 0.9;
+  font-size: 12px;
+  width: 355px;
+  height: 110px;
+  background-color: white;
   position: absolute;
-  opacity: 0;
-  fill: none;
-  pointer-events: all;
-  z-index: 10;
+  text-align: center;
 }
+
+.inner-div {
+  width: 95%;
+  height: 90%;
+  margin: 0 auto;
+  padding-top: 0.5em;
+}
+
+.prediction-table {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.tail {
+  margin-top: 0px;
+  margin-left: 47%;
+  width: 0px;
+  height: 0px;
+  border: 10px solid;
+  border-color: white transparent transparent transparent;
+}
+
+.big-row {
+  /*font-size: 16px;*/
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.small-row {
+  /*font-size: 12px;*/
+  font-size: 0.75em;
+}
+
+.main-prediction {
+  color: white;
+  width: 50px;
+}
+
+.riding-name { 
+  font-weight: bold;
+  text-align: center;
+  height: 2em;
+}
+
+.label {
+  color: black;
+  text-align: right;
+}
+
+.col { 
+  text-align: center; 
+}
+
 
 </style>
 
@@ -57,6 +112,17 @@ dataz = {"details": {
 draw_tooltip();
 update_tooltip(0, 0, dataz);
 transition_tooltip();
+
+
+window.onresize = function(event) {
+  width = window.innerWidth;
+  height = window.innerHeight;
+  console.log(width, height);
+// height = window.innerHeight - 44;
+  transition_tooltip();
+  tooltip_h = +d3.select(".tooltip").style("height").slice(0, -2);
+};
+
 
 
 function draw_tooltip() {  
@@ -128,8 +194,16 @@ function update_tooltip(x, y, data) {
 
 function transition_tooltip() {
   if (width <= transition_width || isTouchDevice) {
+
     tooltip.style("width", "100%");
-    tooltip.style("height", 0.25*height + "px")
+    // first set the tooltip height to 25% of the screen height
+    tooltip_h = 100;
+    tooltip.style("height", tooltip_h + 'px')// tooltip_h + "px")
+
+    // then set the font size
+    // var tooltip_fontsize = tooltip_h/10;
+    // tooltip.style("font-size", tooltip_fontsize + 'px')
+
     tooltip.style("transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)");
     tooltip.style("-ms-transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)"); // IE 9
     tooltip.style("-webkit-transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)"); // Safari

@@ -1,0 +1,90 @@
+
+html, body { 
+  overflow: hidden; 
+  height: 100%;
+}
+
+html {
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+  margin:0; 
+  padding:0;
+}
+
+.tooltip {
+  opacity: 0.9;
+  font-size: 12px;
+  width: 355px;
+  height: 110px;
+  background-color: white;
+  position: absolute;
+  text-align: center;
+}
+
+.inner-div {
+  width: 95%;
+  height: 90%;
+  margin: 0 auto;
+  padding-top: 0.5em;
+}
+
+.prediction-table {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.tail {
+  margin-top: 0px;
+  margin-left: 47%;
+  width: 0px;
+  height: 0px;
+  border: 10px solid;
+  border-color: white transparent transparent transparent;
+}
+
+.big-row {
+  /*font-size: 16px;*/
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.small-row {
+  /*font-size: 12px;*/
+  font-size: 0.75em;
+}
+
+.main-prediction {
+  color: white;
+  width: 50px;
+}
+
+.riding-name { 
+  font-weight: bold;
+  text-align: center;
+  height: 2em;
+}
+
+.label {
+  color: black;
+  text-align: right;
+}
+
+.col { 
+  text-align: center; 
+}
+
+svg {
+  background: white;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  fill: none;
+  pointer-events: all;
+  z-i
+}
