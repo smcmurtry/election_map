@@ -45,9 +45,8 @@ var parties = ['con', 'lib', 'ndp', 'blc', 'unk', 'grn', 'oth'];
 var parties2display = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
 
 var transition_width = 600; // width at which the tooltip stops moving around. in px
-var isTouchDevice = 'ontouchstart' in document.documentElement;
-// var isTouchDevice = true;
-var default_tooltip_w = '355px';
+// var isTouchDevice = 'ontouchstart' in document.documentElement;
+var isTouchDevice = true;
 var width = window.innerWidth;
 var height;
 
@@ -254,8 +253,6 @@ function update_tooltip(x, y, data) {
     tooltip.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
     tooltip.style("-webkit-transform", "translate("+ x + "px," + y + "px)"); // Safari
   }
-
-
 }
 
 function draw_tooltip() {  
@@ -304,15 +301,13 @@ function draw_tooltip() {
 function transition_tooltip() {
   if (width <= transition_width || isTouchDevice) {
     tooltip.style("width", "100%");
-    // tooltip.style("height", 0.25*height + "px")
-    tooltip_h = 100;
-    tooltip.style("height", tooltip_h + 'px')// tooltip_h + "px")
-    
+    // if (isTouchDevice) { tooltip.style("font-size", '12px'); }
     tooltip.style("transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)");
     tooltip.style("-ms-transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)"); // IE 9
     tooltip.style("-webkit-transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)"); // Safari
   } else {
-    tooltip.style("width", default_tooltip_w);
+    tooltip.style("width", '355px');
+    // tooltip.style("font-size", '16px')
   }
 }
 
