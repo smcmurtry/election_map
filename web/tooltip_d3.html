@@ -1,143 +1,141 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="tooltip.css"/>
 <style>
 
+html, body { overflow: hidden; height: 100% }
+
+body { margin:0; padding:0; }
+
+html {
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
 body {
-  font-family: Helvetica, sans-serif;
-  font-size:16px;
-  background-color: black;
-}
-
-.tooltip {
-  width: 23em;
-  height: 6em;
   background-color: white;
+}
+
+svg {
+  background: white;
+}
+
+.overlay {
   position: absolute;
+  opacity: 0;
+  fill: none;
+  pointer-events: all;
+  z-index: 10;
 }
-
-.inner-div {
-  width: 95%;
-  height: 90%;
-  margin: 0 auto;
-  padding-top: 0.5em;
-}
-
-.tail {
-    margin-top: 0px;
-    margin-left: 45%;
-    width: 0px;
-    height: 0px;
-    border: 10px solid;
-    border-color: white transparent transparent transparent;
-}
-
-.big-row {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.small-row {
-  font-size: 12px;
-}
-
-.main-prediction {
-  color: white;
-  width: 50px;
-}
-
-.riding-name { font-weight: bold; text-align: center;}
-
-.label {color: black; text-align: right;}
-
-.col { text-align: center; }
 
 </style>
 
 <body></body>
-
 <script src="d3.v3.min.js"></script>
 <script>
+var width = window.innerWidth;
+var height = window.innerHeight;
+var transition_width = 600; // width at which the tooltip stops moving around. in px
+var isTouchDevice = true;
 
+var parties2display = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
 
 var party_colours = {'ndp': '#F78320', 'con': '#263893', 'lib': '#D71921',
                      'grn': '#3D9B35', 'blc': '#00A7EC', 'oth': 'grey'};
 
-dataz = {"con":{"low": '40.9', "med": '40.0', 'high': '40.0'}, 
-        "lib":{"low": '40.9', "med": '40.0', 'high': '40.0'},
-        "ndp":{"low": '40.9', "med": '40.0', 'high': '40.0'},
-        "blc":{"low": '40.9', "med": '40.0', 'high': '40.0'},
-        "grn":{"low": '40.9', "med": '40.0', 'high': '40.0'},
-        "oth":{"low": '40.9', "med": '40.0', 'high': '40.0'},
-        "main":{"leader": "ndp", "likelyhood": '84%'}
+dataz = {"details": {
+          "con":{"low": '40.9', "med": '40.0', 'high': '40.0'}, 
+          "lib":{"low": '40.9', "med": '40.0', 'high': '40.0'},
+          "ndp":{"low": '40.9', "med": '40.0', 'high': '40.0'},
+          "blc":{"low": '40.9', "med": '40.0', 'high': '40.0'},
+          "grn":{"low": '40.9', "med": '40.0', 'high': '40.0'},
+          "oth":{"low": '40.9', "med": '40.0', 'high': '40.0'}
+        },
+        "main":{"leader": "ndp", "likelyhood": '84%'},
+        "riding_utf8": "Kamloops – Thompson – Cariboo"
 };
 
-// initialize tooltip
-var tooltip = d3.select("body")
-                .append("div")
-                .attr('class', 'tooltip')
-                .style("display", "none");
-
-var svg = d3.select("body").append("svg")
-    .attr("width", 800)
-    .attr("height", 500)
-    .style("background-color", "grey")
-  .append("g");
-
-d3.json("../data/fake_predictions.json", function(predictions) {
-  datas = predictions[10001];
-// draw tooltip
-draw_tooltip(200,100, datas);
-
-// hide tooltip
-// tooltip.style("display", "none");
-
-})
+draw_tooltip();
+update_tooltip(0, 0, dataz);
+transition_tooltip();
 
 
-function draw_tooltip(x, y, data) {
-  tooltip.style("display", "block");
+function draw_tooltip() {  
+  tooltip = d3.select("body")
+              .append("div")
+              .attr('class', 'tooltip')
+
   var inner_div = tooltip.append("div").attr("class", 'inner-div');
   var tail = tooltip.append("div").attr("class", "tail");
 
-  inner_div.append("div").attr("class", "riding-name").text(data['ENNAME']);
+  inner_div.append("div").attr("class", "riding-name");
 
   var prediction_table = inner_div.append("table").attr("class", "prediction-table");
 
-  var row1 = prediction_table.append("tr").attr("class", "small-row");
-  var row2 = prediction_table.append("tr").attr("class", "big-row");
-  var row3 = prediction_table.append("tr").attr("class", "small-row");
+  row1 = prediction_table.append("tr").attr("class", "small-row");
+  row2 = prediction_table.append("tr").attr("class", "big-row");
+  row3 = prediction_table.append("tr").attr("class", "small-row");
 
   row1.append("td").attr("class", "label").text("High / Haut");
   row2.append("td").attr("class", "label").text("");
   row3.append("td").attr("class", "label").text("Low / Bas");
 
-  parties = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
-  for (var i = 0; i < parties.length; i++) {
+  for (var i = 0; i < parties2display.length; i++) {
+    var p = parties2display[i];
     row1.append("td")
-        .attr("class", "col")
-        .style("color", party_colours[parties[i]])
-        .text(data.details[parties[i]].high);
+        .attr("class", "col " + p)
+        .style("color", party_colours[p]);
 
     row2.append("td")
-        .attr("class", "col")
-        .style("color", party_colours[parties[i]])
-        .text(data.details[parties[i]].med);
+        .attr("class", "col " + p)
+        .style("color", party_colours[p]);
 
     row3.append("td")
-        .attr("class", "col")
-        .style("color", party_colours[parties[i]])
-        .text(data.details[parties[i]].low);
+        .attr("class", "col " + p)
+        .style("color", party_colours[p]);
   };
 
   row2.append("td")
-      .attr("class", "col main-prediction")
+      .attr("class", "col main-prediction");
+  
+  tooltip_h = +d3.select(".tooltip").style("height").slice(0, -2);
+  transition_tooltip();
+
+}
+
+function update_tooltip(x, y, data) {
+
+  tooltip.select(".riding-name").text(data['riding_utf8']); //['ENNAME']);
+  for (var i = 0; i < parties2display.length; i++) {
+    var p = parties2display[i];
+    row1.select("." + p)
+        .text(data.details[p].high);
+    row2.select("." + p)
+        .text(data.details[p].med);
+    row3.select("." + p)
+        .text(data.details[p].low);
+  }
+
+  row2.select(".main-prediction")
       .style("background-color", party_colours[data.leader])
-      .text(data.likelyhood + '%');
+      .text(data.likelyhood);
 
-  tooltip.style("transform", "translate("+ x + "px," + y + "px)");
-  tooltip.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
-  tooltip.style("-webkit-transform", "translate("+ x + "px," + y + "px)"); // Safari
+  if (width > transition_width && !isTouchDevice) {
+    tooltip.style("transform", "translate("+ x + "px," + y + "px)");
+    tooltip.style("-ms-transform", "translate("+ x + "px," + y + "px)"); // IE 9
+    tooltip.style("-webkit-transform", "translate("+ x + "px," + y + "px)"); // Safari
+  }
+}
 
+function transition_tooltip() {
+  if (width <= transition_width || isTouchDevice) {
+    tooltip.style("width", "100%");
+    tooltip.style("height", 0.25*height + "px")
+    tooltip.style("transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)");
+    tooltip.style("-ms-transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)"); // IE 9
+    tooltip.style("-webkit-transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)"); // Safari
+  } else {
+    tooltip.style("width", default_tooltip_w);
+  }
 }
 
 </script>
