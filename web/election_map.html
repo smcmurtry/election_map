@@ -48,6 +48,8 @@ var isTouchDevice = 'ontouchstart' in document.documentElement;
 // var isTouchDevice = true;
 var width = window.innerWidth;
 var height = window.innerHeight;
+var ack_font_size = (width < 400 ? 11 : 12),
+    text_w = ack_font_size*29;
 
 if (!inIframe()) {
   init_acknowledgement();
@@ -134,6 +136,8 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
             .attr("height", height);
         initialize_zoom();
         if(!inIframe()) {
+          ack_font_size = (width < 400 ? 11 : 12);
+          text_w = ack_font_size*29;
           update_acknowledgement();
         }
       };
@@ -266,9 +270,9 @@ function draw_tooltip() {
   row2 = prediction_table.append("tr").attr("class", "big-row");
   row3 = prediction_table.append("tr").attr("class", "small-row");
 
-  row1.append("td").attr("class", "label").text("High / Haut");
+  row1.append("td").attr("class", "label").text("High/Haut");
   row2.append("td").attr("class", "label").text("");
-  row3.append("td").attr("class", "label").text("Low / Bas");
+  row3.append("td").attr("class", "label").text("Low/Bas");
 
   for (var i = 0; i < parties2display.length; i++) {
     var p = parties2display[i];
@@ -319,34 +323,32 @@ function inIframe () {
 }
 
 function init_acknowledgement() {
-  var text_w = 390;
   d3.select("body")
     .append("div")
     .attr("class", "acknowledgement-box")
-    .style("height", (14+5+3) + 'px')
+    .style("height", (ack_font_size+5+3) + 'px')
     .style("width", text_w + 'px')
     .style("left", (width/2-text_w/2) + 'px')
-    .style("top", (height-(14+5+3+3)) + 'px')
+    .style("top", (height-(ack_font_size+5+3+3)) + 'px')
 
   d3.select("body")
     .append("div")
     .attr("class", "acknowledgement")
-    .html("This map uses projections from <a href='http://www.threehundredeight.com/'>threehundredeight.com</a>")
-    .style("font-size", 14 + 'px')
+    .html("This map uses projections from <a href='http://www.threehundredeight.com/'>ThreeHundredEight.com</a>")
+    .style("font-size", ack_font_size + 'px')
     .style("width", width + 'px')
-    .style("top", (height-(14+5+3)) + 'px')
+    .style("top", (height-(ack_font_size+5+3)) + 'px')
 }
 
 function update_acknowledgement() {
-  var text_w = 390;
   d3.select(".acknowledgement-box")
     .style("left", (width/2-text_w/2) + 'px')
-    .style("top", (height-(14+5+3+3)) + 'px')
-    
+    .style("top", (height-(ack_font_size+5+3+3)) + 'px')
+
 
   d3.select(".acknowledgement")
     .style("width", width + 'px')
-    .style("top", (height-(14+5+3)) + 'px')
+    .style("top", (height-(ack_font_size+5+3)) + 'px')
 
 }
 
