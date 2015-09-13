@@ -86,3 +86,26 @@ svg {
   pointer-events: all;
   z-index: 10;
 }
+
+.riding {
+  stroke: #fff;
+  stroke-width: .5px;
+}
+
+.acknowledgement {
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 100;
+  font-weight: bold;
+}
+
+.acknowledgement-box {
+  background-color: white;
+  opacity: 0.5;
+  width: 300px;
+  border-radius: 5px;
+
+  position: absolute;
+
+}

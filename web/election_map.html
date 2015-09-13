@@ -10,7 +10,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
 <body>
     <div id="spin"></div>
-    <div id="map-cont"></div>
 </body>
 <script>
 
@@ -49,6 +48,10 @@ var isTouchDevice = 'ontouchstart' in document.documentElement;
 // var isTouchDevice = true;
 var width = window.innerWidth;
 var height = window.innerHeight;
+
+if (!inIframe()) {
+  init_acknowledgement();
+}
 
 var party_colours = {'ndp': '#F78320', 'con': '#263893', 'lib': '#D71921',
                      'grn': '#3D9B35', 'blc': '#00A7EC', 'oth': 'grey'};
@@ -130,6 +133,9 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
         d3.select('.overlay').attr("width", width)
             .attr("height", height);
         initialize_zoom();
+        if(!inIframe()) {
+          update_acknowledgement();
+        }
       };
 
       function parse_data() {
@@ -289,14 +295,63 @@ function draw_tooltip() {
 function transition_tooltip() {
   if (width <= transition_width || isTouchDevice) {
     tooltip.style("width", "100%");
-    tooltip.style("transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)");
-    tooltip.style("-ms-transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)"); // IE 9
-    tooltip.style("-webkit-transform", "translate("+ 0 + "px," + (height-tooltip_h) + "px)"); // Safari
+    var translate_y = height-tooltip_h;
+    if(!inIframe()) { 
+      tooltip.style("height", (110+14) + 'px');
+      translate_y = height-tooltip_h-14;
+    }
+    tooltip.style("transform", "translate("+ 0 + "px," + translate_y + "px)");
+    tooltip.style("-ms-transform", "translate("+ 0 + "px," + translate_y + "px)"); // IE 9
+    tooltip.style("-webkit-transform", "translate("+ 0 + "px," + translate_y + "px)"); // Safari
   } else {
     tooltip.style("width", '355px');
+    tooltip.style("height", (110) + 'px')
+
   }
 }
 
+function inIframe () {
+    try {
+        return window.self !== window.top;
+    } catch (e) {
+        return true;
+    }
+}
+
+function init_acknowledgement() {
+  var text_w = 390;
+  d3.select("body")
+    .append("div")
+    .attr("class", "acknowledgement-box")
+    .style("height", (14+5+3) + 'px')
+    .style("width", text_w + 'px')
+    .style("left", (width/2-text_w/2) + 'px')
+    .style("top", (height-(14+5+3+3)) + 'px')
+
+  d3.select("body")
+    .append("div")
+    .attr("class", "acknowledgement")
+    .html("This map uses projections from <a href='http://www.threehundredeight.com/'>threehundredeight.com</a>")
+    .style("font-size", 14 + 'px')
+    .style("width", width + 'px')
+    .style("top", (height-(14+5+3)) + 'px')
+}
+
+function update_acknowledgement() {
+  var text_w = 390;
+  d3.select(".acknowledgement-box")
+    .style("left", (width/2-text_w/2) + 'px')
+    .style("top", (height-(14+5+3+3)) + 'px')
+    
+
+  d3.select(".acknowledgement")
+    .style("width", width + 'px')
+    .style("top", (height-(14+5+3)) + 'px')
+
+}
+
 d3.select(self.frameElement).style("height", height + "px");
+
+
 
 </script>
