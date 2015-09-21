@@ -13,6 +13,10 @@
 </body>
 <script>
 
+// var scenarios = ['normal', 'con-best', 'lib-best', 'ndp-best', 'blc-best', 'grn-best'];
+// var scn = 'ndp-best';
+var best_case = 'con'; // options: ['con', 'lib', 'ndp', 'blc', 'grn']
+
 var opts = {
   lines: 13 // The number of lines to draw
 , length: 28 // The length of each line
@@ -119,6 +123,7 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
     d3.text('https://raw.githubusercontent.com/smcmurtry/election_map/master/data/current_projections.txt', function(dat) {
       var predictions = {};  
       parse_data();
+      // console.log(predictions);
       feature = topojson.feature(ca, ca.objects.intersection_3);
       spinner.stop();
       draw_map();
@@ -183,7 +188,9 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
             .attr("class", "riding")
             .attr("d", path)
             .attr("fill", function(d) {
-              var leader = predictions[d.properties.FEDNUM]['leader'];
+              // var leader = predictions[d.properties.FEDNUM]['leader'];
+              var proj_data = predictions[d.properties.FEDNUM];
+              var leader = get_leader(proj_data);
               return party_colours[leader];
             });
 
@@ -329,7 +336,7 @@ function init_acknowledgement() {
     .style("height", (ack_font_size+5+3) + 'px')
     .style("width", text_w + 'px')
     .style("left", (width/2-text_w/2) + 'px')
-    .style("top", (height-(ack_font_size+5+3+3)) + 'px')
+    .style("top", (height-(ack_font_size+5+3+3)) + 'px');
 
   d3.select("body")
     .append("div")
@@ -337,23 +344,34 @@ function init_acknowledgement() {
     .html("This map uses projections from <a href='http://www.threehundredeight.com/'>ThreeHundredEight.com</a>")
     .style("font-size", ack_font_size + 'px')
     .style("width", width + 'px')
-    .style("top", (height-(ack_font_size+5+3)) + 'px')
+    .style("top", (height-(ack_font_size+5+3)) + 'px');
 }
 
 function update_acknowledgement() {
   d3.select(".acknowledgement-box")
     .style("left", (width/2-text_w/2) + 'px')
-    .style("top", (height-(ack_font_size+5+3+3)) + 'px')
-
+    .style("top", (height-(ack_font_size+5+3+3)) + 'px');
 
   d3.select(".acknowledgement")
     .style("width", width + 'px')
-    .style("top", (height-(ack_font_size+5+3)) + 'px')
+    .style("top", (height-(ack_font_size+5+3)) + 'px');
+}
 
+function get_leader(proj_data) {
+  if (best_case == 'none') {
+    return proj_data['leader'];
+  } else {
+    var high = +proj_data['details'][best_case]['high'];
+    var lows = [];
+    for (var i = 0; i < parties2display.length; i++) {
+      if (parties2display[i] != best_case) { 
+        lows.push(+proj_data['details'][parties2display[i]]['low']);
+      }
+    };
+    return high > Math.max.apply(null, lows) ? best_case : proj_data['leader'];    
+  }
 }
 
 d3.select(self.frameElement).style("height", height + "px");
-
-
 
 </script>
