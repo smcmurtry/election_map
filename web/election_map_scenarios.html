@@ -48,7 +48,8 @@ var dropdown_opts = [{'value': 'none', 'text': 'Most Likely Scenario'},
                      {'value': 'lib', 'text': 'Liberal Best Case Scenario'},
                      {'value': 'ndp', 'text': 'NDP Best Case Scenario'},
                      {'value': 'blc', 'text': 'Bloc Que. Best Case Scenario'},
-                     {'value': 'grn', 'text': 'Green Best Case Scenario'}
+                     {'value': 'grn', 'text': 'Green Best Case Scenario'},
+                     {'value': 'swing', 'text': 'Swing Ridings'}
                     ]
 var transition_width = 600; // width at which the tooltip stops moving around. in px
 var isTouchDevice = 'ontouchstart' in document.documentElement;
@@ -141,6 +142,8 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
         d3.select('.overlay').attr("width", width)
             .attr("height", height);
         initialize_zoom();
+        d3.select('.select-style').style("left", ((width-230)/2) + 'px');
+
         if(!inIframe()) {
           ack_font_size = (width < 400 ? 11 : 12);
           text_w = ack_font_size*29;
@@ -357,19 +360,19 @@ function update_acknowledgement() {
 }
 
 // following functions are all for the dropdown menu
-function get_leader(proj_data) {
-  var best_case = get_selected(".dropdown");
-  if (best_case == 'none') {
+function best_case(party, proj_data) {
+  // var val = get_selected(".dropdown");
+  if (party == 'none') {
     return proj_data['leader'];
   } else {
-    var high = +proj_data['details'][best_case]['high'];
+    var high = +proj_data['details'][party]['high'];
     var lows = [];
     for (var i = 0; i < parties2display.length; i++) {
-      if (parties2display[i] != best_case) { 
+      if (parties2display[i] != party) { 
         lows.push(+proj_data['details'][parties2display[i]]['low']);
       }
     };
-    return high > Math.max.apply(null, lows) ? best_case : proj_data['leader'];    
+    return high > Math.max.apply(null, lows) ? party : proj_data['leader'];    
   }
 }
 
@@ -385,9 +388,7 @@ function init_dropdown() {
     .attr("class", "select-style")
     .style("width", 230 + 'px')
     .style("height", 25 + 'px')
-    // .style("right", 10 + 'px')
     .style("left", ((width-230)/2) + 'px')
-    // .style("left", 10 + 'px')
     .style("top", 5 + 'px')
     .append("select")
     .attr("class", "dropdown")
@@ -402,12 +403,34 @@ function init_dropdown() {
 
   d3.select(".dropdown")
     .on("change", function() {
-      d3.selectAll(".riding")
-        .attr("fill", function(d) {
-          var proj_data = predictions[d.properties.FEDNUM];
-          var leader = get_leader(proj_data);
-          return party_colours[leader];
-        });
+      var val = get_selected(".dropdown");
+      
+      if (val == 'none') {
+        d3.selectAll(".riding")
+          .attr("fill", function(d) {
+            var proj_data = predictions[d.properties.FEDNUM];
+            // var leader = predictions[d.properties.FEDNUM]['leader'];
+            return party_colours[proj_data['leader']];
+          });
+      } else if (val == 'swing') {
+        d3.selectAll(".riding")
+          .attr("fill", function(d) {
+            var proj_data = predictions[d.properties.FEDNUM];
+            for (var i = parties2display.length - 1; i >= 0; i--) {
+              if (best_case(parties2display[i], proj_data) != proj_data['leader']) {
+                return '#252525';// '#756bb1';
+              }
+            };
+            return '#d9d9d9'; // '#efedf5';
+          });
+      } else {
+        d3.selectAll(".riding")
+          .attr("fill", function(d) {
+            var proj_data = predictions[d.properties.FEDNUM];
+            var leader = best_case(val, proj_data);
+            return party_colours[leader];
+          });
+      }
     })
 }
 

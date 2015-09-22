@@ -109,6 +109,8 @@ svg {
 }
 
 .select-style {
+  font-weight: bold;
+
   position: absolute;
   z-index: 1000;
   padding: 0;
@@ -121,6 +123,8 @@ svg {
 }
 
 .select-style select {
+  font-weight: bold;
+  
   padding: 5px 8px;
   width: 130%;
   border: none;
