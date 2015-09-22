@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-<link rel="stylesheet" type="text/css" href="election_map.css"/>
 <meta http-equiv="cache-control" content="max-age=0" />
 <meta http-equiv="expires" content="0" />
 <meta http-equiv="pragma" content="no-cache" /> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+<link rel="stylesheet" type="text/css" href="election_map.css"/>
 <body>
     <div id="spin"></div>
 </body>
 <script>
-
-// var scenarios = ['normal', 'con-best', 'lib-best', 'ndp-best', 'blc-best', 'grn-best'];
-// var scn = 'ndp-best';
-var best_case = 'con'; // options: ['con', 'lib', 'ndp', 'blc', 'grn']
 
 var opts = {
   lines: 13 // The number of lines to draw
@@ -43,10 +39,17 @@ var target = document.getElementById('spin')
 var spinner = new Spinner(opts).spin(target);
 
 var data_path = '../data/'; // dir_election_map/
+var predictions = {};  
 
 var parties = ['con', 'lib', 'ndp', 'blc', 'unk', 'grn', 'oth'];
 var parties2display = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
-
+var dropdown_opts = [{'value': 'none', 'text': 'Most Likely Scenario'}, 
+                     {'value': 'con', 'text': 'Conservative Best Case Scenario'},
+                     {'value': 'lib', 'text': 'Liberal Best Case Scenario'},
+                     {'value': 'ndp', 'text': 'NDP Best Case Scenario'},
+                     {'value': 'blc', 'text': 'Bloc Que. Best Case Scenario'},
+                     {'value': 'grn', 'text': 'Green Best Case Scenario'}
+                    ]
 var transition_width = 600; // width at which the tooltip stops moving around. in px
 var isTouchDevice = 'ontouchstart' in document.documentElement;
 // var isTouchDevice = true;
@@ -121,9 +124,7 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
     };
 
     d3.text('https://raw.githubusercontent.com/smcmurtry/election_map/master/data/current_projections.txt', function(dat) {
-      var predictions = {};  
       parse_data();
-      // console.log(predictions);
       feature = topojson.feature(ca, ca.objects.intersection_3);
       spinner.stop();
       draw_map();
@@ -188,9 +189,7 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
             .attr("class", "riding")
             .attr("d", path)
             .attr("fill", function(d) {
-              // var leader = predictions[d.properties.FEDNUM]['leader'];
-              var proj_data = predictions[d.properties.FEDNUM];
-              var leader = get_leader(proj_data);
+              var leader = predictions[d.properties.FEDNUM]['leader'];
               return party_colours[leader];
             });
 
@@ -357,7 +356,9 @@ function update_acknowledgement() {
     .style("top", (height-(ack_font_size+5+3)) + 'px');
 }
 
+// following functions are all for the dropdown menu
 function get_leader(proj_data) {
+  var best_case = get_selected(".dropdown");
   if (best_case == 'none') {
     return proj_data['leader'];
   } else {
@@ -371,6 +372,46 @@ function get_leader(proj_data) {
     return high > Math.max.apply(null, lows) ? best_case : proj_data['leader'];    
   }
 }
+
+function get_selected(id) {
+  var options = d3.select(id).selectAll('option');
+  var index = d3.select(id).property('selectedIndex');
+  return options[0][index].value;
+}
+
+function init_dropdown() {
+  var dropdown = d3.select("body")
+    .append("div")
+    .attr("class", "select-style")
+    .style("width", 230 + 'px')
+    .style("height", 25 + 'px')
+    // .style("right", 10 + 'px')
+    .style("left", ((width-230)/2) + 'px')
+    // .style("left", 10 + 'px')
+    .style("top", 5 + 'px')
+    .append("select")
+    .attr("class", "dropdown")
+
+  d3.selectAll(".dropdown")
+    .selectAll("option")
+    .data(dropdown_opts)
+    .enter()
+    .append("option")
+    .attr("value", function(d) { return d.value; })
+    .html(function(d) { return d.text; });
+
+  d3.select(".dropdown")
+    .on("change", function() {
+      d3.selectAll(".riding")
+        .attr("fill", function(d) {
+          var proj_data = predictions[d.properties.FEDNUM];
+          var leader = get_leader(proj_data);
+          return party_colours[leader];
+        });
+    })
+}
+
+init_dropdown();
 
 d3.select(self.frameElement).style("height", height + "px");
 
