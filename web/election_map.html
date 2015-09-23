@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-<link rel="stylesheet" type="text/css" href="election_map.css"/>
-<meta http-equiv="cache-control" content="max-age=0" />
-<meta http-equiv="expires" content="0" />
-<meta http-equiv="pragma" content="no-cache" /> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="pragma" content="no-cache" /> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="election_map.css"/>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59457353-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+<title>2015 Canadian Election Map</title>
+<meta name="description" content="This interactive map shows the current projections from ThreeHundredEight.com for the 2015 Canadian federal election.">
+</head>
 <body>
     <div id="spin"></div>
 </body>
@@ -39,10 +54,18 @@ var target = document.getElementById('spin')
 var spinner = new Spinner(opts).spin(target);
 
 var data_path = '../data/'; // dir_election_map/
+var predictions = {};  
 
 var parties = ['con', 'lib', 'ndp', 'blc', 'unk', 'grn', 'oth'];
 var parties2display = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
-
+var dropdown_opts = [{'value': 'none', 'text': 'Current Average Projections'}, 
+                     {'value': 'con', 'text': 'Conservative High Range'},
+                     {'value': 'lib', 'text': 'Liberal High Range'},
+                     {'value': 'ndp', 'text': 'NDP High Range'},
+                     {'value': 'blc', 'text': 'Bloc Que. High Range'},
+                     {'value': 'grn', 'text': 'Green High Range'},
+                     {'value': 'swing', 'text': 'Swing Ridings'}
+                    ]
 var transition_width = 600; // width at which the tooltip stops moving around. in px
 var isTouchDevice = 'ontouchstart' in document.documentElement;
 // var isTouchDevice = true;
@@ -117,7 +140,6 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
     };
 
     d3.text('https://raw.githubusercontent.com/smcmurtry/election_map/master/data/current_projections.txt', function(dat) {
-      var predictions = {};  
       parse_data();
       feature = topojson.feature(ca, ca.objects.intersection_3);
       spinner.stop();
@@ -125,21 +147,7 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
       initialize_zoom();
 
       window.onresize = function(event) {
-        width = window.innerWidth;
-        height = window.innerHeight;
-        transition_tooltip();
-        svg.attr("width", width)
-           .attr("height", height);
-        svg2.attr("width", width)
-            .attr("height", height);
-        d3.select('.overlay').attr("width", width)
-            .attr("height", height);
-        initialize_zoom();
-        if(!inIframe()) {
-          ack_font_size = (width < 400 ? 11 : 12);
-          text_w = ack_font_size*29;
-          update_acknowledgement();
-        }
+        on_resize();
       };
 
       function parse_data() {
@@ -217,11 +225,13 @@ function zoomed() {
 }
 
 function initialize_zoom() {
-  var init_height = (height<=transition_width || isTouchDevice) ? height-tooltip_h : height;
-
+  var init_height = (width<=transition_width || isTouchDevice) ? height-tooltip_h : height;
+  var blocked_top = 37;
+  var blocked_bottom = 29;
+  var unblocked_height = init_height - blocked_top - blocked_bottom; //
   var b = path.bounds(feature),
-      s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / init_height),
-      t = [(width - s * (b[1][0] + b[0][0])) / 2, (init_height - s * (b[1][1] + b[0][1])) / 2];
+      s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / unblocked_height),
+      t = [(width - s * (b[1][0] + b[0][0])) / 2, (unblocked_height - s * (b[1][1] + b[0][1]))/2 + blocked_top ];
 
   zoom.scaleExtent([s, max_zoom]);
   zoom.scale(s).translate(t);
@@ -300,9 +310,10 @@ function transition_tooltip() {
   if (width <= transition_width || isTouchDevice) {
     tooltip.style("width", "100%");
     var translate_y = height-tooltip_h;
-    if(!inIframe()) { 
-      tooltip.style("height", (110+14) + 'px');
-      translate_y = height-tooltip_h-14;
+    if(!inIframe()) {
+      bottom_margin = 20; // 14
+      tooltip.style("height", (110+bottom_margin) + 'px'); 
+      translate_y = height-tooltip_h-bottom_margin;
     }
     tooltip.style("transform", "translate("+ 0 + "px," + translate_y + "px)");
     tooltip.style("-ms-transform", "translate("+ 0 + "px," + translate_y + "px)"); // IE 9
@@ -315,45 +326,158 @@ function transition_tooltip() {
 }
 
 function inIframe () {
-    try {
-        return window.self !== window.top;
-    } catch (e) {
-        return true;
-    }
+    try { return window.self !== window.top; } 
+    catch (e) { return true; }
 }
 
 function init_acknowledgement() {
-  d3.select("body")
-    .append("div")
-    .attr("class", "acknowledgement-box")
-    .style("height", (ack_font_size+5+3) + 'px')
-    .style("width", text_w + 'px')
-    .style("left", (width/2-text_w/2) + 'px')
-    .style("top", (height-(ack_font_size+5+3+3)) + 'px')
 
   d3.select("body")
     .append("div")
-    .attr("class", "acknowledgement")
-    .html("This map uses projections from <a href='http://www.threehundredeight.com/'>ThreeHundredEight.com</a>")
-    .style("font-size", ack_font_size + 'px')
-    .style("width", width + 'px')
-    .style("top", (height-(ack_font_size+5+3)) + 'px')
+    .attr("class", "footer")
+
+  var details_button = d3.select('.footer')
+    .append('div')
+    .attr('class', 'button')
+    
+  details_button.append('div')
+    .html("Details")
+    .append('i')
+    .attr('class', 'fa fa-angle-up')
+
+  d3.select('.footer')
+    .append('div')
+    .attr('class', 'text')
+    .html("This map uses projections from <a href='http://www.threehundredeight.com/'>ThreeHundredEight.com</a>.")
+
+  d3.select('.footer')
+    .append('div')
+    .attr('class', 'text')
+    .html("These riding projections are not polls and are not necessarily an accurate reflection of current voting intentions in each riding. The full methodology can be found <a href='http://www.threehundredeight.com/p/forecasting-methodology.html'>here</a>.")
+
+  d3.select('.footer')
+    .append('div')
+    .attr('class', 'text')
+    .html("Interactive map &copy; <a href='http://stephenmcmurtry.org/'>Stephen McMurtry</a>");
+
+  d3.select('.footer')
+    .on('click', function() {
+        d3.select('.footer')
+          .transition()
+          .duration(600)
+          .style('height', 180 + 'px');
+
+        d3.select('.fa').attr('class', 'fa fa-angle-down');
+
+      d3.select('.overlay')
+        .on('mouseover', function() {
+          d3.select('.footer')
+            .transition()
+            .duration(600)
+            .style('height', 27 + 'px');
+          d3.select('.fa').attr('class', 'fa fa-angle-up');
+
+        })
+    });
 }
 
-function update_acknowledgement() {
-  d3.select(".acknowledgement-box")
-    .style("left", (width/2-text_w/2) + 'px')
-    .style("top", (height-(ack_font_size+5+3+3)) + 'px')
+function on_resize() {
+  width = window.innerWidth;
+  height = window.innerHeight;
+  transition_tooltip();
+  svg.attr("width", width)
+     .attr("height", height);
+  svg2.attr("width", width)
+      .attr("height", height);
+  d3.select('.overlay').attr("width", width)
+      .attr("height", height);
+  // initialize_zoom();
+  d3.select('.select-style').style("left", ((width-230)/2) + 'px');
 
-
-  d3.select(".acknowledgement")
-    .style("width", width + 'px')
-    .style("top", (height-(ack_font_size+5+3)) + 'px')
-
+  if(!inIframe()) {
+    ack_font_size = (width < 400 ? 11 : 12);
+    text_w = ack_font_size*29;
+  }
 }
+
+// following functions are all for the dropdown menu
+function best_case(party, proj_data) {
+  if (party == 'none') {
+    return proj_data['leader'];
+  } else {
+    var high = +proj_data['details'][party]['high'];
+    var lows = [];
+    for (var i = 0; i < parties2display.length; i++) {
+      if (parties2display[i] != party) { 
+        lows.push(+proj_data['details'][parties2display[i]]['low']);
+      }
+    };
+    return high > Math.max.apply(null, lows) ? party : proj_data['leader'];    
+  }
+}
+
+function get_selected(id) {
+  var options = d3.select(id).selectAll('option');
+  var index = d3.select(id).property('selectedIndex');
+  return options[0][index].value;
+}
+
+function init_dropdown() {
+  var dropdown_w = 240;
+  d3.select("body")
+    .append("div")
+    .attr("class", "select-style")
+    .style("width", dropdown_w + 'px')
+    .style("height", 27 + 'px')
+    .style("left", ((width-dropdown_w)/2) + 'px')
+    .style("top", 5 + 'px');
+
+  d3.select('.select-style')
+    .append("select")
+    .attr("class", "drpdwn")
+
+  d3.selectAll(".drpdwn")
+    .selectAll("option")
+    .data(dropdown_opts)
+    .enter()
+    .append("option")
+    .attr("value", function(d) { return d.value; })
+    .html(function(d) { return d.text; });
+
+  d3.select(".drpdwn")
+    .on("change", function() {
+      var val = get_selected(".drpdwn");
+      
+      if (val == 'none') {
+        d3.selectAll(".riding")
+          .attr("fill", function(d) {
+            var proj_data = predictions[d.properties.FEDNUM];
+            return party_colours[proj_data['leader']];
+          });
+      } else if (val == 'swing') {
+        d3.selectAll(".riding")
+          .attr("fill", function(d) {
+            var proj_data = predictions[d.properties.FEDNUM];
+            for (var i = parties2display.length - 1; i >= 0; i--) {
+              if (best_case(parties2display[i], proj_data) != proj_data['leader']) {
+                return '#252525';
+              }
+            };
+            return '#d9d9d9';
+          });
+      } else {
+        d3.selectAll(".riding")
+          .attr("fill", function(d) {
+            var proj_data = predictions[d.properties.FEDNUM];
+            var leader = best_case(val, proj_data);
+            return party_colours[leader];
+          });
+      }
+    })
+}
+
+init_dropdown();
 
 d3.select(self.frameElement).style("height", height + "px");
-
-
-
+on_resize();
 </script>
