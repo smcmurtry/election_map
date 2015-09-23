@@ -7,6 +7,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" type="text/css" href="election_map.css"/>
 <body>
     <div id="spin"></div>
@@ -43,12 +44,12 @@ var predictions = {};
 
 var parties = ['con', 'lib', 'ndp', 'blc', 'unk', 'grn', 'oth'];
 var parties2display = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
-var dropdown_opts = [{'value': 'none', 'text': 'Most Likely Scenario'}, 
-                     {'value': 'con', 'text': 'Conservative Best Case Scenario'},
-                     {'value': 'lib', 'text': 'Liberal Best Case Scenario'},
-                     {'value': 'ndp', 'text': 'NDP Best Case Scenario'},
-                     {'value': 'blc', 'text': 'Bloc Que. Best Case Scenario'},
-                     {'value': 'grn', 'text': 'Green Best Case Scenario'},
+var dropdown_opts = [{'value': 'none', 'text': 'Current Average Projections'}, 
+                     {'value': 'con', 'text': 'Conservative High Range'},
+                     {'value': 'lib', 'text': 'Liberal High Range'},
+                     {'value': 'ndp', 'text': 'NDP High Range'},
+                     {'value': 'blc', 'text': 'Bloc Que. High Range'},
+                     {'value': 'grn', 'text': 'Green High Range'},
                      {'value': 'swing', 'text': 'Swing Ridings'}
                     ]
 var transition_width = 600; // width at which the tooltip stops moving around. in px
@@ -332,36 +333,68 @@ function inIframe () {
 }
 
 function init_acknowledgement() {
-  d3.select("body")
-    .append("div")
-    .attr("class", "acknowledgement-box")
-    .style("height", (ack_font_size+5+3) + 'px')
-    .style("width", text_w + 'px')
-    .style("left", (width/2-text_w/2) + 'px')
-    .style("top", (height-(ack_font_size+5+3+3)) + 'px');
 
   d3.select("body")
     .append("div")
-    .attr("class", "acknowledgement")
+    .attr("class", "footer")
+
+  var details_button = d3.select('.footer')
+    .append('div')
+    .attr('class', 'button')
+    
+  details_button.append('div')
+    .html("Details")
+    .append('i')
+    .attr('class', 'fa fa-angle-up')
+
+  d3.select('.footer')
+    .append('div')
+    .attr('class', 'text')
     .html("This map uses projections from <a href='http://www.threehundredeight.com/'>ThreeHundredEight.com</a>")
-    .style("font-size", ack_font_size + 'px')
-    .style("width", width + 'px')
-    .style("top", (height-(ack_font_size+5+3)) + 'px');
+
+  d3.select('.footer')
+    .append('div')
+    .attr('class', 'text')
+    .html("These riding projections are not polls and are not necessarily an accurate reflection of current voting intentions in each riding. The full methodology can be found <a href='http://www.threehundredeight.com/p/forecasting-methodology.html'>here</a>.")
+
+  d3.select('.footer')
+    .append('div')
+    .attr('class', 'text')
+    .html("Interactive map &copy; <a href='http://stephenmcmurtry.org/'>Stephen McMurtry</a>");
+
+  d3.select('.footer')
+    .on('click', function() {
+        d3.select('.footer')
+          .transition()
+          .duration(600)
+          .style('height', 180 + 'px');
+
+        d3.select('.fa').attr('class', 'fa fa-angle-down');
+
+      d3.select('.overlay')
+        .on('mouseover', function() {
+          d3.select('.footer')
+            .transition()
+            .duration(600)
+            .style('height', 27 + 'px');
+          d3.select('.fa').attr('class', 'fa fa-angle-up');
+
+        })
+    });
 }
 
 function update_acknowledgement() {
-  d3.select(".acknowledgement-box")
-    .style("left", (width/2-text_w/2) + 'px')
-    .style("top", (height-(ack_font_size+5+3+3)) + 'px');
+  // d3.select(".acknowledgement-box")
+  //   .style("left", (width/2-text_w/2) + 'px')
+  //   .style("top", (height-(ack_font_size+5+3+3)) + 'px');
 
-  d3.select(".acknowledgement")
-    .style("width", width + 'px')
-    .style("top", (height-(ack_font_size+5+3)) + 'px');
+  // d3.select(".acknowledgement")
+  //   .style("width", width + 'px')
+  //   .style("top", (height-(ack_font_size+5+3)) + 'px');
 }
 
 // following functions are all for the dropdown menu
 function best_case(party, proj_data) {
-  // var val = get_selected(".dropdown");
   if (party == 'none') {
     return proj_data['leader'];
   } else {
@@ -383,17 +416,19 @@ function get_selected(id) {
 }
 
 function init_dropdown() {
+
+  var dropdown_w = 200;
   var dropdown = d3.select("body")
     .append("div")
     .attr("class", "select-style")
-    .style("width", 230 + 'px')
+    .style("width", dropdown_w + 'px')
     .style("height", 25 + 'px')
-    .style("left", ((width-230)/2) + 'px')
+    .style("left", ((width-dropdown_w)/2) + 'px')
     .style("top", 5 + 'px')
     .append("select")
-    .attr("class", "dropdown")
+    .attr("class", "drpdwn")
 
-  d3.selectAll(".dropdown")
+  d3.selectAll(".drpdwn")
     .selectAll("option")
     .data(dropdown_opts)
     .enter()
@@ -401,9 +436,9 @@ function init_dropdown() {
     .attr("value", function(d) { return d.value; })
     .html(function(d) { return d.text; });
 
-  d3.select(".dropdown")
+  d3.select(".drpdwn")
     .on("change", function() {
-      var val = get_selected(".dropdown");
+      var val = get_selected(".drpdwn");
       
       if (val == 'none') {
         d3.selectAll(".riding")
