@@ -95,12 +95,12 @@ svg {
   z-index: 1000;
   /*padding: 0;*/
   /*margin: 0;*/
-  /*border: 1px solid #ccc;*/
+  border: 1px solid black;
   overflow: hidden;
-  background-color: #fff;
+  background-color: white;/*#fff;*/
   opacity: 0.9;
-  text-align: center;
-  background: lightgrey url("angle-down_000000_14.png") no-repeat 98% 50%;
+  /*text-align: center;*/
+  background: white url("angle-down_000000_14.png") no-repeat 98% 50%;
 }
 
 .drpdwn {
@@ -114,8 +114,8 @@ svg {
 }
 
 .select-style select {
-  text-align: center;
-  font-weight: bold;
+  /*text-align: center;*/
+  /*font-weight: bold;*/
   border: none;
   box-shadow: none;
   background-color: transparent;
@@ -141,6 +141,9 @@ svg {
   z-index: 999;
   font-size: 14px;
   text-align: center;
+  border: 1px solid;
+  border-color: black black transparent black;
+
 }
 
 .footer .text {
@@ -153,13 +156,16 @@ svg {
 .footer .button {
   /*font-weight: bold;*/
   text-align: center;
-  background-color: black;
+  background-color: lightgrey;
   border: none;
   width: 100%;
   height: 27px;
   margin-bottom: 10px;
   cursor: default;
-  color: white;
+  /*color: white;*/
+  /*border: 1px solid;*/
+  /*border-color: transparent transparent black transparent;*/
+
 }
 
 .footer .button div {
