@@ -93,22 +93,29 @@ svg {
 .select-style {
   position: absolute;
   z-index: 1000;
-  padding: 0;
-  margin: 0;
-  border: 1px solid #ccc;
+  /*padding: 0;*/
+  /*margin: 0;*/
+  /*border: 1px solid #ccc;*/
   overflow: hidden;
   background-color: #fff;
   opacity: 0.9;
   text-align: center;
-  background-color: lightgrey;
-  /*background: lightgrey url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 98% 50%;*/
+  background: lightgrey url("angle-down_000000_14.png") no-repeat 98% 50%;
+}
+
+.drpdwn {
+  width: 240px;
+  height: 27px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 14px;
+
+  /*text-align: center;*/
 }
 
 .select-style select {
   text-align: center;
   font-weight: bold;
-  padding: 5px 8px;
-  width: 130%;
   border: none;
   box-shadow: none;
   background-color: transparent;
@@ -144,14 +151,15 @@ svg {
 }
 
 .footer .button {
-  font-weight: bold;
+  /*font-weight: bold;*/
   text-align: center;
-  background-color: lightgrey;
+  background-color: black;
   border: none;
   width: 100%;
   height: 27px;
   margin-bottom: 10px;
   cursor: default;
+  color: white;
 }
 
 .footer .button div {
@@ -160,4 +168,6 @@ svg {
 
 .footer i {
   padding-left: 5px;
+  font-size: 14px;
+  /*font-weight: bold;*/
 }

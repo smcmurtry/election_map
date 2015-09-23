@@ -8,7 +8,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
-<link rel="stylesheet" type="text/css" href="election_map.css"/>
+<link rel="stylesheet" type="text/css" href="election_map_2.css"/>
 <body>
     <div id="spin"></div>
 </body>
@@ -148,7 +148,6 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
         if(!inIframe()) {
           ack_font_size = (width < 400 ? 11 : 12);
           text_w = ack_font_size*29;
-          update_acknowledgement();
         }
       };
 
@@ -227,7 +226,7 @@ function zoomed() {
 }
 
 function initialize_zoom() {
-  var init_height = (height<=transition_width || isTouchDevice) ? height-tooltip_h : height;
+  var init_height = (width<=transition_width || isTouchDevice) ? height-tooltip_h : height;
 
   var b = path.bounds(feature),
       s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / init_height),
@@ -383,16 +382,6 @@ function init_acknowledgement() {
     });
 }
 
-function update_acknowledgement() {
-  // d3.select(".acknowledgement-box")
-  //   .style("left", (width/2-text_w/2) + 'px')
-  //   .style("top", (height-(ack_font_size+5+3+3)) + 'px');
-
-  // d3.select(".acknowledgement")
-  //   .style("width", width + 'px')
-  //   .style("top", (height-(ack_font_size+5+3)) + 'px');
-}
-
 // following functions are all for the dropdown menu
 function best_case(party, proj_data) {
   if (party == 'none') {
@@ -417,14 +406,16 @@ function get_selected(id) {
 
 function init_dropdown() {
 
-  var dropdown_w = 200;
-  var dropdown = d3.select("body")
+  var dropdown_w = 240;
+  d3.select("body")
     .append("div")
     .attr("class", "select-style")
     .style("width", dropdown_w + 'px')
-    .style("height", 25 + 'px')
+    .style("height", 27 + 'px')
     .style("left", ((width-dropdown_w)/2) + 'px')
-    .style("top", 5 + 'px')
+    .style("top", 5 + 'px');
+
+  d3.select('.select-style')
     .append("select")
     .attr("class", "drpdwn")
 
@@ -444,7 +435,6 @@ function init_dropdown() {
         d3.selectAll(".riding")
           .attr("fill", function(d) {
             var proj_data = predictions[d.properties.FEDNUM];
-            // var leader = predictions[d.properties.FEDNUM]['leader'];
             return party_colours[proj_data['leader']];
           });
       } else if (val == 'swing') {
@@ -453,10 +443,10 @@ function init_dropdown() {
             var proj_data = predictions[d.properties.FEDNUM];
             for (var i = parties2display.length - 1; i >= 0; i--) {
               if (best_case(parties2display[i], proj_data) != proj_data['leader']) {
-                return '#252525';// '#756bb1';
+                return '#252525';
               }
             };
-            return '#d9d9d9'; // '#efedf5';
+            return '#d9d9d9';
           });
       } else {
         d3.selectAll(".riding")
