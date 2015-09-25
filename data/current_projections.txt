@@ -1,1352 +1,1352 @@
-BRITISH COLUMBIA / COLOMBIE-BRITANNIQUE (ThreeHundredEight.com projections)								September 22, 2015
-Low / Bas	47.5	17.7	21.4	0.0	0.0	6.5	0.4	
-Abbotsford	50.0	19.6	22.3	0.0	0.0	7.2	0.9	93%
-High / Haut	55.0	21.0	24.0	0.0	0.0	7.7	1.3	
+BRITISH COLUMBIA / COLOMBIE-BRITANNIQUE (ThreeHundredEight.com projections)								September 23, 2015
+Low / Bas	49.0	16.5	20.8	0.0	0.0	7.2	0.2	
+Abbotsford	51.6	18.4	21.6	0.0	0.0	8.0	0.4	94%
+High / Haut	56.7	19.7	23.4	0.0	0.0	8.5	0.7	
 								
-Low / Bas	27.2	26.6	33.0	0.0	0.0	6.0	0.4	
-Burnaby North – Seymour	28.6	29.6	34.4	0.0	0.0	6.7	0.8	61%
-High / Haut	31.5	31.6	37.1	0.0	0.0	7.1	1.2	
+Low / Bas	28.6	25.3	32.6	0.0	0.0	6.7	0.2	
+Burnaby North – Seymour	30.1	28.1	34.0	0.0	0.0	7.5	0.4	58%
+High / Haut	33.1	30.1	36.7	0.0	0.0	8.0	0.6	
 								
-Low / Bas	23.2	21.2	44.5	0.0	0.0	4.4	0.4	
-Burnaby South	24.4	23.5	46.3	0.0	0.0	4.9	0.8	88%
-High / Haut	26.9	25.2	50.0	0.0	0.0	5.3	1.2	
+Low / Bas	23.9	19.7	45.2	0.0	0.0	4.8	0.2	
+Burnaby South	25.2	21.9	47.1	0.0	0.0	5.4	0.4	88%
+High / Haut	27.7	23.5	50.9	0.0	0.0	5.8	0.6	
 								
-Low / Bas	37.2	11.1	35.9	0.0	0.0	9.2	0.5	
-Cariboo – Prince George	39.1	12.3	37.4	0.0	0.0	10.2	1.0	53%
-High / Haut	43.0	13.2	40.4	0.0	0.0	10.9	1.4	
+Low / Bas	38.7	10.5	34.5	0.0	0.0	10.1	0.2	
+Cariboo – Prince George	40.8	11.6	35.9	0.0	0.0	11.2	0.5	61%
+High / Haut	44.8	12.5	38.8	0.0	0.0	12.0	0.7	
 								
-Low / Bas	36.5	19.3	27.0	0.0	0.0	10.1	0.4	
-Central Okanagan – Similkameen – Nicola	38.4	21.4	28.2	0.0	0.0	11.2	0.8	73%
-High / Haut	42.2	22.9	30.4	0.0	0.0	12.0	1.3	
+Low / Bas	38.0	18.2	26.0	0.0	0.0	11.1	0.2	
+Central Okanagan – Similkameen – Nicola	40.0	20.2	27.0	0.0	0.0	12.3	0.4	77%
+High / Haut	44.0	21.7	29.2	0.0	0.0	13.2	0.6	
 								
-Low / Bas	40.0	21.6	24.7	0.0	0.0	6.6	0.4	
-Chilliwack – Hope	42.1	24.0	25.7	0.0	0.0	7.3	0.8	82%
-High / Haut	46.3	25.7	27.8	0.0	0.0	7.8	1.3	
+Low / Bas	41.5	20.4	24.1	0.0	0.0	7.3	0.2	
+Chilliwack – Hope	43.7	22.6	25.1	0.0	0.0	8.1	0.4	85%
+High / Haut	48.1	24.2	27.2	0.0	0.0	8.7	0.6	
 								
-Low / Bas	36.7	23.2	26.7	0.0	0.0	6.1	0.4	
-Cloverdale – Langley City	38.6	25.8	27.8	0.0	0.0	6.8	0.9	73%
-High / Haut	42.5	27.6	30.1	0.0	0.0	7.3	1.3	
+Low / Bas	38.3	22.0	26.2	0.0	0.0	6.9	0.2	
+Cloverdale – Langley City	40.3	24.4	27.3	0.0	0.0	7.6	0.4	78%
+High / Haut	44.3	26.1	29.4	0.0	0.0	8.2	0.6	
 								
-Low / Bas	34.7	17.2	35.2	0.0	0.0	6.1	0.5	
-Coquitlam – Port Coquitlam	36.6	19.1	36.7	0.0	0.0	6.8	0.9	50%
-High / Haut	40.2	20.4	39.6	0.0	0.0	7.2	1.4	
+Low / Bas	36.3	16.2	34.4	0.0	0.0	6.8	0.2	
+Coquitlam – Port Coquitlam	38.2	18.0	35.8	0.0	0.0	7.5	0.5	56%
+High / Haut	42.0	19.3	38.7	0.0	0.0	8.0	0.7	
 								
-Low / Bas	30.2	12.6	40.8	0.0	0.0	9.9	0.4	
-Courtenay – Alberni	31.8	14.0	42.5	0.0	0.0	10.9	0.8	73%
-High / Haut	34.9	15.0	45.8	0.0	0.0	11.7	1.3	
+Low / Bas	31.6	12.0	39.3	0.0	0.0	10.9	0.2	
+Courtenay – Alberni	33.3	13.3	40.9	0.0	0.0	12.1	0.4	67%
+High / Haut	36.6	14.2	44.2	0.0	0.0	12.9	0.6	
 								
-Low / Bas	27.9	11.7	44.1	0.0	0.0	9.7	0.4	
-Cowichan – Malahat – Langford	29.4	13.0	46.0	0.0	0.0	10.8	0.9	82%
-High / Haut	32.3	13.9	49.7	0.0	0.0	11.6	1.3	
+Low / Bas	29.3	11.1	42.7	0.0	0.0	10.8	0.2	
+Cowichan – Malahat – Langford	30.8	12.3	44.4	0.0	0.0	12.0	0.4	78%
+High / Haut	33.9	13.2	48.0	0.0	0.0	12.8	0.7	
 								
-Low / Bas	28.8	32.0	26.3	0.0	0.0	5.5	0.4	
-Delta	30.3	35.5	27.4	0.0	0.0	6.1	0.8	63%
-High / Haut	33.4	38.0	29.5	0.0	0.0	6.5	1.1	
+Low / Bas	30.2	30.4	26.0	0.0	0.0	6.1	0.2	
+Delta	31.8	33.8	27.1	0.0	0.0	6.8	0.4	53%
+High / Haut	35.0	36.2	29.3	0.0	0.0	7.3	0.6	
 								
-Low / Bas	21.3	16.8	38.8	0.0	0.0	16.0	0.4	
-Esquimalt – Saanich – Sooke	22.4	18.6	40.4	0.0	0.0	17.8	0.8	84%
-High / Haut	24.6	19.9	43.6	0.0	0.0	19.0	1.2	
+Low / Bas	21.9	15.6	38.4	0.0	0.0	17.4	0.2	
+Esquimalt – Saanich – Sooke	23.0	17.3	40.0	0.0	0.0	19.3	0.4	82%
+High / Haut	25.3	18.5	43.2	0.0	0.0	20.7	0.6	
 								
-Low / Bas	29.7	27.9	32.1	0.0	0.0	3.1	0.4	
-Fleetwood – Port Kells	31.3	31.1	33.4	0.0	0.0	3.5	0.8	56%
-High / Haut	34.4	33.2	36.1	0.0	0.0	3.7	1.2	
+Low / Bas	31.3	26.7	31.8	0.0	0.0	3.5	0.2	
+Fleetwood – Port Kells	32.9	29.6	33.1	0.0	0.0	3.9	0.4	50%
+High / Haut	36.2	31.7	35.8	0.0	0.0	4.2	0.6	
 								
-Low / Bas	36.3	10.6	39.9	0.0	0.0	6.8	0.4	
-Kamloops – Thompson – Cariboo	38.2	11.8	41.5	0.0	0.0	7.6	0.9	58%
-High / Haut	42.0	12.7	44.9	0.0	0.0	8.1	1.3	
+Low / Bas	38.0	10.1	38.4	0.0	0.0	7.5	0.2	
+Kamloops – Thompson – Cariboo	40.0	11.2	40.0	0.0	0.0	8.4	0.4	50%
+High / Haut	44.0	12.0	43.2	0.0	0.0	8.9	0.7	
 								
-Low / Bas	38.3	21.5	21.8	0.0	0.0	11.1	0.4	
-Kelowna – Lake Country	40.3	23.9	22.7	0.0	0.0	12.3	0.8	82%
-High / Haut	44.3	25.5	24.5	0.0	0.0	13.2	1.2	
+Low / Bas	39.8	20.2	20.9	0.0	0.0	12.2	0.2	
+Kelowna – Lake Country	41.9	22.5	21.7	0.0	0.0	13.5	0.4	86%
+High / Haut	46.0	24.0	23.5	0.0	0.0	14.5	0.6	
 								
-Low / Bas	34.4	10.3	39.4	0.0	0.0	9.5	0.4	
-Kootenay – Columbia	36.2	11.4	41.0	0.0	0.0	10.5	0.8	61%
-High / Haut	39.9	12.2	44.3	0.0	0.0	11.2	1.3	
+Low / Bas	35.9	9.7	37.8	0.0	0.0	10.4	0.2	
+Kootenay – Columbia	37.8	10.8	39.4	0.0	0.0	11.6	0.4	53%
+High / Haut	41.6	11.5	42.6	0.0	0.0	12.4	0.6	
 								
-Low / Bas	46.4	18.2	21.2	0.0	0.0	7.2	0.4	
-Langley – Aldergrove	48.9	20.2	22.1	0.0	0.0	8.0	0.9	92%
-High / Haut	53.7	21.6	23.8	0.0	0.0	8.6	1.3	
+Low / Bas	48.0	17.0	20.8	0.0	0.0	7.7	0.2	
+Langley – Aldergrove	50.5	18.9	21.7	0.0	0.0	8.5	0.4	93%
+High / Haut	55.5	20.2	23.4	0.0	0.0	9.1	0.7	
 								
-Low / Bas	35.3	16.8	34.9	0.0	0.0	6.2	0.4	
-Mission – Matsqui – Fraser Canyon	37.2	18.7	36.3	0.0	0.0	6.9	0.9	50%
-High / Haut	40.9	20.0	39.2	0.0	0.0	7.4	1.3	
+Low / Bas	36.7	15.8	34.2	0.0	0.0	6.9	0.2	
+Mission – Matsqui – Fraser Canyon	38.6	17.6	35.6	0.0	0.0	7.7	0.4	56%
+High / Haut	42.5	18.8	38.5	0.0	0.0	8.3	0.7	
 								
-Low / Bas	22.5	14.4	39.8	0.0	0.0	16.2	0.4	
-Nanaimo – Ladysmith	23.7	16.1	41.4	0.0	0.0	18.0	0.8	84%
-High / Haut	26.1	17.2	44.7	0.0	0.0	19.3	1.2	
+Low / Bas	23.5	13.7	38.2	0.0	0.0	17.9	0.2	
+Nanaimo – Ladysmith	24.7	15.2	39.8	0.0	0.0	19.9	0.4	81%
+High / Haut	27.2	16.2	43.0	0.0	0.0	21.2	0.6	
 								
-Low / Bas	21.0	16.2	50.9	0.0	0.0	5.4	0.4	
-New Westminster – Burnaby	22.1	18.0	53.1	0.0	0.0	6.0	0.8	94%
-High / Haut	24.3	19.3	57.3	0.0	0.0	6.4	1.2	
+Low / Bas	20.9	14.6	52.8	0.0	0.0	5.8	0.2	
+New Westminster – Burnaby	22.0	16.2	55.0	0.0	0.0	6.4	0.4	95%
+High / Haut	24.2	17.4	59.4	0.0	0.0	6.8	0.6	
 								
-Low / Bas	26.0	14.6	42.6	0.0	0.0	10.1	0.4	
-North Island – Powell River	27.3	16.2	44.4	0.0	0.0	11.3	0.8	84%
-High / Haut	30.1	17.3	47.9	0.0	0.0	12.1	1.3	
+Low / Bas	27.3	13.9	41.2	0.0	0.0	11.2	0.2	
+North Island – Powell River	28.7	15.4	42.9	0.0	0.0	12.5	0.4	80%
+High / Haut	31.6	16.5	46.4	0.0	0.0	13.4	0.6	
 								
-Low / Bas	33.8	15.2	29.2	0.0	0.0	14.6	0.4	
-North Okanagan – Shuswap	35.6	16.9	30.4	0.0	0.0	16.3	0.9	63%
-High / Haut	39.1	18.1	32.9	0.0	0.0	17.4	1.3	
+Low / Bas	35.0	14.3	27.9	0.0	0.0	16.0	0.2	
+North Okanagan – Shuswap	36.9	15.9	29.1	0.0	0.0	17.8	0.4	67%
+High / Haut	40.5	17.0	31.4	0.0	0.0	19.0	0.7	
 								
-Low / Bas	26.1	43.9	13.8	0.0	0.0	7.9	0.4	
-North Vancouver	27.5	48.7	14.4	0.0	0.0	8.7	0.7	88%
-High / Haut	30.2	52.1	15.5	0.0	0.0	9.4	1.1	
+Low / Bas	27.5	41.9	13.7	0.0	0.0	8.8	0.2	
+North Vancouver	29.0	46.6	14.3	0.0	0.0	9.8	0.4	84%
+High / Haut	31.9	49.8	15.4	0.0	0.0	10.5	0.5	
 								
-Low / Bas	32.1	14.9	40.1	0.0	0.0	6.3	0.4	
-Pitt Meadows – Maple Ridge	33.8	16.6	41.8	0.0	0.0	7.0	0.9	67%
-High / Haut	37.2	17.7	45.1	0.0	0.0	7.5	1.3	
+Low / Bas	33.6	14.1	39.1	0.0	0.0	7.0	0.2	
+Pitt Meadows – Maple Ridge	35.4	15.6	40.8	0.0	0.0	7.8	0.4	63%
+High / Haut	38.9	16.7	44.0	0.0	0.0	8.4	0.6	
 								
-Low / Bas	28.9	16.1	42.5	0.0	0.0	5.9	0.4	
-Port Moody – Coquitlam	30.4	17.9	44.3	0.0	0.0	6.6	0.8	78%
-High / Haut	33.4	19.2	47.8	0.0	0.0	7.1	1.2	
+Low / Bas	29.8	15.1	42.6	0.0	0.0	6.5	0.2	
+Port Moody – Coquitlam	31.3	16.7	44.3	0.0	0.0	7.2	0.4	77%
+High / Haut	34.5	17.9	47.9	0.0	0.0	7.7	0.6	
 								
-Low / Bas	44.8	10.8	29.2	0.0	0.0	8.5	0.5	
-Prince George – Peace River – Northern Rockies	47.2	12.0	30.4	0.0	0.0	9.5	0.9	82%
-High / Haut	51.9	12.8	32.9	0.0	0.0	10.1	1.4	
+Low / Bas	46.5	10.1	27.9	0.0	0.0	9.3	0.2	
+Prince George – Peace River – Northern Rockies	48.9	11.2	29.0	0.0	0.0	10.4	0.4	86%
+High / Haut	53.8	12.0	31.4	0.0	0.0	11.1	0.7	
 								
-Low / Bas	35.8	33.1	17.4	0.0	0.0	5.9	0.4	
-Richmond Centre	37.7	36.8	18.2	0.0	0.0	6.6	0.8	50%
-High / Haut	41.4	39.4	19.6	0.0	0.0	7.1	1.2	
+Low / Bas	37.4	31.4	17.2	0.0	0.0	6.7	0.2	
+Richmond Centre	39.3	34.9	18.0	0.0	0.0	7.4	0.4	61%
+High / Haut	43.3	37.3	19.4	0.0	0.0	7.9	0.6	
 								
-Low / Bas	20.0	10.3	10.2	0.0	0.0	50.5	0.4	
-Saanich – Gulf Islands	21.1	11.5	10.6	0.0	0.0	56.1	0.7	96%
-High / Haut	23.2	12.3	11.4	0.0	0.0	60.0	1.1	
+Low / Bas	19.9	9.3	9.3	0.0	0.0	52.9	0.2	
+Saanich – Gulf Islands	20.9	10.3	9.7	0.0	0.0	58.7	0.4	97%
+High / Haut	23.0	11.1	10.4	0.0	0.0	62.8	0.5	
 								
-Low / Bas	22.9	7.4	59.5	0.0	0.0	4.4	0.4	
-Skeena – Bulkley Valley	24.1	8.2	62.0	0.0	0.0	4.9	0.9	97%
-High / Haut	26.5	8.7	66.9	0.0	0.0	5.2	1.3	
+Low / Bas	22.7	6.6	60.6	0.0	0.0	4.6	0.2	
+Skeena – Bulkley Valley	23.9	7.4	63.2	0.0	0.0	5.1	0.4	97%
+High / Haut	26.3	7.9	68.2	0.0	0.0	5.5	0.6	
 								
-Low / Bas	28.6	17.0	38.4	0.0	0.0	9.1	0.4	
-South Okanagan – West Kootenay	30.1	18.9	40.0	0.0	0.0	10.2	0.8	71%
-High / Haut	33.1	20.2	43.2	0.0	0.0	10.9	1.3	
+Low / Bas	30.0	16.1	37.2	0.0	0.0	10.1	0.2	
+South Okanagan – West Kootenay	31.6	17.9	38.7	0.0	0.0	11.3	0.4	67%
+High / Haut	34.8	19.2	41.8	0.0	0.0	12.1	0.6	
 								
-Low / Bas	32.6	34.0	18.6	0.0	0.0	7.1	0.4	
-South Surrey – White Rock	34.3	37.7	19.3	0.0	0.0	7.9	0.8	58%
-High / Haut	37.7	40.4	20.9	0.0	0.0	8.4	1.2	
+Low / Bas	34.0	32.2	18.4	0.0	0.0	8.0	0.2	
+South Surrey – White Rock	35.8	35.8	19.1	0.0	0.0	8.9	0.4	50%
+High / Haut	39.4	38.3	20.7	0.0	0.0	9.5	0.6	
 								
-Low / Bas	29.9	34.3	22.9	0.0	0.0	5.1	0.4	
-Steveston – Richmond East	31.5	38.1	23.8	0.0	0.0	5.7	0.8	65%
-High / Haut	34.7	40.8	25.8	0.0	0.0	6.1	1.2	
-ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 22, 2015
-Low / Bas	19.9	30.6	38.1	0.0	0.0	4.2	0.4	
-Surrey Centre	20.9	34.0	39.7	0.0	0.0	4.6	0.8	63%
-High / Haut	23.0	36.4	42.9	0.0	0.0	5.0	1.1	
+Low / Bas	31.5	32.7	22.7	0.0	0.0	5.8	0.2	
+Steveston – Richmond East	33.2	36.3	23.7	0.0	0.0	6.4	0.4	58%
+High / Haut	36.5	38.9	25.5	0.0	0.0	6.9	0.6	
+ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 23, 2015
+Low / Bas	20.7	29.0	38.9	0.0	0.0	4.6	0.2	
+Surrey Centre	21.8	32.2	40.5	0.0	0.0	5.1	0.4	69%
+High / Haut	24.0	34.4	43.7	0.0	0.0	5.5	0.6	
 								
-Low / Bas	12.7	48.7	28.0	0.0	0.0	2.5	0.3	
-Surrey – Newton	13.3	54.1	29.1	0.0	0.0	2.8	0.6	90%
-High / Haut	14.7	57.9	31.5	0.0	0.0	3.0	0.9	
+Low / Bas	13.5	46.9	29.0	0.0	0.0	2.8	0.2	
+Surrey – Newton	14.2	52.1	30.2	0.0	0.0	3.1	0.3	88%
+High / Haut	15.6	55.8	32.6	0.0	0.0	3.3	0.5	
 								
-Low / Bas	12.2	43.6	20.7	0.0	0.0	14.8	0.3	
-Vancouver Centre	12.9	48.4	21.6	0.0	0.0	16.4	0.6	92%
-High / Haut	14.2	51.8	23.3	0.0	0.0	17.6	1.0	
+Low / Bas	13.0	41.9	20.3	0.0	0.0	16.5	0.2	
+Vancouver Centre	13.7	46.5	21.1	0.0	0.0	18.4	0.3	91%
+High / Haut	15.0	49.8	22.8	0.0	0.0	19.7	0.5	
 								
-Low / Bas	10.8	17.5	56.1	0.0	0.0	9.1	0.4	
-Vancouver East	11.4	19.4	58.4	0.0	0.0	10.1	0.8	97%
-High / Haut	12.5	20.8	63.1	0.0	0.0	10.8	1.2	
+Low / Bas	11.5	16.9	55.1	0.0	0.0	10.2	0.2	
+Vancouver East	12.1	18.8	57.4	0.0	0.0	11.3	0.4	97%
+High / Haut	13.3	20.1	62.0	0.0	0.0	12.1	0.6	
 								
-Low / Bas	22.1	35.5	25.8	0.0	0.0	8.7	0.4	
-Vancouver Granville	23.3	39.4	26.9	0.0	0.0	9.7	0.7	77%
-High / Haut	25.6	42.2	29.1	0.0	0.0	10.3	1.1	
+Low / Bas	23.5	34.1	25.2	0.0	0.0	9.7	0.2	
+Vancouver Granville	24.7	37.8	26.3	0.0	0.0	10.8	0.4	75%
+High / Haut	27.2	40.5	28.4	0.0	0.0	11.6	0.5	
 								
-Low / Bas	15.3	27.6	46.0	0.0	0.0	4.1	0.4	
-Vancouver Kingsway	16.1	30.6	48.0	0.0	0.0	4.5	0.7	84%
-High / Haut	17.7	32.8	51.8	0.0	0.0	4.8	1.1	
+Low / Bas	15.6	25.4	48.1	0.0	0.0	4.4	0.2	
+Vancouver Kingsway	16.4	28.3	50.1	0.0	0.0	4.9	0.4	88%
+High / Haut	18.1	30.2	54.1	0.0	0.0	5.2	0.5	
 								
-Low / Bas	16.4	58.5	10.9	0.0	0.0	5.3	0.3	
-Vancouver Quadra	17.2	65.0	11.3	0.0	0.0	5.9	0.6	98%
-High / Haut	18.9	69.5	12.2	0.0	0.0	6.3	0.9	
+Low / Bas	17.6	57.0	10.8	0.0	0.0	6.0	0.2	
+Vancouver Quadra	18.5	63.3	11.2	0.0	0.0	6.7	0.3	98%
+High / Haut	20.4	67.7	12.1	0.0	0.0	7.1	0.5	
 								
-Low / Bas	22.2	47.0	19.2	0.0	0.0	3.4	0.3	
-Vancouver South	23.4	52.2	19.9	0.0	0.0	3.8	0.7	93%
-High / Haut	25.8	55.8	21.5	0.0	0.0	4.0	1.0	
+Low / Bas	23.8	45.6	18.9	0.0	0.0	3.8	0.2	
+Vancouver South	25.1	50.6	19.7	0.0	0.0	4.3	0.3	91%
+High / Haut	27.6	54.2	21.3	0.0	0.0	4.6	0.5	
 								
-Low / Bas	10.7	20.0	37.8	0.0	0.0	23.8	0.3	
-Victoria	11.3	22.3	39.4	0.0	0.0	26.4	0.7	77%
-High / Haut	12.4	23.8	42.5	0.0	0.0	28.3	1.0	
+Low / Bas	10.6	18.7	37.7	0.0	0.0	25.6	0.2	
+Victoria	11.2	20.7	39.2	0.0	0.0	28.5	0.3	73%
+High / Haut	12.3	22.2	42.4	0.0	0.0	30.5	0.5	
 								
-Low / Bas	25.0	34.6	20.4	0.0	0.0	11.8	0.4	
-West Vancouver – Sunshine Coast – Sea to Sky Country	26.3	38.5	21.3	0.0	0.0	13.1	0.8	77%
-High / Haut	29.0	41.2	23.0	0.0	0.0	14.1	1.1	
+Low / Bas	26.3	33.0	19.8	0.0	0.0	13.1	0.2	
+West Vancouver – Sunshine Coast – Sea to Sky Country	27.7	36.7	20.6	0.0	0.0	14.6	0.4	69%
+High / Haut	30.5	39.2	22.3	0.0	0.0	15.6	0.6	
 ALBERTA								
-Low / Bas	56.2	16.9	16.4	0.0	0.0	3.5	0.5	
-Banff – Airdrie	59.2	18.8	17.1	0.0	0.0	3.9	1.0	98%
-High / Haut	65.1	20.1	18.5	0.0	0.0	4.2	1.5	
+Low / Bas	55.9	16.8	15.6	0.0	0.0	4.7	0.5	
+Banff – Airdrie	58.9	18.6	16.3	0.0	0.0	5.2	1.0	98%
+High / Haut	64.8	19.9	17.6	0.0	0.0	5.6	1.5	
 								
-Low / Bas	73.1	5.0	13.6	0.0	0.0	2.0	0.5	
-Battle River – Crowfoot	77.0	5.6	14.2	0.0	0.0	2.2	1.1	99%
-High / Haut	84.6	6.0	15.3	0.0	0.0	2.4	1.6	
+Low / Bas	73.0	5.0	13.0	0.0	0.0	2.7	0.5	
+Battle River – Crowfoot	76.9	5.5	13.5	0.0	0.0	3.0	1.1	99%
+High / Haut	84.6	5.9	14.6	0.0	0.0	3.2	1.6	
 								
-Low / Bas	71.3	8.5	11.9	0.0	0.0	1.8	0.6	
-Bow River	75.0	9.5	12.3	0.0	0.0	2.0	1.1	99%
-High / Haut	82.5	10.1	13.3	0.0	0.0	2.2	1.7	
+Low / Bas	71.2	8.5	11.3	0.0	0.0	2.4	0.6	
+Bow River	74.9	9.4	11.8	0.0	0.0	2.7	1.1	99%
+High / Haut	82.4	10.1	12.7	0.0	0.0	2.9	1.7	
 								
-Low / Bas	34.2	39.5	12.2	0.0	0.0	5.8	0.4	
-Calgary Centre	36.0	43.9	12.7	0.0	0.0	6.5	0.8	67%
-High / Haut	39.6	47.0	13.7	0.0	0.0	6.9	1.2	
+Low / Bas	33.7	38.8	11.5	0.0	0.0	7.7	0.4	
+Calgary Centre	35.5	43.1	12.0	0.0	0.0	8.6	0.8	67%
+High / Haut	39.1	46.1	12.9	0.0	0.0	9.2	1.2	
 								
-Low / Bas	34.3	35.2	17.8	0.0	0.0	4.8	0.5	
-Calgary Confederation	36.1	39.1	18.6	0.0	0.0	5.3	0.9	56%
-High / Haut	39.7	41.8	20.1	0.0	0.0	5.7	1.4	
+Low / Bas	34.0	34.7	16.9	0.0	0.0	6.3	0.5	
+Calgary Confederation	35.8	38.6	17.6	0.0	0.0	7.0	0.9	56%
+High / Haut	39.4	41.3	19.0	0.0	0.0	7.5	1.4	
 								
-Low / Bas	43.9	32.0	14.4	0.0	0.0	2.1	0.4	
-Calgary Forest Lawn	46.2	35.5	15.0	0.0	0.0	2.4	0.9	73%
-High / Haut	50.8	38.0	16.2	0.0	0.0	2.5	1.3	
+Low / Bas	43.9	31.8	13.8	0.0	0.0	2.8	0.4	
+Calgary Forest Lawn	46.2	35.4	14.4	0.0	0.0	3.2	0.9	73%
+High / Haut	50.9	37.9	15.5	0.0	0.0	3.4	1.3	
 								
-Low / Bas	60.7	15.3	14.8	0.0	0.0	2.4	0.5	
-Calgary Heritage	63.9	17.0	15.4	0.0	0.0	2.7	1.0	98%
-High / Haut	70.3	18.2	16.6	0.0	0.0	2.9	1.4	
+Low / Bas	60.6	15.2	14.1	0.0	0.0	3.3	0.5	
+Calgary Heritage	63.8	16.9	14.7	0.0	0.0	3.6	1.0	98%
+High / Haut	70.2	18.1	15.9	0.0	0.0	3.9	1.4	
 								
-Low / Bas	62.6	13.9	13.6	0.0	0.0	3.1	0.5	
-Calgary Midnapore	65.9	15.5	14.2	0.0	0.0	3.4	1.0	99%
-High / Haut	72.5	16.6	15.3	0.0	0.0	3.6	1.5	
+Low / Bas	62.3	13.8	13.0	0.0	0.0	4.1	0.5	
+Calgary Midnapore	65.6	15.3	13.5	0.0	0.0	4.5	1.0	99%
+High / Haut	72.1	16.4	14.6	0.0	0.0	4.9	1.5	
 								
-Low / Bas	52.5	22.1	15.3	0.0	0.0	2.9	0.5	
-Calgary Nose Hill	55.3	24.5	15.9	0.0	0.0	3.3	0.9	94%
-High / Haut	60.8	26.3	17.2	0.0	0.0	3.5	1.4	
+Low / Bas	52.4	21.9	14.6	0.0	0.0	3.9	0.5	
+Calgary Nose Hill	55.2	24.4	15.2	0.0	0.0	4.4	0.9	94%
+High / Haut	60.7	26.1	16.4	0.0	0.0	4.7	1.4	
 								
-Low / Bas	49.3	26.0	14.0	0.0	0.0	3.2	0.5	
-Calgary Rocky Ridge	51.9	28.9	14.6	0.0	0.0	3.6	1.0	89%
-High / Haut	57.1	31.0	15.8	0.0	0.0	3.9	1.5	
+Low / Bas	49.1	25.8	13.3	0.0	0.0	4.3	0.5	
+Calgary Rocky Ridge	51.6	28.7	13.9	0.0	0.0	4.8	1.0	89%
+High / Haut	56.8	30.7	15.0	0.0	0.0	5.1	1.4	
 								
-Low / Bas	59.4	16.1	14.9	0.0	0.0	2.8	0.5	
-Calgary Shepard	62.5	17.9	15.5	0.0	0.0	3.1	1.1	98%
-High / Haut	68.7	19.2	16.7	0.0	0.0	3.3	1.6	
+Low / Bas	59.2	16.0	14.2	0.0	0.0	3.7	0.5	
+Calgary Shepard	62.3	17.8	14.8	0.0	0.0	4.1	1.1	98%
+High / Haut	68.5	19.0	15.9	0.0	0.0	4.4	1.6	
 								
-Low / Bas	43.6	31.7	13.0	0.0	0.0	4.0	0.5	
-Calgary Signal Hill	45.9	35.2	13.5	0.0	0.0	4.4	1.0	73%
-High / Haut	50.5	37.7	14.6	0.0	0.0	4.7	1.5	
+Low / Bas	43.3	31.4	12.3	0.0	0.0	5.3	0.5	
+Calgary Signal Hill	45.5	34.8	12.8	0.0	0.0	5.8	1.0	73%
+High / Haut	50.1	37.3	13.9	0.0	0.0	6.3	1.4	
 								
-Low / Bas	34.4	46.1	9.6	0.0	0.0	1.6	0.4	
-Calgary Skyview	36.2	51.2	10.1	0.0	0.0	1.8	0.8	81%
-High / Haut	39.8	54.8	10.9	0.0	0.0	1.9	1.1	
+Low / Bas	34.4	45.9	9.2	0.0	0.0	2.2	0.4	
+Calgary Skyview	36.2	51.0	9.6	0.0	0.0	2.4	0.8	80%
+High / Haut	39.8	54.6	10.4	0.0	0.0	2.6	1.1	
 								
-Low / Bas	29.4	32.4	28.9	0.0	0.0	1.9	0.4	
-Edmonton Centre	31.0	36.0	30.1	0.0	0.0	2.1	0.9	63%
-High / Haut	34.1	38.5	32.5	0.0	0.0	2.2	1.3	
+Low / Bas	29.6	32.5	27.8	0.0	0.0	2.5	0.4	
+Edmonton Centre	31.2	36.1	29.0	0.0	0.0	2.8	0.9	61%
+High / Haut	34.3	38.7	31.3	0.0	0.0	3.0	1.3	
 								
-Low / Bas	31.1	15.4	45.2	0.0	0.0	1.8	0.5	
-Edmonton Griesbach	32.8	17.1	47.1	0.0	0.0	2.0	1.0	80%
-High / Haut	36.0	18.3	50.9	0.0	0.0	2.2	1.4	
+Low / Bas	31.6	15.6	43.9	0.0	0.0	2.5	0.5	
+Edmonton Griesbach	33.3	17.3	45.7	0.0	0.0	2.7	1.0	77%
+High / Haut	36.6	18.5	49.4	0.0	0.0	2.9	1.5	
 								
-Low / Bas	40.4	19.0	32.1	0.0	0.0	1.7	0.5	
-Edmonton Manning	42.5	21.1	33.5	0.0	0.0	1.9	1.0	71%
-High / Haut	46.8	22.6	36.2	0.0	0.0	2.0	1.5	
+Low / Bas	40.8	19.1	31.0	0.0	0.0	2.3	0.5	
+Edmonton Manning	43.0	21.2	32.3	0.0	0.0	2.5	1.0	73%
+High / Haut	47.2	22.7	34.9	0.0	0.0	2.7	1.5	
 								
-Low / Bas	41.7	21.9	28.4	0.0	0.0	1.2	0.4	
-Edmonton Mill Woods	43.9	24.3	29.5	0.0	0.0	1.4	0.9	80%
-High / Haut	48.3	26.0	31.9	0.0	0.0	1.5	1.3	
+Low / Bas	42.1	22.0	27.4	0.0	0.0	1.7	0.4	
+Edmonton Mill Woods	44.3	24.4	28.5	0.0	0.0	1.8	0.9	81%
+High / Haut	48.8	26.1	30.8	0.0	0.0	2.0	1.3	
 								
-Low / Bas	38.6	24.1	28.1	0.0	0.0	2.1	0.5	
-Edmonton Riverbend	40.6	26.8	29.2	0.0	0.0	2.4	0.9	75%
-High / Haut	44.7	28.7	31.6	0.0	0.0	2.5	1.4	
+Low / Bas	38.8	24.2	27.0	0.0	0.0	2.9	0.5	
+Edmonton Riverbend	40.9	26.9	28.1	0.0	0.0	3.2	1.0	77%
+High / Haut	45.0	28.7	30.4	0.0	0.0	3.4	1.4	
 								
-Low / Bas	27.4	5.6	60.4	0.0	0.0	1.0	0.5	
-Edmonton Strathcona	28.9	6.3	62.9	0.0	0.0	1.1	0.9	95%
-High / Haut	31.8	6.7	67.9	0.0	0.0	1.2	1.4	
+Low / Bas	28.1	5.7	59.1	0.0	0.0	1.3	0.5	
+Edmonton Strathcona	29.6	6.4	61.6	0.0	0.0	1.5	0.9	95%
+High / Haut	32.6	6.8	66.5	0.0	0.0	1.6	1.4	
 								
-Low / Bas	42.4	27.8	20.6	0.0	0.0	1.9	0.5	
-Edmonton West	44.6	30.9	21.5	0.0	0.0	2.1	1.0	78%
-High / Haut	49.1	33.0	23.2	0.0	0.0	2.2	1.4	
+Low / Bas	42.6	27.8	19.8	0.0	0.0	2.5	0.5	
+Edmonton West	44.8	30.9	20.6	0.0	0.0	2.8	1.0	78%
+High / Haut	49.3	33.0	22.3	0.0	0.0	3.0	1.4	
 								
-Low / Bas	61.1	12.2	18.2	0.0	0.0	1.9	0.5	
-Edmonton – Wetaskiwin	64.4	13.5	19.0	0.0	0.0	2.1	1.0	98%
-High / Haut	70.8	14.5	20.5	0.0	0.0	2.3	1.5	
+Low / Bas	61.2	12.1	17.5	0.0	0.0	2.6	0.5	
+Edmonton – Wetaskiwin	64.5	13.5	18.2	0.0	0.0	2.9	1.0	98%
+High / Haut	70.9	14.4	19.6	0.0	0.0	3.1	1.5	
 								
-Low / Bas	66.9	9.0	12.1	0.0	0.0	5.3	0.5	
-Foothills	70.4	10.0	12.6	0.0	0.0	5.9	1.1	99%
-High / Haut	77.5	10.7	13.6	0.0	0.0	6.3	1.6	
-ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 22, 2015
-Low / Bas	45.6	28.2	16.4	0.0	0.0	2.4	0.5	
-Fort McMurray – Cold Lake	48.0	31.4	17.1	0.0	0.0	2.7	0.9	82%
-High / Haut	52.8	33.6	18.4	0.0	0.0	2.9	1.4	
+Low / Bas	66.7	8.9	11.6	0.0	0.0	6.1	0.5	
+Foothills	70.3	9.9	12.0	0.0	0.0	6.7	1.1	99%
+High / Haut	77.3	10.6	13.0	0.0	0.0	7.2	1.6	
+ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 23, 2015
+Low / Bas	45.6	28.1	15.6	0.0	0.0	3.2	0.5	
+Fort McMurray – Cold Lake	48.0	31.2	16.3	0.0	0.0	3.6	0.9	82%
+High / Haut	52.8	33.4	17.6	0.0	0.0	3.8	1.4	
 								
-Low / Bas	64.3	7.1	20.5	0.0	0.0	1.9	0.5	
-Grande Prairie – Mackenzie	67.7	7.9	21.4	0.0	0.0	2.1	1.1	98%
-High / Haut	74.4	8.4	23.1	0.0	0.0	2.2	1.6	
+Low / Bas	64.5	7.1	19.7	0.0	0.0	2.5	0.5	
+Grande Prairie – Mackenzie	67.8	7.9	20.5	0.0	0.0	2.8	1.1	98%
+High / Haut	74.6	8.4	22.1	0.0	0.0	3.0	1.6	
 								
-Low / Bas	62.5	12.4	16.2	0.0	0.0	2.2	0.6	
-Lakeland	65.8	13.7	16.9	0.0	0.0	2.5	1.1	99%
-High / Haut	72.3	14.7	18.2	0.0	0.0	2.7	1.7	
+Low / Bas	62.4	12.3	15.5	0.0	0.0	3.0	0.6	
+Lakeland	65.7	13.7	16.1	0.0	0.0	3.3	1.1	99%
+High / Haut	72.3	14.6	17.4	0.0	0.0	3.6	1.7	
 								
-Low / Bas	39.6	17.0	34.3	0.0	0.0	2.4	0.5	
-Lethbridge	41.7	18.9	35.8	0.0	0.0	2.7	1.0	63%
-High / Haut	45.8	20.2	38.6	0.0	0.0	2.9	1.5	
+Low / Bas	39.9	17.1	33.1	0.0	0.0	3.2	0.5	
+Lethbridge	42.0	19.0	34.5	0.0	0.0	3.6	1.0	67%
+High / Haut	46.2	20.3	37.2	0.0	0.0	3.9	1.5	
 								
-Low / Bas	51.4	22.1	17.6	0.0	0.0	1.9	0.5	
-Medicine Hat – Cardston – Warner	54.1	24.6	18.3	0.0	0.0	2.1	0.9	94%
-High / Haut	59.5	26.3	19.7	0.0	0.0	2.3	1.4	
+Low / Bas	51.5	22.1	16.8	0.0	0.0	2.6	0.5	
+Medicine Hat – Cardston – Warner	54.2	24.5	17.5	0.0	0.0	2.9	0.9	94%
+High / Haut	59.6	26.2	18.9	0.0	0.0	3.0	1.4	
 								
-Low / Bas	64.6	8.6	18.3	0.0	0.0	2.0	0.6	
-Peace River – Westlock	68.0	9.5	19.1	0.0	0.0	2.2	1.1	99%
-High / Haut	74.8	10.2	20.6	0.0	0.0	2.4	1.7	
+Low / Bas	64.7	8.6	17.5	0.0	0.0	2.7	0.6	
+Peace River – Westlock	68.1	9.5	18.3	0.0	0.0	3.0	1.1	99%
+High / Haut	74.9	10.2	19.7	0.0	0.0	3.2	1.7	
 								
-Low / Bas	64.6	7.9	18.8	0.0	0.0	2.3	0.5	
-Red Deer – Lacombe	68.0	8.8	19.6	0.0	0.0	2.5	1.0	99%
-High / Haut	74.8	9.4	21.2	0.0	0.0	2.7	1.6	
+Low / Bas	64.7	7.9	18.0	0.0	0.0	3.0	0.5	
+Red Deer – Lacombe	68.1	8.8	18.7	0.0	0.0	3.4	1.0	99%
+High / Haut	74.9	9.4	20.2	0.0	0.0	3.6	1.6	
 								
-Low / Bas	67.4	7.8	15.9	0.0	0.0	2.5	0.5	
-Red Deer – Mountain View	70.9	8.7	16.6	0.0	0.0	2.7	1.1	99%
-High / Haut	78.0	9.3	17.9	0.0	0.0	2.9	1.6	
+Low / Bas	67.3	7.8	15.2	0.0	0.0	3.3	0.5	
+Red Deer – Mountain View	70.8	8.7	15.8	0.0	0.0	3.6	1.1	99%
+High / Haut	77.9	9.3	17.1	0.0	0.0	3.9	1.6	
 								
-Low / Bas	35.2	18.1	20.1	0.0	0.0	1.7	10.1	
-St. Albert – Edmonton*	37.0	20.1	20.9	0.0	0.0	1.9	20.1	82%
-High / Haut	40.7	21.5	22.6	0.0	0.0	2.0	30.2	
+Low / Bas	35.3	18.0	19.3	0.0	0.0	2.3	10.1	
+St. Albert – Edmonton*	37.2	20.1	20.1	0.0	0.0	2.5	20.2	84%
+High / Haut	40.9	21.5	21.7	0.0	0.0	2.7	30.2	
 							*Other is Brent Rathgeber only	
-Low / Bas	49.5	19.9	20.5	0.0	0.0	2.8	0.7	
-Sherwood Park – Fort Saskatchewan	52.1	22.1	21.3	0.0	0.0	3.1	1.4	94%
-High / Haut	57.3	23.7	23.0	0.0	0.0	3.3	2.2	
+Low / Bas	49.5	19.8	19.6	0.0	0.0	3.7	0.7	
+Sherwood Park – Fort Saskatchewan	52.1	22.0	20.4	0.0	0.0	4.1	1.4	94%
+High / Haut	57.3	23.6	22.0	0.0	0.0	4.4	2.2	
 								
-Low / Bas	63.2	11.8	16.6	0.0	0.0	1.9	0.5	
-Sturgeon River	66.5	13.1	17.3	0.0	0.0	2.1	1.0	99%
-High / Haut	73.1	14.0	18.7	0.0	0.0	2.2	1.5	
+Low / Bas	63.2	11.7	15.9	0.0	0.0	2.5	0.5	
+Sturgeon River	66.6	13.0	16.6	0.0	0.0	2.8	1.0	99%
+High / Haut	73.2	13.9	17.9	0.0	0.0	3.0	1.5	
 								
-Low / Bas	60.8	13.9	16.2	0.0	0.0	2.4	0.5	
-Yellowhead	64.0	15.4	16.9	0.0	0.0	2.7	1.0	98%
-High / Haut	70.4	16.5	18.2	0.0	0.0	2.9	1.5	
+Low / Bas	60.8	13.8	15.5	0.0	0.0	3.3	0.5	
+Yellowhead	64.0	15.3	16.1	0.0	0.0	3.6	1.0	98%
+High / Haut	70.4	16.4	17.4	0.0	0.0	3.9	1.5	
 SASKATCHEWAN								
-Low / Bas	56.8	7.1	26.6	0.0	0.0	3.0	0.6	
-Battlefords – Lloydminster	59.8	7.8	27.7	0.0	0.0	3.4	1.2	95%
-High / Haut	65.8	8.4	30.0	0.0	0.0	3.6	1.8	
+Low / Bas	54.0	7.1	28.0	0.0	0.0	4.0	0.8	
+Battlefords – Lloydminster	56.9	7.9	29.2	0.0	0.0	4.5	1.7	93%
+High / Haut	62.5	8.4	31.5	0.0	0.0	4.8	2.5	
 								
-Low / Bas	59.1	8.2	23.2	0.0	0.0	3.0	0.6	
-Carlton Trail – Eagle Creek	62.2	9.1	24.2	0.0	0.0	3.4	1.2	97%
-High / Haut	68.4	9.7	26.1	0.0	0.0	3.6	1.8	
+Low / Bas	56.3	8.2	24.5	0.0	0.0	4.0	0.8	
+Carlton Trail – Eagle Creek	59.2	9.1	25.5	0.0	0.0	4.5	1.7	95%
+High / Haut	65.2	9.8	27.5	0.0	0.0	4.8	2.5	
 								
-Low / Bas	59.2	11.8	19.2	0.0	0.0	3.2	0.6	
-Cypress Hills – Grasslands	62.3	13.1	20.0	0.0	0.0	3.5	1.2	98%
-High / Haut	68.5	14.0	21.6	0.0	0.0	3.7	1.8	
+Low / Bas	56.5	11.8	20.3	0.0	0.0	4.2	0.8	
+Cypress Hills – Grasslands	59.4	13.2	21.1	0.0	0.0	4.7	1.6	97%
+High / Haut	65.4	14.1	22.8	0.0	0.0	5.0	2.4	
 								
-Low / Bas	38.8	10.6	41.4	0.0	0.0	2.8	0.6	
-Desnethé – Missinippi – Churchill River	40.9	11.8	43.1	0.0	0.0	3.1	1.2	56%
-High / Haut	45.0	12.6	46.5	0.0	0.0	3.3	1.7	
+Low / Bas	36.3	10.5	42.8	0.0	0.0	3.6	0.8	
+Desnethé – Missinippi – Churchill River	38.2	11.6	44.6	0.0	0.0	4.0	1.6	65%
+High / Haut	42.0	12.5	48.1	0.0	0.0	4.3	2.3	
 								
-Low / Bas	52.1	7.9	30.5	0.0	0.0	3.1	0.6	
-Moose Jaw – Lake Centre – Lanigan	54.8	8.7	31.8	0.0	0.0	3.4	1.2	90%
-High / Haut	60.3	9.3	34.4	0.0	0.0	3.7	1.8	
+Low / Bas	49.2	7.8	32.0	0.0	0.0	4.1	0.8	
+Moose Jaw – Lake Centre – Lanigan	51.8	8.7	33.3	0.0	0.0	4.5	1.6	85%
+High / Haut	57.0	9.3	35.9	0.0	0.0	4.9	2.4	
 								
-Low / Bas	53.9	7.2	29.9	0.0	0.0	2.5	0.6	
-Prince Albert	56.8	8.0	31.2	0.0	0.0	2.8	1.2	91%
-High / Haut	62.5	8.6	33.7	0.0	0.0	3.0	1.8	
+Low / Bas	51.2	7.2	31.4	0.0	0.0	3.4	0.8	
+Prince Albert	53.9	8.0	32.7	0.0	0.0	3.7	1.7	88%
+High / Haut	59.3	8.6	35.4	0.0	0.0	4.0	2.5	
 								
-Low / Bas	31.7	16.7	41.7	0.0	0.0	3.1	0.6	
-Regina – Lewvan	33.4	18.5	43.5	0.0	0.0	3.4	1.2	73%
-High / Haut	36.7	19.8	46.9	0.0	0.0	3.7	1.8	
+Low / Bas	29.5	16.4	42.9	0.0	0.0	4.0	0.8	
+Regina – Lewvan	31.0	18.2	44.7	0.0	0.0	4.5	1.6	78%
+High / Haut	34.1	19.5	48.3	0.0	0.0	4.8	2.4	
 								
-Low / Bas	44.7	9.7	35.8	0.0	0.0	3.4	0.6	
-Regina – Qu'Appelle	47.1	10.8	37.2	0.0	0.0	3.7	1.2	71%
-High / Haut	51.8	11.5	40.2	0.0	0.0	4.0	1.8	
+Low / Bas	42.0	9.6	37.1	0.0	0.0	4.4	0.8	
+Regina – Qu'Appelle	44.2	10.7	38.7	0.0	0.0	4.9	1.6	63%
+High / Haut	48.6	11.4	41.8	0.0	0.0	5.2	2.4	
 								
-Low / Bas	19.2	57.1	12.9	0.0	0.0	1.9	0.4	
-Regina – Wascana	20.2	63.4	13.4	0.0	0.0	2.1	0.8	98%
-High / Haut	22.2	67.9	14.5	0.0	0.0	2.3	1.2	
+Low / Bas	18.1	56.7	13.4	0.0	0.0	2.5	0.6	
+Regina – Wascana	19.1	63.1	14.0	0.0	0.0	2.8	1.1	98%
+High / Haut	21.0	67.5	15.1	0.0	0.0	3.0	1.7	
 								
-Low / Bas	37.3	15.3	37.8	0.0	0.0	2.9	0.6	
-Saskatoon – Grasswood	39.2	17.0	39.3	0.0	0.0	3.2	1.2	50%
-High / Haut	43.2	18.2	42.5	0.0	0.0	3.4	1.8	
+Low / Bas	34.9	15.1	39.1	0.0	0.0	3.8	0.8	
+Saskatoon – Grasswood	36.7	16.8	40.7	0.0	0.0	4.2	1.6	61%
+High / Haut	40.4	17.9	44.0	0.0	0.0	4.5	2.4	
 								
-Low / Bas	33.3	19.5	36.8	0.0	0.0	3.5	0.5	
-Saskatoon – University	35.0	21.7	38.3	0.0	0.0	3.9	1.1	58%
-High / Haut	38.5	23.2	41.3	0.0	0.0	4.2	1.6	
+Low / Bas	31.0	19.2	37.9	0.0	0.0	4.6	0.7	
+Saskatoon – University	32.7	21.3	39.5	0.0	0.0	5.1	1.5	65%
+High / Haut	35.9	22.8	42.6	0.0	0.0	5.4	2.2	
 								
-Low / Bas	32.5	8.2	50.0	0.0	0.0	3.1	0.6	
-Saskatoon West	34.2	9.1	52.1	0.0	0.0	3.4	1.2	84%
-High / Haut	37.6	9.7	56.2	0.0	0.0	3.7	1.9	
+Low / Bas	30.1	8.0	51.2	0.0	0.0	4.0	0.8	
+Saskatoon West	31.7	8.9	53.4	0.0	0.0	4.4	1.7	88%
+High / Haut	34.9	9.5	57.6	0.0	0.0	4.7	2.5	
 								
-Low / Bas	57.9	12.5	18.8	0.0	0.0	3.8	0.6	
-Souris – Moose Mountain	61.0	13.9	19.5	0.0	0.0	4.3	1.3	98%
-High / Haut	67.1	14.9	21.1	0.0	0.0	4.6	1.9	
+Low / Bas	55.1	12.6	19.8	0.0	0.0	5.1	0.9	
+Souris – Moose Mountain	58.0	14.0	20.6	0.0	0.0	5.7	1.8	97%
+High / Haut	63.8	14.9	22.2	0.0	0.0	6.1	2.7	
 								
-Low / Bas	53.8	14.4	22.0	0.0	0.0	2.9	0.6	
-Yorkton – Melville	56.6	16.0	22.9	0.0	0.0	3.2	1.3	95%
-High / Haut	62.3	17.1	24.7	0.0	0.0	3.4	1.9	
+Low / Bas	51.2	14.5	23.1	0.0	0.0	3.8	0.9	
+Yorkton – Melville	53.9	16.1	24.1	0.0	0.0	4.3	1.7	94%
+High / Haut	59.2	17.2	26.0	0.0	0.0	4.6	2.6	
 MANITOBA								
-Low / Bas	51.1	21.0	15.4	0.0	0.0	5.1	0.6	
-Brandon – Souris	53.8	23.3	16.1	0.0	0.0	5.7	1.1	94%
-High / Haut	59.2	24.9	17.4	0.0	0.0	6.1	1.7	
+Low / Bas	48.4	20.9	16.2	0.0	0.0	6.7	0.8	
+Brandon – Souris	50.9	23.2	16.8	0.0	0.0	7.5	1.5	93%
+High / Haut	56.0	24.9	18.2	0.0	0.0	8.0	2.3	
 								
-Low / Bas	41.0	31.7	15.8	0.0	0.0	3.8	0.5	
-Charleswood – St. James – Assiniboia – Headingley	43.2	35.2	16.4	0.0	0.0	4.2	1.0	67%
-High / Haut	47.5	37.7	17.7	0.0	0.0	4.5	1.5	
+Low / Bas	38.8	31.6	16.5	0.0	0.0	5.0	0.7	
+Charleswood – St. James – Assiniboia – Headingley	40.8	35.1	17.2	0.0	0.0	5.5	1.4	63%
+High / Haut	44.9	37.6	18.6	0.0	0.0	5.9	2.0	
 								
-Low / Bas	16.4	32.6	41.6	0.0	0.0	2.1	0.5	
-Churchill – Keewatinook Aski	17.2	36.2	43.3	0.0	0.0	2.3	0.9	67%
-High / Haut	18.9	38.7	46.8	0.0	0.0	2.5	1.4	
+Low / Bas	15.1	31.9	42.6	0.0	0.0	2.7	0.6	
+Churchill – Keewatinook Aski	15.9	35.4	44.4	0.0	0.0	3.0	1.3	71%
+High / Haut	17.5	37.9	47.9	0.0	0.0	3.2	1.9	
 								
-Low / Bas	46.6	11.1	19.7	0.0	0.0	4.1	6.7	
-Dauphin – Swan River – Neepawa*	49.1	12.3	20.6	0.0	0.0	4.6	13.4	93%
-High / Haut	54.0	13.2	22.2	0.0	0.0	4.9	20.1	
+Low / Bas	44.2	11.1	20.7	0.0	0.0	5.5	6.8	
+Dauphin – Swan River – Neepawa*	46.5	12.3	21.6	0.0	0.0	6.1	13.5	90%
+High / Haut	51.2	13.2	23.3	0.0	0.0	6.5	20.3	
 							*Other is Inky Mark only	
-Low / Bas	35.1	15.4	39.1	0.0	0.0	3.6	0.6	
-Elmwood – Transcona	37.0	17.1	40.8	0.0	0.0	4.0	1.1	58%
-High / Haut	40.7	18.3	44.0	0.0	0.0	4.3	1.7	
+Low / Bas	32.7	15.2	40.3	0.0	0.0	4.7	0.7	
+Elmwood – Transcona	34.5	16.8	42.0	0.0	0.0	5.2	1.5	67%
+High / Haut	37.9	18.0	45.4	0.0	0.0	5.5	2.2	
 								
-Low / Bas	44.1	16.7	29.0	0.0	0.0	3.1	0.6	
-Kildonan – St. Paul	46.5	18.6	30.3	0.0	0.0	3.5	1.2	82%
-High / Haut	51.1	19.9	32.7	0.0	0.0	3.7	1.8	
-ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 22, 2015
-Low / Bas	64.6	12.3	9.6	0.0	0.0	6.5	0.6	
-Portage – Lisgar	68.0	13.7	10.0	0.0	0.0	7.2	1.2	99%
-High / Haut	74.8	14.7	10.7	0.0	0.0	7.7	1.8	
+Low / Bas	41.6	16.6	30.3	0.0	0.0	4.1	0.8	
+Kildonan – St. Paul	43.8	18.5	31.5	0.0	0.0	4.5	1.7	77%
+High / Haut	48.1	19.8	34.1	0.0	0.0	4.9	2.5	
+ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 23, 2015
+Low / Bas	61.4	12.4	10.1	0.0	0.0	8.6	0.8	
+Portage – Lisgar	64.6	13.7	10.5	0.0	0.0	9.5	1.6	99%
+High / Haut	71.1	14.7	11.3	0.0	0.0	10.2	2.5	
 								
-Low / Bas	60.2	16.4	13.4	0.0	0.0	3.1	0.6	
-Provencher	63.4	18.2	13.9	0.0	0.0	3.4	1.1	98%
-High / Haut	69.7	19.5	15.0	0.0	0.0	3.6	1.7	
+Low / Bas	57.7	16.6	14.2	0.0	0.0	4.1	0.8	
+Provencher	60.8	18.4	14.8	0.0	0.0	4.5	1.5	98%
+High / Haut	66.9	19.7	15.9	0.0	0.0	4.8	2.3	
 								
-Low / Bas	27.7	48.4	12.9	0.0	0.0	2.5	0.4	
-Saint Boniface – Saint Vital	29.1	53.8	13.4	0.0	0.0	2.7	0.9	90%
-High / Haut	32.0	57.6	14.5	0.0	0.0	2.9	1.3	
+Low / Bas	26.1	48.3	13.4	0.0	0.0	3.3	0.6	
+Saint Boniface – Saint Vital	27.5	53.6	14.0	0.0	0.0	3.6	1.2	92%
+High / Haut	30.3	57.4	15.1	0.0	0.0	3.9	1.8	
 								
-Low / Bas	56.1	10.0	23.3	0.0	0.0	4.0	0.6	
-Selkirk – Interlake – Eastman	59.0	11.1	24.3	0.0	0.0	4.4	1.2	96%
-High / Haut	64.9	11.9	26.2	0.0	0.0	4.7	1.8	
+Low / Bas	53.2	10.0	24.4	0.0	0.0	5.2	0.8	
+Selkirk – Interlake – Eastman	56.0	11.1	25.5	0.0	0.0	5.8	1.6	94%
+High / Haut	61.6	11.9	27.5	0.0	0.0	6.2	2.4	
 								
-Low / Bas	18.9	19.8	47.2	0.0	0.0	7.0	0.5	
-Winnipeg Centre	19.9	22.0	49.2	0.0	0.0	7.8	1.0	93%
-High / Haut	21.9	23.6	53.1	0.0	0.0	8.3	1.6	
+Low / Bas	17.2	19.0	47.5	0.0	0.0	8.9	0.7	
+Winnipeg Centre	18.1	21.1	49.5	0.0	0.0	9.9	1.4	93%
+High / Haut	19.9	22.6	53.4	0.0	0.0	10.6	2.0	
 								
-Low / Bas	15.6	50.5	23.9	0.0	0.0	1.5	0.4	
-Winnipeg North	16.4	56.2	24.9	0.0	0.0	1.6	0.9	95%
-High / Haut	18.1	60.1	26.9	0.0	0.0	1.7	1.3	
+Low / Bas	14.6	49.9	24.8	0.0	0.0	1.9	0.6	
+Winnipeg North	15.4	55.5	25.9	0.0	0.0	2.1	1.2	94%
+High / Haut	16.9	59.4	27.9	0.0	0.0	2.3	1.7	
 								
-Low / Bas	29.0	50.4	10.1	0.0	0.0	1.9	0.5	
-Winnipeg South	30.5	56.0	10.5	0.0	0.0	2.1	0.9	91%
-High / Haut	33.5	59.9	11.4	0.0	0.0	2.2	1.4	
+Low / Bas	27.5	50.5	10.6	0.0	0.0	2.5	0.6	
+Winnipeg South	28.9	56.1	11.0	0.0	0.0	2.7	1.2	93%
+High / Haut	31.8	60.0	11.9	0.0	0.0	2.9	1.9	
 								
-Low / Bas	27.0	44.4	17.0	0.0	0.0	3.2	0.5	
-Winnipeg South Centre	28.5	49.3	17.7	0.0	0.0	3.6	0.9	87%
-High / Haut	31.3	52.8	19.1	0.0	0.0	3.8	1.4	
+Low / Bas	25.4	44.0	17.7	0.0	0.0	4.2	0.6	
+Winnipeg South Centre	26.7	48.9	18.4	0.0	0.0	4.7	1.3	89%
+High / Haut	29.4	52.3	19.9	0.0	0.0	5.0	1.9	
 ONTARIO								
-Low / Bas	35.3	39.7	14.6	0.0	0.0	3.0	0.1	
-Ajax	37.2	44.1	15.2	0.0	0.0	3.3	0.2	65%
-High / Haut	40.9	47.2	16.4	0.0	0.0	3.5	0.3	
-								
-Low / Bas	24.4	18.6	47.9	0.0	0.0	3.2	0.1	
-Algoma – Manitoulin – Kapuskasing	25.7	20.7	49.9	0.0	0.0	3.6	0.2	90%
-High / Haut	28.2	22.1	53.9	0.0	0.0	3.8	0.3	
-								
-Low / Bas	40.5	35.0	13.8	0.0	0.0	3.5	0.1	
-Aurora – Oak Ridges – Richmond Hill	42.6	38.9	14.3	0.0	0.0	3.9	0.2	58%
-High / Haut	46.9	41.6	15.5	0.0	0.0	4.2	0.3	
-								
-Low / Bas	50.3	17.7	19.7	0.0	0.0	6.0	0.1	
-Barrie – Innisfil	52.9	19.6	20.5	0.0	0.0	6.7	0.2	95%
-High / Haut	58.2	21.0	22.2	0.0	0.0	7.2	0.3	
-								
-Low / Bas	42.2	24.3	19.7	0.0	0.0	7.1	0.1	
-Barrie – Springwater – Oro-Medonte	44.4	26.9	20.6	0.0	0.0	7.8	0.2	84%
-High / Haut	48.9	28.8	22.2	0.0	0.0	8.4	0.3	
-								
-Low / Bas	38.5	28.8	21.8	0.0	0.0	4.2	0.1	
-Bay of Quinte	40.5	32.0	22.7	0.0	0.0	4.7	0.2	69%
-High / Haut	44.5	34.2	24.5	0.0	0.0	5.0	0.3	
-								
-Low / Bas	15.6	36.4	36.5	0.0	0.0	4.4	0.1	
-Beaches – East York	16.4	40.5	38.1	0.0	0.0	4.9	0.2	56%
-High / Haut	18.0	43.3	41.1	0.0	0.0	5.2	0.3	
-								
-Low / Bas	36.6	31.9	20.1	0.0	0.0	4.5	0.1	
-Brampton Centre	38.5	35.5	20.9	0.0	0.0	5.0	0.2	56%
-High / Haut	42.3	38.0	22.6	0.0	0.0	5.3	0.3	
-								
-Low / Bas	20.0	38.6	32.5	0.0	0.0	1.7	0.1	
-Brampton East	21.1	42.9	33.9	0.0	0.0	1.9	0.2	71%
-High / Haut	23.2	45.9	36.6	0.0	0.0	2.1	0.3	
-								
-Low / Bas	38.1	35.0	16.1	0.0	0.0	3.7	0.1	
-Brampton North	40.1	38.9	16.7	0.0	0.0	4.1	0.2	53%
-High / Haut	44.1	41.6	18.1	0.0	0.0	4.4	0.3	
-								
-Low / Bas	34.2	42.5	13.5	0.0	0.0	2.2	0.1	
-Brampton South	36.0	47.3	14.1	0.0	0.0	2.5	0.2	75%
-High / Haut	39.6	50.6	15.2	0.0	0.0	2.7	0.3	
-								
-Low / Bas	28.5	45.4	16.9	0.0	0.0	1.6	0.1	
-Brampton West	30.0	50.4	17.6	0.0	0.0	1.8	0.2	87%
-High / Haut	33.0	53.9	19.0	0.0	0.0	1.9	0.3	
-								
-Low / Bas	39.6	24.7	25.9	0.0	0.0	3.4	0.1	
-Brantford – Brant	41.7	27.4	27.0	0.0	0.0	3.7	0.2	80%
-High / Haut	45.8	29.3	29.2	0.0	0.0	4.0	0.3	
-								
-Low / Bas	43.3	24.0	17.0	0.0	0.0	8.9	0.1	
-Bruce – Grey – Owen Sound	45.6	26.7	17.7	0.0	0.0	9.8	0.2	85%
-High / Haut	50.1	28.5	19.1	0.0	0.0	10.5	0.3	
-								
-Low / Bas	43.3	29.6	16.6	0.0	0.0	3.6	0.1	
-Burlington	45.6	32.9	17.3	0.0	0.0	4.0	0.2	77%
-High / Haut	50.1	35.2	18.7	0.0	0.0	4.3	0.3	
-								
-Low / Bas	42.7	26.0	20.7	0.0	0.0	4.0	0.1	
-Cambridge	44.9	28.9	21.6	0.0	0.0	4.4	0.2	82%
-High / Haut	49.4	30.9	23.3	0.0	0.0	4.7	0.3	
-								
-Low / Bas	50.0	27.0	11.8	0.0	0.0	4.3	0.1	
-Carleton	52.7	30.0	12.3	0.0	0.0	4.8	0.2	89%
-High / Haut	57.9	32.2	13.3	0.0	0.0	5.1	0.3	
-								
-Low / Bas	44.0	21.5	24.7	0.0	0.0	3.5	0.1	
-Chatham-Kent – Leamington	46.3	23.9	25.7	0.0	0.0	3.9	0.2	87%
-High / Haut	50.9	25.6	27.8	0.0	0.0	4.2	0.3	
-								
-Low / Bas	9.8	33.1	47.2	0.0	0.0	3.3	0.1	
-Davenport	10.3	36.7	49.2	0.0	0.0	3.6	0.2	77%
-High / Haut	11.3	39.3	53.1	0.0	0.0	3.9	0.3	
-								
-Low / Bas	24.0	47.0	18.4	0.0	0.0	2.8	0.1	
-Don Valley East	25.3	52.2	19.2	0.0	0.0	3.1	0.2	92%
-High / Haut	27.8	55.9	20.7	0.0	0.0	3.3	0.3	
-								
-Low / Bas	30.0	44.3	16.9	0.0	0.0	1.2	0.1	
-Don Valley North	31.6	49.2	17.6	0.0	0.0	1.4	0.2	84%
-High / Haut	34.7	52.7	19.0	0.0	0.0	1.5	0.3	
-								
-Low / Bas	31.9	48.2	8.5	0.0	0.0	3.4	0.1	
-Don Valley West	33.6	53.5	8.9	0.0	0.0	3.7	0.2	86%
-High / Haut	37.0	57.3	9.6	0.0	0.0	4.0	0.3	
-								
-Low / Bas	48.5	17.2	11.9	0.0	0.0	15.6	0.1	
-Dufferin – Caledon	51.0	19.1	12.4	0.0	0.0	17.3	0.2	95%
-High / Haut	56.1	20.4	13.4	0.0	0.0	18.5	0.3	
-								
-Low / Bas	46.7	19.9	23.0	0.0	0.0	4.1	0.1	
-Durham	49.2	22.1	24.0	0.0	0.0	4.5	0.2	91%
-High / Haut	54.1	23.6	25.9	0.0	0.0	4.8	0.3	
-ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 22, 2015
-Low / Bas	34.8	40.0	15.1	0.0	0.0	2.7	0.1	
-Eglinton – Lawrence	36.6	44.4	15.8	0.0	0.0	3.0	0.2	67%
-High / Haut	40.3	47.5	17.0	0.0	0.0	3.2	0.3	
-								
-Low / Bas	46.1	19.7	24.4	0.0	0.0	3.6	0.1	
-Elgin – Middlesex – London	48.5	21.9	25.4	0.0	0.0	4.0	0.2	90%
-High / Haut	53.4	23.4	27.4	0.0	0.0	4.2	0.3	
-								
-Low / Bas	40.3	19.1	32.0	0.0	0.0	2.6	0.1	
-Essex	42.5	21.2	33.3	0.0	0.0	2.9	0.2	71%
-High / Haut	46.7	22.7	36.0	0.0	0.0	3.1	0.3	
-								
-Low / Bas	30.6	47.3	11.7	0.0	0.0	2.5	0.1	
-Etobicoke Centre	32.2	52.6	12.2	0.0	0.0	2.8	0.2	87%
-High / Haut	35.4	56.3	13.2	0.0	0.0	3.0	0.3	
-								
-Low / Bas	34.4	36.4	18.8	0.0	0.0	3.3	0.1	
-Etobicoke – Lakeshore	36.2	40.4	19.5	0.0	0.0	3.7	0.2	61%
-High / Haut	39.8	43.2	21.1	0.0	0.0	4.0	0.3	
-								
-Low / Bas	21.6	48.1	18.9	0.0	0.0	3.6	0.1	
-Etobicoke North	22.7	53.4	19.7	0.0	0.0	4.0	0.2	94%
-High / Haut	25.0	57.2	21.2	0.0	0.0	4.2	0.3	
-								
-Low / Bas	45.9	22.4	20.7	0.0	0.0	4.5	0.1	
-Flamborough – Glanbrook	48.4	24.8	21.6	0.0	0.0	5.0	0.2	90%
-High / Haut	53.2	26.6	23.3	0.0	0.0	5.3	0.3	
-								
-Low / Bas	37.5	37.5	14.1	0.0	0.0	3.6	0.1	
-Glengarry – Prescott – Russell	39.5	41.7	14.7	0.0	0.0	4.0	0.2	56%
-High / Haut	43.4	44.6	15.8	0.0	0.0	4.2	0.3	
-								
-Low / Bas	23.8	45.6	15.5	0.0	0.0	7.1	0.1	
-Guelph	25.1	50.7	16.1	0.0	0.0	7.9	0.2	91%
-High / Haut	27.6	54.3	17.4	0.0	0.0	8.4	0.3	
-								
-Low / Bas	40.5	31.6	17.5	0.0	0.0	3.4	0.1	
-Haldimand – Norfolk	42.7	35.2	18.2	0.0	0.0	3.8	0.2	67%
-High / Haut	46.9	37.6	19.7	0.0	0.0	4.0	0.3	
-								
-Low / Bas	46.9	18.7	22.3	0.0	0.0	5.8	0.1	
-Haliburton – Kawaratha Lakes – Brock	49.3	20.7	23.2	0.0	0.0	6.5	0.2	92%
-High / Haut	54.3	22.2	25.1	0.0	0.0	6.9	0.3	
-								
-Low / Bas	17.2	16.6	56.6	0.0	0.0	3.9	0.1	
-Hamilton Centre	18.1	18.4	59.0	0.0	0.0	4.3	0.2	98%
-High / Haut	20.0	19.7	63.7	0.0	0.0	4.6	0.3	
-								
-Low / Bas	27.9	20.4	42.8	0.0	0.0	2.9	0.1	
-Hamilton East – Stoney Creek	29.3	22.6	44.6	0.0	0.0	3.3	0.2	81%
-High / Haut	32.3	24.2	48.2	0.0	0.0	3.5	0.3	
-								
-Low / Bas	26.0	21.7	43.0	0.0	0.0	3.1	0.1	
-Hamilton Mountain	27.4	24.1	44.8	0.0	0.0	3.5	0.2	84%
-High / Haut	30.2	25.8	48.4	0.0	0.0	3.7	0.3	
-								
-Low / Bas	30.3	33.0	25.7	0.0	0.0	4.0	0.1	
-Hamilton West – Ancaster – Dundas	31.9	36.7	26.8	0.0	0.0	4.4	0.2	61%
-High / Haut	35.1	39.3	28.9	0.0	0.0	4.7	0.3	
-								
-Low / Bas	45.5	22.6	21.8	0.0	0.0	3.6	0.1	
-Hastings – Lennox and Addington	47.9	25.1	22.7	0.0	0.0	4.0	0.2	89%
-High / Haut	52.7	26.9	24.6	0.0	0.0	4.3	0.3	
-								
-Low / Bas	15.0	53.2	22.3	0.0	0.0	1.5	0.1	
-Humber River – Black Creek	15.8	59.1	23.2	0.0	0.0	1.7	0.2	96%
-High / Haut	17.3	63.3	25.1	0.0	0.0	1.8	0.3	
-								
-Low / Bas	45.7	21.9	23.1	0.0	0.0	2.9	0.1	
-Huron – Bruce	48.1	24.4	24.1	0.0	0.0	3.2	0.2	90%
-High / Haut	52.9	26.1	26.0	0.0	0.0	3.4	0.3	
-								
-Low / Bas	38.6	35.3	14.0	0.0	0.0	4.8	0.1	
-Kanata – Carleton	40.6	39.2	14.6	0.0	0.0	5.4	0.2	53%
-High / Haut	44.7	42.0	15.8	0.0	0.0	5.7	0.3	
-								
-Low / Bas	36.5	27.1	27.3	0.0	0.0	2.6	0.1	
-Kenora	38.4	30.1	28.4	0.0	0.0	2.9	0.2	69%
-High / Haut	42.2	32.2	30.7	0.0	0.0	3.1	0.3	
-								
-Low / Bas	24.2	45.6	18.2	0.0	0.0	4.3	0.1	
-Kingston and the Islands	25.5	50.6	18.9	0.0	0.0	4.7	0.2	91%
-High / Haut	28.1	54.2	20.5	0.0	0.0	5.1	0.3	
-								
-Low / Bas	43.1	35.8	11.0	0.0	0.0	2.8	0.1	
-King – Vaughan	45.4	39.8	11.5	0.0	0.0	3.2	0.2	63%
-High / Haut	49.9	42.6	12.4	0.0	0.0	3.4	0.3	
-								
-Low / Bas	30.4	35.7	22.2	0.0	0.0	4.5	0.1	
-Kitchener Centre	32.0	39.7	23.1	0.0	0.0	5.0	0.2	67%
-High / Haut	35.2	42.5	25.0	0.0	0.0	5.4	0.3	
-								
-Low / Bas	43.4	29.9	16.0	0.0	0.0	3.7	0.1	
-Kitchener – Conestoga	45.7	33.3	16.7	0.0	0.0	4.1	0.2	77%
-High / Haut	50.3	35.6	18.0	0.0	0.0	4.4	0.3	
-								
-Low / Bas	39.9	25.4	23.8	0.0	0.0	4.3	0.1	
-Kitchener South – Hespeler	42.0	28.2	24.8	0.0	0.0	4.8	0.2	78%
-High / Haut	46.2	30.2	26.8	0.0	0.0	5.2	0.3	
-								
-Low / Bas	48.8	19.2	22.3	0.0	0.0	3.6	0.1	
-Lambton – Kent – Middlesex	51.3	21.3	23.2	0.0	0.0	4.0	0.2	93%
-High / Haut	56.5	22.8	25.0	0.0	0.0	4.3	0.3	
-								
-Low / Bas	46.3	21.0	21.2	0.0	0.0	5.1	0.1	
-Lanark – Frontenac – Kingston	48.8	23.4	22.0	0.0	0.0	5.6	0.2	91%
-High / Haut	53.7	25.0	23.8	0.0	0.0	6.0	0.3	
-								
-Low / Bas	50.5	21.1	16.7	0.0	0.0	5.3	0.1	
-Leeds – Grenville – Thousand Islands and Rideau Lakes	53.1	23.4	17.4	0.0	0.0	5.9	0.2	94%
-High / Haut	58.4	25.0	18.7	0.0	0.0	6.4	0.3	
-								
-Low / Bas	26.1	15.9	49.0	0.0	0.0	3.2	0.1	
-London – Fanshawe	27.5	17.7	51.1	0.0	0.0	3.6	0.2	90%
-High / Haut	30.2	18.9	55.2	0.0	0.0	3.8	0.3	
-								
-Low / Bas	30.5	37.8	20.8	0.0	0.0	3.7	0.1	
-London North Centre	32.1	42.0	21.7	0.0	0.0	4.1	0.2	71%
-High / Haut	35.3	44.9	23.4	0.0	0.0	4.4	0.3	
-								
-Low / Bas	35.2	33.3	21.8	0.0	0.0	2.7	0.1	
-London West	37.1	37.0	22.7	0.0	0.0	3.0	0.2	50%
-High / Haut	40.8	39.6	24.5	0.0	0.0	3.2	0.3	
-								
-Low / Bas	39.4	36.1	14.6	0.0	0.0	2.7	0.1	
-Markham – Stouffville	41.5	40.1	15.2	0.0	0.0	3.0	0.2	53%
-High / Haut	45.6	42.9	16.4	0.0	0.0	3.2	0.3	
-ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 22, 2015
-Low / Bas	25.9	44.2	19.8	0.0	0.0	2.6	0.1	
-Markham – Thornhill	27.3	49.1	20.6	0.0	0.0	2.9	0.2	88%
-High / Haut	30.0	52.5	22.2	0.0	0.0	3.1	0.3	
-								
-Low / Bas	34.3	40.5	14.6	0.0	0.0	3.1	0.1	
-Markham – Unionville	36.1	45.0	15.3	0.0	0.0	3.5	0.2	69%
-High / Haut	39.7	48.1	16.5	0.0	0.0	3.7	0.3	
-								
-Low / Bas	43.8	30.8	14.4	0.0	0.0	4.0	0.1	
-Milton	46.1	34.2	15.0	0.0	0.0	4.4	0.2	75%
-High / Haut	50.7	36.6	16.2	0.0	0.0	4.8	0.3	
-								
-Low / Bas	29.5	44.7	15.9	0.0	0.0	2.3	0.1	
-Mississauga Centre	31.0	49.7	16.6	0.0	0.0	2.5	0.2	85%
-High / Haut	34.1	53.2	17.9	0.0	0.0	2.7	0.3	
-								
-Low / Bas	32.6	43.2	14.5	0.0	0.0	2.1	0.1	
-Mississauga East – Cooksville	34.3	48.0	15.1	0.0	0.0	2.4	0.2	78%
-High / Haut	37.7	51.4	16.4	0.0	0.0	2.5	0.3	
-								
-Low / Bas	35.2	41.4	13.3	0.0	0.0	2.6	0.1	
-Mississauga – Erin Mills	37.0	46.0	13.9	0.0	0.0	2.9	0.2	71%
-High / Haut	40.7	49.2	15.0	0.0	0.0	3.1	0.3	
-								
-Low / Bas	35.0	43.9	10.5	0.0	0.0	3.0	0.1	
-Mississauga – Lakeshore	36.8	48.8	10.9	0.0	0.0	3.3	0.2	75%
-High / Haut	40.5	52.2	11.8	0.0	0.0	3.5	0.3	
-								
-Low / Bas	25.0	45.5	19.9	0.0	0.0	2.0	0.1	
-Mississauga – Malton	26.3	50.6	20.7	0.0	0.0	2.2	0.2	90%
-High / Haut	28.9	54.1	22.4	0.0	0.0	2.4	0.3	
-								
-Low / Bas	34.5	41.8	12.5	0.0	0.0	3.6	0.1	
-Mississauga – Streetsville	36.4	46.5	13.0	0.0	0.0	4.0	0.2	73%
-High / Haut	40.0	49.7	14.1	0.0	0.0	4.2	0.3	
-								
-Low / Bas	36.4	35.9	16.2	0.0	0.0	4.3	0.1	
-Nepean	38.3	39.8	16.9	0.0	0.0	4.7	0.2	53%
-High / Haut	42.2	42.6	18.2	0.0	0.0	5.1	0.3	
-								
-Low / Bas	43.8	30.6	14.0	0.0	0.0	4.6	0.1	
-Newmarket – Aurora	46.1	34.0	14.6	0.0	0.0	5.1	0.2	77%
-High / Haut	50.7	36.4	15.8	0.0	0.0	5.5	0.3	
-								
-Low / Bas	30.0	19.0	42.4	0.0	0.0	2.7	0.1	
-Niagara Centre	31.6	21.1	44.1	0.0	0.0	3.0	0.2	77%
-High / Haut	34.7	22.6	47.7	0.0	0.0	3.2	0.3	
-								
-Low / Bas	42.1	23.9	23.3	0.0	0.0	4.1	0.1	
-Niagara Falls	44.4	26.6	24.3	0.0	0.0	4.6	0.2	84%
-High / Haut	48.8	28.4	26.2	0.0	0.0	4.9	0.3	
-								
-Low / Bas	51.0	19.6	18.1	0.0	0.0	5.0	0.1	
-Niagara West	53.7	21.7	18.8	0.0	0.0	5.5	0.2	95%
-High / Haut	59.1	23.3	20.3	0.0	0.0	5.9	0.3	
-								
-Low / Bas	20.8	18.1	52.4	0.0	0.0	2.9	0.1	
-Nickel Belt	21.9	20.1	54.6	0.0	0.0	3.2	0.2	95%
-High / Haut	24.1	21.5	58.9	0.0	0.0	3.4	0.3	
-								
-Low / Bas	26.8	42.8	17.0	0.0	0.0	5.7	0.1	
-Nipissing – Timiskaming	28.2	47.6	17.7	0.0	0.0	6.3	0.2	86%
-High / Haut	31.0	50.9	19.2	0.0	0.0	6.8	0.3	
-								
-Low / Bas	39.5	28.9	19.4	0.0	0.0	5.2	0.1	
-Northumberland – Peterborough South	41.6	32.2	20.2	0.0	0.0	5.8	0.2	71%
-High / Haut	45.8	34.4	21.9	0.0	0.0	6.2	0.3	
-								
-Low / Bas	39.6	37.6	11.7	0.0	0.0	3.7	0.1	
-Oakville	41.7	41.8	12.2	0.0	0.0	4.1	0.2	50%
-High / Haut	45.9	44.7	13.2	0.0	0.0	4.4	0.3	
-								
-Low / Bas	39.1	36.1	14.2	0.0	0.0	3.3	0.1	
-Oakville North – Burlington	41.1	40.1	14.8	0.0	0.0	3.7	0.2	53%
-High / Haut	45.3	42.9	16.0	0.0	0.0	4.0	0.3	
-								
-Low / Bas	31.1	47.9	10.6	0.0	0.0	2.6	0.1	
-Orléans	32.7	53.3	11.0	0.0	0.0	2.9	0.2	87%
-High / Haut	36.0	57.0	11.9	0.0	0.0	3.1	0.3	
-								
-Low / Bas	44.4	10.7	35.4	0.0	0.0	3.9	0.1	
-Oshawa	46.7	11.9	36.8	0.0	0.0	4.4	0.2	71%
-High / Haut	51.4	12.7	39.8	0.0	0.0	4.7	0.3	
-								
-Low / Bas	15.6	25.0	48.1	0.0	0.0	5.0	0.1	
-Ottawa Centre	16.4	27.7	50.1	0.0	0.0	5.6	0.2	89%
-High / Haut	18.0	29.7	54.1	0.0	0.0	6.0	0.3	
-								
-Low / Bas	23.1	51.0	15.0	0.0	0.0	2.9	0.1	
-Ottawa South	24.3	56.7	15.6	0.0	0.0	3.2	0.2	95%
-High / Haut	26.7	60.7	16.8	0.0	0.0	3.4	0.3	
-								
-Low / Bas	19.4	44.3	23.7	0.0	0.0	4.9	0.1	
-Ottawa – Vanier	20.4	49.2	24.7	0.0	0.0	5.5	0.2	90%
-High / Haut	22.5	52.7	26.6	0.0	0.0	5.9	0.3	
-								
-Low / Bas	30.8	40.2	17.4	0.0	0.0	4.1	0.1	
-Ottawa West – Nepean	32.4	44.7	18.1	0.0	0.0	4.6	0.2	77%
-High / Haut	35.7	47.8	19.6	0.0	0.0	4.9	0.3	
-								
-Low / Bas	51.5	13.4	24.3	0.0	0.0	4.8	0.1	
-Oxford	54.2	14.9	25.3	0.0	0.0	5.4	0.2	93%
-High / Haut	59.6	15.9	27.4	0.0	0.0	5.7	0.3	
-								
-Low / Bas	10.6	38.4	40.9	0.0	0.0	3.1	0.1	
-Parkdale – High Park	11.1	42.7	42.6	0.0	0.0	3.5	0.2	50%
-High / Haut	12.2	45.6	46.0	0.0	0.0	3.7	0.3	
-								
-Low / Bas	47.0	15.5	22.4	0.0	0.0	8.8	0.1	
-Parry Sound – Muskoka	49.5	17.2	23.3	0.0	0.0	9.8	0.2	92%
-High / Haut	54.4	18.4	25.2	0.0	0.0	10.5	0.3	
-								
-Low / Bas	41.7	25.5	20.8	0.0	0.0	5.3	0.1	
-Perth – Wellington	43.9	28.4	21.6	0.0	0.0	5.9	0.2	81%
-High / Haut	48.3	30.4	23.4	0.0	0.0	6.3	0.3	
-								
-Low / Bas	36.6	29.1	23.5	0.0	0.0	4.1	0.1	
-Peterborough – Kawartha	38.5	32.3	24.5	0.0	0.0	4.5	0.2	65%
-High / Haut	42.3	34.6	26.4	0.0	0.0	4.8	0.3	
-								
-Low / Bas	35.0	40.0	13.1	0.0	0.0	4.4	0.1	
-Pickering – Uxbridge	36.8	44.5	13.6	0.0	0.0	4.9	0.2	67%
-High / Haut	40.5	47.6	14.7	0.0	0.0	5.2	0.3	
-								
-Low / Bas	44.7	17.0	12.3	0.0	0.0	1.8	9.6	
-Renfrew – Nipissing – Pembroke	47.1	18.9	12.8	0.0	0.0	2.0	19.2	93%
-High / Haut	51.8	20.2	13.9	0.0	0.0	2.2	28.8	
-ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 22, 2015
-Low / Bas	29.3	44.5	14.6	0.0	0.0	3.9	0.1	
-Richmond Hill	30.9	49.4	15.2	0.0	0.0	4.3	0.2	85%
-High / Haut	34.0	52.9	16.4	0.0	0.0	4.6	0.3	
-								
-Low / Bas	41.2	26.8	21.3	0.0	0.0	4.0	0.1	
-St. Catharines	43.4	29.8	22.2	0.0	0.0	4.4	0.2	78%
-High / Haut	47.7	31.9	24.0	0.0	0.0	4.7	0.3	
-								
-Low / Bas	41.0	20.2	29.7	0.0	0.0	2.9	0.1	
-Sarnia – Lambton	43.1	22.5	30.9	0.0	0.0	3.2	0.2	77%
-High / Haut	47.5	24.0	33.4	0.0	0.0	3.5	0.3	
-								
-Low / Bas	31.2	28.3	30.7	0.0	0.0	3.1	0.1	
-Sault Ste. Marie	32.9	31.5	32.0	0.0	0.0	3.5	0.2	50%
-High / Haut	36.2	33.7	34.5	0.0	0.0	3.7	0.3	
-								
-Low / Bas	25.2	51.9	13.1	0.0	0.0	1.8	0.1	
-Scarborough – Agincourt	26.5	57.7	13.7	0.0	0.0	2.0	0.2	95%
-High / Haut	29.1	61.7	14.8	0.0	0.0	2.1	0.3	
-								
-Low / Bas	26.4	38.5	25.5	0.0	0.0	2.5	0.1	
-Scarborough Centre	27.8	42.7	26.5	0.0	0.0	2.8	0.2	80%
-High / Haut	30.5	45.7	28.6	0.0	0.0	3.0	0.3	
-								
-Low / Bas	24.8	42.9	22.7	0.0	0.0	2.2	0.1	
-Scarborough – Guildwood	26.2	47.6	23.6	0.0	0.0	2.4	0.2	88%
-High / Haut	28.8	51.0	25.5	0.0	0.0	2.6	0.3	
-								
-Low / Bas	23.8	35.5	32.3	0.0	0.0	1.6	0.1	
-Scarborough North	25.0	39.4	33.6	0.0	0.0	1.8	0.2	63%
-High / Haut	27.5	42.2	36.3	0.0	0.0	1.9	0.3	
-								
-Low / Bas	22.2	42.2	25.8	0.0	0.0	2.3	0.1	
-Scarborough – Rouge Park	23.4	46.9	26.9	0.0	0.0	2.6	0.2	86%
-High / Haut	25.7	50.2	29.1	0.0	0.0	2.8	0.3	
-								
-Low / Bas	21.0	38.5	29.6	0.0	0.0	3.8	0.1	
-Scarborough Southwest	22.1	42.7	30.8	0.0	0.0	4.2	0.2	75%
-High / Haut	24.3	45.7	33.3	0.0	0.0	4.5	0.3	
-								
-Low / Bas	47.7	20.0	18.8	0.0	0.0	7.0	0.1	
-Simcoe – Grey	50.2	22.2	19.6	0.0	0.0	7.8	0.2	93%
-High / Haut	55.2	23.7	21.2	0.0	0.0	8.3	0.4	
-								
-Low / Bas	43.9	25.0	18.2	0.0	0.0	6.1	0.1	
-Simcoe North	46.2	27.8	19.0	0.0	0.0	6.8	0.2	85%
-High / Haut	50.8	29.7	20.5	0.0	0.0	7.3	0.3	
-								
-Low / Bas	12.0	33.8	43.7	0.0	0.0	3.7	0.1	
-Spadina – Fort York	12.7	37.5	45.5	0.0	0.0	4.1	0.2	67%
-High / Haut	13.9	40.2	49.2	0.0	0.0	4.4	0.3	
-								
-Low / Bas	51.6	23.7	15.9	0.0	0.0	2.3	0.1	
-Stormont – Dundas – South Glengarry	54.3	26.3	16.6	0.0	0.0	2.6	0.2	93%
-High / Haut	59.7	28.2	17.9	0.0	0.0	2.8	0.3	
-								
-Low / Bas	22.4	24.5	43.5	0.0	0.0	3.3	0.1	
-Sudbury	23.6	27.2	45.3	0.0	0.0	3.7	0.2	85%
-High / Haut	25.9	29.1	49.0	0.0	0.0	3.9	0.3	
-								
-Low / Bas	51.2	29.1	10.2	0.0	0.0	2.6	0.1	
-Thornhill	53.9	32.3	10.7	0.0	0.0	2.9	0.2	88%
-High / Haut	59.3	34.6	11.5	0.0	0.0	3.1	0.3	
-								
-Low / Bas	19.6	26.9	44.8	0.0	0.0	2.4	0.1	
-Thunder Bay – Rainy River	20.6	29.9	46.6	0.0	0.0	2.7	0.2	82%
-High / Haut	22.7	32.0	50.4	0.0	0.0	2.9	0.3	
-								
-Low / Bas	23.4	22.4	43.7	0.0	0.0	4.3	0.1	
-Thunder Bay – Superior North	24.6	24.9	45.5	0.0	0.0	4.8	0.2	87%
-High / Haut	27.0	26.7	49.1	0.0	0.0	5.1	0.3	
-								
-Low / Bas	23.7	20.5	47.5	0.0	0.0	2.3	0.1	
-Timmins – James Bay	25.0	22.8	49.5	0.0	0.0	2.5	0.2	90%
-High / Haut	27.5	24.4	53.5	0.0	0.0	2.7	0.3	
-								
-Low / Bas	10.4	43.2	34.9	0.0	0.0	4.1	0.1	
-Toronto Centre	11.0	48.0	36.3	0.0	0.0	4.6	0.2	75%
-High / Haut	12.0	51.3	39.2	0.0	0.0	4.9	0.3	
-								
-Low / Bas	8.0	25.9	54.6	0.0	0.0	5.1	0.1	
-Toronto – Danforth	8.4	28.8	56.9	0.0	0.0	5.7	0.2	93%
-High / Haut	9.3	30.8	61.5	0.0	0.0	6.1	0.3	
-								
-Low / Bas	22.6	46.5	18.7	0.0	0.0	4.4	0.1	
-Toronto – St. Paul's	23.8	51.7	19.5	0.0	0.0	4.9	0.2	93%
-High / Haut	26.2	55.3	21.0	0.0	0.0	5.2	0.3	
-								
-Low / Bas	16.2	37.0	34.1	0.0	0.0	5.4	0.1	
-University – Rosedale	17.1	41.1	35.6	0.0	0.0	6.0	0.2	63%
-High / Haut	18.8	44.0	38.4	0.0	0.0	6.4	0.3	
-								
-Low / Bas	43.8	37.9	9.1	0.0	0.0	2.0	0.1	
-Vaughan – Woodbridge	46.1	42.1	9.5	0.0	0.0	2.2	0.2	58%
-High / Haut	50.7	45.0	10.2	0.0	0.0	2.4	0.3	
-								
-Low / Bas	30.3	40.9	18.0	0.0	0.0	3.3	0.1	
-Waterloo	31.9	45.4	18.8	0.0	0.0	3.7	0.2	78%
-High / Haut	35.1	48.6	20.3	0.0	0.0	3.9	0.3	
-								
-Low / Bas	53.0	21.6	11.9	0.0	0.0	6.9	0.1	
-Wellington – Halton Hills	55.8	24.0	12.4	0.0	0.0	7.6	0.2	95%
-High / Haut	61.4	25.7	13.3	0.0	0.0	8.2	0.3	
-								
-Low / Bas	48.9	24.6	16.1	0.0	0.0	3.8	0.1	
-Whitby	51.5	27.3	16.8	0.0	0.0	4.2	0.2	90%
-High / Haut	56.7	29.2	18.1	0.0	0.0	4.5	0.3	
-								
-Low / Bas	30.8	42.3	16.5	0.0	0.0	2.9	0.1	
-Willowdale	32.4	47.0	17.2	0.0	0.0	3.2	0.2	80%
-High / Haut	35.7	50.3	18.6	0.0	0.0	3.4	0.3	
-								
-Low / Bas	27.5	18.2	45.0	0.0	0.0	3.4	0.1	
-Windsor – Tecumseh	28.9	20.2	46.9	0.0	0.0	3.8	0.2	84%
-High / Haut	31.8	21.6	50.6	0.0	0.0	4.1	0.3	
-								
-Low / Bas	24.1	14.3	53.0	0.0	0.0	3.0	0.1	
-Windsor West	25.4	15.9	55.2	0.0	0.0	3.3	0.2	94%
-High / Haut	27.9	17.0	59.6	0.0	0.0	3.5	0.3	
-								
-Low / Bas	36.8	40.2	13.3	0.0	0.0	2.2	0.1	
-York Centre	38.8	44.7	13.8	0.0	0.0	2.5	0.2	63%
-High / Haut	42.7	47.9	14.9	0.0	0.0	2.7	0.3	
-								
-Low / Bas	54.8	15.5	17.5	0.0	0.0	6.0	0.1	
-York – Simcoe	57.6	17.2	18.3	0.0	0.0	6.6	0.2	97%
-High / Haut	63.4	18.4	19.7	0.0	0.0	7.1	0.3	
-ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 22, 2015
-Low / Bas	16.6	38.6	35.0	0.0	0.0	2.7	0.1	
-York South – Weston	17.5	42.9	36.5	0.0	0.0	3.0	0.2	65%
-High / Haut	19.2	45.9	39.4	0.0	0.0	3.2	0.3	
+Low / Bas	36.8	38.4	13.9	0.0	0.0	3.5	0.1	
+Ajax	38.8	42.7	14.4	0.0	0.0	3.9	0.2	58%
+High / Haut	42.6	45.7	15.6	0.0	0.0	4.2	0.3	
+								
+Low / Bas	25.8	18.3	46.2	0.0	0.0	3.9	0.1	
+Algoma – Manitoulin – Kapuskasing	27.1	20.3	48.1	0.0	0.0	4.3	0.2	87%
+High / Haut	29.8	21.7	51.9	0.0	0.0	4.6	0.3	
+								
+Low / Bas	42.0	33.7	13.0	0.0	0.0	4.2	0.1	
+Aurora – Oak Ridges – Richmond Hill	44.2	37.4	13.6	0.0	0.0	4.6	0.2	65%
+High / Haut	48.6	40.0	14.6	0.0	0.0	5.0	0.3	
+								
+Low / Bas	51.4	16.8	18.4	0.0	0.0	7.0	0.1	
+Barrie – Innisfil	54.1	18.6	19.2	0.0	0.0	7.8	0.2	96%
+High / Haut	59.6	20.0	20.7	0.0	0.0	8.4	0.3	
+								
+Low / Bas	43.4	23.1	18.5	0.0	0.0	8.3	0.1	
+Barrie – Springwater – Oro-Medonte	45.6	25.7	19.3	0.0	0.0	9.2	0.2	86%
+High / Haut	50.2	27.5	20.8	0.0	0.0	9.8	0.3	
+								
+Low / Bas	39.9	27.7	20.6	0.0	0.0	5.0	0.1	
+Bay of Quinte	42.0	30.8	21.5	0.0	0.0	5.5	0.2	75%
+High / Haut	46.2	32.9	23.2	0.0	0.0	5.9	0.3	
+								
+Low / Bas	16.5	35.8	35.3	0.0	0.0	5.3	0.1	
+Beaches – East York	17.4	39.8	36.8	0.0	0.0	5.9	0.2	58%
+High / Haut	19.1	42.6	39.7	0.0	0.0	6.3	0.3	
+								
+Low / Bas	38.0	30.8	19.0	0.0	0.0	5.3	0.1	
+Brampton Centre	40.0	34.2	19.8	0.0	0.0	5.9	0.2	63%
+High / Haut	44.0	36.6	21.4	0.0	0.0	6.3	0.3	
+								
+Low / Bas	21.3	38.1	31.5	0.0	0.0	2.1	0.1	
+Brampton East	22.4	42.3	32.8	0.0	0.0	2.3	0.2	71%
+High / Haut	24.6	45.3	35.4	0.0	0.0	2.5	0.3	
+								
+Low / Bas	39.5	33.8	15.2	0.0	0.0	4.4	0.1	
+Brampton North	41.6	37.5	15.8	0.0	0.0	4.9	0.2	61%
+High / Haut	45.8	40.1	17.1	0.0	0.0	5.2	0.3	
+								
+Low / Bas	35.7	41.2	12.9	0.0	0.0	2.7	0.1	
+Brampton South	37.6	45.8	13.4	0.0	0.0	2.9	0.2	69%
+High / Haut	41.3	49.0	14.5	0.0	0.0	3.2	0.3	
+								
+Low / Bas	29.9	44.3	16.2	0.0	0.0	1.9	0.1	
+Brampton West	31.5	49.2	16.9	0.0	0.0	2.2	0.2	84%
+High / Haut	34.7	52.6	18.3	0.0	0.0	2.3	0.3	
+								
+Low / Bas	41.1	23.8	24.6	0.0	0.0	4.0	0.1	
+Brantford – Brant	43.3	26.4	25.6	0.0	0.0	4.4	0.2	82%
+High / Haut	47.6	28.3	27.7	0.0	0.0	4.7	0.3	
+								
+Low / Bas	44.2	22.8	15.8	0.0	0.0	10.3	0.1	
+Bruce – Grey – Owen Sound	46.6	25.3	16.5	0.0	0.0	11.4	0.2	88%
+High / Haut	51.2	27.1	17.8	0.0	0.0	12.2	0.3	
+								
+Low / Bas	44.8	28.5	15.7	0.0	0.0	4.2	0.1	
+Burlington	47.2	31.6	16.3	0.0	0.0	4.7	0.2	81%
+High / Haut	51.9	33.8	17.6	0.0	0.0	5.0	0.3	
+								
+Low / Bas	44.2	25.0	19.5	0.0	0.0	4.7	0.1	
+Cambridge	46.5	27.7	20.4	0.0	0.0	5.2	0.2	85%
+High / Haut	51.1	29.7	22.0	0.0	0.0	5.6	0.3	
+								
+Low / Bas	51.4	25.8	11.1	0.0	0.0	5.0	0.1	
+Carleton	54.1	28.6	11.5	0.0	0.0	5.6	0.2	91%
+High / Haut	59.5	30.6	12.5	0.0	0.0	5.9	0.3	
+								
+Low / Bas	45.5	20.7	23.3	0.0	0.0	4.1	0.1	
+Chatham-Kent – Leamington	47.9	23.0	24.3	0.0	0.0	4.6	0.2	90%
+High / Haut	52.7	24.6	26.2	0.0	0.0	4.9	0.3	
+								
+Low / Bas	10.4	32.8	46.1	0.0	0.0	4.0	0.1	
+Davenport	11.0	36.4	48.0	0.0	0.0	4.4	0.2	75%
+High / Haut	12.1	39.0	51.8	0.0	0.0	4.7	0.3	
+								
+Low / Bas	25.3	45.9	17.7	0.0	0.0	3.3	0.1	
+Don Valley East	26.6	51.0	18.4	0.0	0.0	3.7	0.2	90%
+High / Haut	29.3	54.6	19.9	0.0	0.0	3.9	0.3	
+								
+Low / Bas	31.5	43.3	16.2	0.0	0.0	1.5	0.1	
+Don Valley North	33.2	48.1	16.9	0.0	0.0	1.7	0.2	80%
+High / Haut	36.5	51.4	18.2	0.0	0.0	1.8	0.3	
+								
+Low / Bas	33.3	46.7	8.1	0.0	0.0	4.0	0.1	
+Don Valley West	35.1	51.8	8.5	0.0	0.0	4.4	0.2	82%
+High / Haut	38.6	55.5	9.1	0.0	0.0	4.8	0.3	
+								
+Low / Bas	48.5	16.0	10.9	0.0	0.0	17.7	0.1	
+Dufferin – Caledon	51.1	17.7	11.3	0.0	0.0	19.7	0.2	95%
+High / Haut	56.2	19.0	12.2	0.0	0.0	21.1	0.3	
+								
+Low / Bas	48.2	19.0	21.7	0.0	0.0	4.8	0.1	
+Durham	50.8	21.1	22.6	0.0	0.0	5.3	0.2	93%
+High / Haut	55.8	22.6	24.4	0.0	0.0	5.7	0.3	
+ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 23, 2015
+Low / Bas	36.3	38.7	14.4	0.0	0.0	3.2	0.1	
+Eglinton – Lawrence	38.2	43.0	15.0	0.0	0.0	3.6	0.2	61%
+High / Haut	42.0	46.0	16.2	0.0	0.0	3.8	0.3	
+								
+Low / Bas	47.7	18.9	23.0	0.0	0.0	4.2	0.1	
+Elgin – Middlesex – London	50.2	21.0	23.9	0.0	0.0	4.7	0.2	92%
+High / Haut	55.2	22.5	25.9	0.0	0.0	5.0	0.3	
+								
+Low / Bas	42.0	18.4	30.4	0.0	0.0	3.1	0.1	
+Essex	44.2	20.5	31.7	0.0	0.0	3.4	0.2	77%
+High / Haut	48.7	21.9	34.2	0.0	0.0	3.6	0.3	
+								
+Low / Bas	32.0	46.0	11.2	0.0	0.0	3.0	0.1	
+Etobicoke Centre	33.7	51.1	11.6	0.0	0.0	3.4	0.2	84%
+High / Haut	37.1	54.7	12.6	0.0	0.0	3.6	0.3	
+								
+Low / Bas	35.8	35.2	17.8	0.0	0.0	4.0	0.1	
+Etobicoke – Lakeshore	37.7	39.1	18.6	0.0	0.0	4.4	0.2	53%
+High / Haut	41.5	41.8	20.1	0.0	0.0	4.7	0.3	
+								
+Low / Bas	22.8	47.0	18.1	0.0	0.0	4.3	0.1	
+Etobicoke North	23.9	52.2	18.9	0.0	0.0	4.7	0.2	93%
+High / Haut	26.3	55.9	20.4	0.0	0.0	5.1	0.3	
+								
+Low / Bas	47.4	21.4	19.5	0.0	0.0	5.3	0.1	
+Flamborough – Glanbrook	49.9	23.8	20.3	0.0	0.0	5.8	0.2	92%
+High / Haut	54.8	25.4	21.9	0.0	0.0	6.3	0.3	
+								
+Low / Bas	39.0	36.2	13.3	0.0	0.0	4.2	0.1	
+Glengarry – Prescott – Russell	41.0	40.2	13.9	0.0	0.0	4.7	0.2	50%
+High / Haut	45.1	43.0	15.0	0.0	0.0	5.0	0.3	
+								
+Low / Bas	24.8	44.1	14.7	0.0	0.0	8.4	0.1	
+Guelph	26.1	49.0	15.3	0.0	0.0	9.3	0.2	89%
+High / Haut	28.7	52.5	16.6	0.0	0.0	10.0	0.3	
+								
+Low / Bas	42.1	30.5	16.5	0.0	0.0	4.0	0.1	
+Haldimand – Norfolk	44.3	33.9	17.2	0.0	0.0	4.4	0.2	73%
+High / Haut	48.7	36.2	18.6	0.0	0.0	4.7	0.3	
+								
+Low / Bas	48.1	17.8	20.9	0.0	0.0	6.8	0.1	
+Haliburton – Kawaratha Lakes – Brock	50.7	19.8	21.8	0.0	0.0	7.6	0.2	93%
+High / Haut	55.7	21.2	23.5	0.0	0.0	8.1	0.3	
+								
+Low / Bas	18.3	16.3	54.9	0.0	0.0	4.7	0.1	
+Hamilton Centre	19.3	18.2	57.2	0.0	0.0	5.2	0.2	97%
+High / Haut	21.2	19.4	61.7	0.0	0.0	5.6	0.3	
+								
+Low / Bas	29.4	19.9	41.1	0.0	0.0	3.5	0.1	
+Hamilton East – Stoney Creek	30.9	22.1	42.9	0.0	0.0	3.9	0.2	75%
+High / Haut	34.0	23.7	46.3	0.0	0.0	4.2	0.3	
+								
+Low / Bas	27.5	21.2	41.4	0.0	0.0	3.8	0.1	
+Hamilton Mountain	28.9	23.6	43.1	0.0	0.0	4.2	0.2	80%
+High / Haut	31.8	25.2	46.6	0.0	0.0	4.5	0.3	
+								
+Low / Bas	31.7	32.1	24.5	0.0	0.0	4.7	0.1	
+Hamilton West – Ancaster – Dundas	33.4	35.6	25.5	0.0	0.0	5.2	0.2	56%
+High / Haut	36.7	38.1	27.6	0.0	0.0	5.6	0.3	
+								
+Low / Bas	47.0	21.7	20.6	0.0	0.0	4.3	0.1	
+Hastings – Lennox and Addington	49.5	24.1	21.4	0.0	0.0	4.7	0.2	91%
+High / Haut	54.5	25.8	23.2	0.0	0.0	5.1	0.3	
+								
+Low / Bas	15.9	52.6	21.7	0.0	0.0	1.8	0.1	
+Humber River – Black Creek	16.8	58.4	22.6	0.0	0.0	2.0	0.2	96%
+High / Haut	18.5	62.5	24.4	0.0	0.0	2.2	0.3	
+								
+Low / Bas	47.3	21.1	21.8	0.0	0.0	3.4	0.1	
+Huron – Bruce	49.8	23.4	22.7	0.0	0.0	3.8	0.2	92%
+High / Haut	54.8	25.1	24.6	0.0	0.0	4.1	0.3	
+								
+Low / Bas	39.9	33.9	13.2	0.0	0.0	5.7	0.1	
+Kanata – Carleton	42.0	37.7	13.8	0.0	0.0	6.3	0.2	61%
+High / Haut	46.2	40.3	14.9	0.0	0.0	6.8	0.3	
+								
+Low / Bas	38.1	26.3	26.0	0.0	0.0	3.1	0.1	
+Kenora	40.1	29.2	27.1	0.0	0.0	3.4	0.2	73%
+High / Haut	44.1	31.2	29.3	0.0	0.0	3.7	0.3	
+								
+Low / Bas	25.4	44.4	17.4	0.0	0.0	5.1	0.1	
+Kingston and the Islands	26.8	49.3	18.1	0.0	0.0	5.6	0.2	89%
+High / Haut	29.4	52.7	19.6	0.0	0.0	6.0	0.3	
+								
+Low / Bas	44.7	34.4	10.4	0.0	0.0	3.3	0.1	
+King – Vaughan	47.0	38.2	10.8	0.0	0.0	3.7	0.2	69%
+High / Haut	51.7	40.9	11.7	0.0	0.0	4.0	0.3	
+								
+Low / Bas	31.7	34.6	21.1	0.0	0.0	5.4	0.1	
+Kitchener Centre	33.4	38.5	22.0	0.0	0.0	6.0	0.2	63%
+High / Haut	36.7	41.1	23.8	0.0	0.0	6.4	0.3	
+								
+Low / Bas	44.9	28.7	15.1	0.0	0.0	4.4	0.1	
+Kitchener – Conestoga	47.3	31.9	15.8	0.0	0.0	4.8	0.2	81%
+High / Haut	52.0	34.2	17.0	0.0	0.0	5.2	0.3	
+								
+Low / Bas	41.3	24.4	22.5	0.0	0.0	5.1	0.1	
+Kitchener South – Hespeler	43.5	27.1	23.5	0.0	0.0	5.7	0.2	82%
+High / Haut	47.9	29.0	25.3	0.0	0.0	6.1	0.3	
+								
+Low / Bas	50.3	18.3	20.9	0.0	0.0	4.2	0.1	
+Lambton – Kent – Middlesex	52.9	20.4	21.8	0.0	0.0	4.7	0.2	95%
+High / Haut	58.2	21.8	23.6	0.0	0.0	5.0	0.3	
+								
+Low / Bas	47.7	20.1	19.9	0.0	0.0	5.9	0.1	
+Lanark – Frontenac – Kingston	50.2	22.3	20.7	0.0	0.0	6.6	0.2	93%
+High / Haut	55.2	23.9	22.3	0.0	0.0	7.1	0.3	
+								
+Low / Bas	51.7	20.0	15.6	0.0	0.0	6.2	0.1	
+Leeds – Grenville – Thousand Islands and Rideau Lakes	54.4	22.3	16.2	0.0	0.0	6.9	0.2	95%
+High / Haut	59.8	23.8	17.5	0.0	0.0	7.4	0.3	
+								
+Low / Bas	27.5	15.6	47.2	0.0	0.0	3.9	0.1	
+London – Fanshawe	29.0	17.3	49.2	0.0	0.0	4.3	0.2	87%
+High / Haut	31.9	18.5	53.1	0.0	0.0	4.6	0.3	
+								
+Low / Bas	31.8	36.6	19.8	0.0	0.0	4.4	0.1	
+London North Centre	33.5	40.7	20.7	0.0	0.0	4.9	0.2	67%
+High / Haut	36.9	43.6	22.3	0.0	0.0	5.3	0.3	
+								
+Low / Bas	36.8	32.3	20.7	0.0	0.0	3.2	0.1	
+London West	38.7	35.9	21.6	0.0	0.0	3.6	0.2	56%
+High / Haut	42.6	38.4	23.3	0.0	0.0	3.8	0.3	
+								
+Low / Bas	41.0	34.9	13.8	0.0	0.0	3.2	0.1	
+Markham – Stouffville	43.1	38.7	14.4	0.0	0.0	3.6	0.2	61%
+High / Haut	47.4	41.4	15.5	0.0	0.0	3.8	0.3	
+ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 23, 2015
+Low / Bas	27.3	43.1	19.0	0.0	0.0	3.1	0.1	
+Markham – Thornhill	28.7	47.9	19.7	0.0	0.0	3.4	0.2	86%
+High / Haut	31.6	51.3	21.3	0.0	0.0	3.7	0.3	
+								
+Low / Bas	35.8	39.2	13.9	0.0	0.0	3.7	0.1	
+Markham – Unionville	37.7	43.5	14.5	0.0	0.0	4.1	0.2	63%
+High / Haut	41.4	46.6	15.7	0.0	0.0	4.4	0.3	
+								
+Low / Bas	45.3	29.5	13.6	0.0	0.0	4.7	0.1	
+Milton	47.6	32.8	14.2	0.0	0.0	5.2	0.2	80%
+High / Haut	52.4	35.1	15.3	0.0	0.0	5.6	0.3	
+								
+Low / Bas	30.9	43.6	15.2	0.0	0.0	2.7	0.1	
+Mississauga Centre	32.6	48.4	15.9	0.0	0.0	3.0	0.2	81%
+High / Haut	35.8	51.8	17.1	0.0	0.0	3.2	0.3	
+								
+Low / Bas	34.1	42.0	13.9	0.0	0.0	2.5	0.1	
+Mississauga East – Cooksville	35.9	46.7	14.5	0.0	0.0	2.8	0.2	73%
+High / Haut	39.5	49.9	15.6	0.0	0.0	3.0	0.3	
+								
+Low / Bas	36.7	40.1	12.7	0.0	0.0	3.1	0.1	
+Mississauga – Erin Mills	38.6	44.6	13.2	0.0	0.0	3.5	0.2	63%
+High / Haut	42.5	47.7	14.3	0.0	0.0	3.7	0.3	
+								
+Low / Bas	36.4	42.5	10.0	0.0	0.0	3.5	0.1	
+Mississauga – Lakeshore	38.3	47.2	10.4	0.0	0.0	3.9	0.2	69%
+High / Haut	42.2	50.5	11.2	0.0	0.0	4.2	0.3	
+								
+Low / Bas	26.3	44.6	19.1	0.0	0.0	2.4	0.1	
+Mississauga – Malton	27.7	49.5	19.9	0.0	0.0	2.7	0.2	88%
+High / Haut	30.5	53.0	21.5	0.0	0.0	2.8	0.3	
+								
+Low / Bas	35.9	40.4	11.9	0.0	0.0	4.2	0.1	
+Mississauga – Streetsville	37.8	44.9	12.4	0.0	0.0	4.7	0.2	67%
+High / Haut	41.6	48.1	13.3	0.0	0.0	5.0	0.3	
+								
+Low / Bas	37.8	34.6	15.3	0.0	0.0	5.0	0.1	
+Nepean	39.8	38.4	16.0	0.0	0.0	5.6	0.2	53%
+High / Haut	43.8	41.1	17.3	0.0	0.0	6.0	0.3	
+								
+Low / Bas	45.1	29.3	13.2	0.0	0.0	5.4	0.1	
+Newmarket – Aurora	47.5	32.6	13.7	0.0	0.0	6.0	0.2	80%
+High / Haut	52.3	34.8	14.8	0.0	0.0	6.4	0.3	
+								
+Low / Bas	31.5	18.6	40.7	0.0	0.0	3.2	0.1	
+Niagara Centre	33.2	20.7	42.4	0.0	0.0	3.5	0.2	71%
+High / Haut	36.5	22.1	45.8	0.0	0.0	3.8	0.3	
+								
+Low / Bas	43.6	23.0	22.0	0.0	0.0	4.8	0.1	
+Niagara Falls	45.9	25.6	22.9	0.0	0.0	5.4	0.2	87%
+High / Haut	50.5	27.3	24.8	0.0	0.0	5.8	0.3	
+								
+Low / Bas	52.3	18.6	16.9	0.0	0.0	5.8	0.1	
+Niagara West	55.1	20.7	17.6	0.0	0.0	6.4	0.2	96%
+High / Haut	60.6	22.1	19.0	0.0	0.0	6.9	0.3	
+								
+Low / Bas	22.1	17.8	50.7	0.0	0.0	3.5	0.1	
+Nickel Belt	23.3	19.8	52.8	0.0	0.0	3.9	0.2	94%
+High / Haut	25.6	21.2	57.1	0.0	0.0	4.2	0.3	
+								
+Low / Bas	27.9	41.5	16.2	0.0	0.0	6.7	0.1	
+Nipissing – Timiskaming	29.4	46.1	16.9	0.0	0.0	7.5	0.2	82%
+High / Haut	32.3	49.3	18.2	0.0	0.0	8.0	0.3	
+								
+Low / Bas	40.9	27.8	18.3	0.0	0.0	6.1	0.1	
+Northumberland – Peterborough South	43.0	30.9	19.1	0.0	0.0	6.8	0.2	77%
+High / Haut	47.3	33.0	20.6	0.0	0.0	7.3	0.3	
+								
+Low / Bas	41.1	36.2	11.1	0.0	0.0	4.3	0.1	
+Oakville	43.2	40.2	11.5	0.0	0.0	4.8	0.2	58%
+High / Haut	47.6	43.1	12.5	0.0	0.0	5.1	0.3	
+								
+Low / Bas	40.6	34.8	13.5	0.0	0.0	3.9	0.1	
+Oakville North – Burlington	42.7	38.6	14.1	0.0	0.0	4.4	0.2	61%
+High / Haut	47.0	41.3	15.2	0.0	0.0	4.7	0.3	
+								
+Low / Bas	32.5	46.6	10.1	0.0	0.0	3.1	0.1	
+Orléans	34.2	51.7	10.5	0.0	0.0	3.4	0.2	84%
+High / Haut	37.6	55.3	11.3	0.0	0.0	3.6	0.3	
+								
+Low / Bas	46.0	10.3	33.4	0.0	0.0	4.6	0.1	
+Oshawa	48.4	11.4	34.8	0.0	0.0	5.1	0.2	78%
+High / Haut	53.3	12.2	37.6	0.0	0.0	5.5	0.3	
+								
+Low / Bas	16.5	24.5	46.5	0.0	0.0	6.0	0.1	
+Ottawa Centre	17.4	27.3	48.5	0.0	0.0	6.7	0.2	88%
+High / Haut	19.1	29.2	52.3	0.0	0.0	7.2	0.3	
+								
+Low / Bas	24.3	49.9	14.4	0.0	0.0	3.5	0.1	
+Ottawa South	25.6	55.4	15.0	0.0	0.0	3.9	0.2	94%
+High / Haut	28.2	59.3	16.2	0.0	0.0	4.1	0.3	
+								
+Low / Bas	20.4	43.3	22.7	0.0	0.0	5.9	0.1	
+Ottawa – Vanier	21.5	48.1	23.7	0.0	0.0	6.6	0.2	90%
+High / Haut	23.6	51.5	25.6	0.0	0.0	7.0	0.3	
+								
+Low / Bas	32.1	39.0	16.5	0.0	0.0	4.9	0.1	
+Ottawa West – Nepean	33.8	43.3	17.2	0.0	0.0	5.4	0.2	71%
+High / Haut	37.2	46.3	18.6	0.0	0.0	5.8	0.3	
+								
+Low / Bas	52.9	12.7	22.8	0.0	0.0	5.6	0.1	
+Oxford	55.6	14.2	23.7	0.0	0.0	6.3	0.2	95%
+High / Haut	61.2	15.1	25.6	0.0	0.0	6.7	0.3	
+								
+Low / Bas	11.3	38.0	39.8	0.0	0.0	3.8	0.1	
+Parkdale – High Park	11.9	42.3	41.5	0.0	0.0	4.2	0.2	50%
+High / Haut	13.1	45.2	44.8	0.0	0.0	4.5	0.3	
+								
+Low / Bas	47.9	14.7	20.8	0.0	0.0	10.2	0.1	
+Parry Sound – Muskoka	50.5	16.3	21.7	0.0	0.0	11.3	0.2	93%
+High / Haut	55.5	17.4	23.4	0.0	0.0	12.1	0.3	
+								
+Low / Bas	43.1	24.5	19.6	0.0	0.0	6.2	0.1	
+Perth – Wellington	45.3	27.2	20.4	0.0	0.0	6.9	0.2	85%
+High / Haut	49.9	29.1	22.0	0.0	0.0	7.4	0.3	
+								
+Low / Bas	38.0	28.1	22.3	0.0	0.0	4.8	0.1	
+Peterborough – Kawartha	40.0	31.2	23.2	0.0	0.0	5.4	0.2	69%
+High / Haut	44.0	33.4	25.1	0.0	0.0	5.7	0.3	
+								
+Low / Bas	36.3	38.6	12.4	0.0	0.0	5.2	0.1	
+Pickering – Uxbridge	38.2	42.9	12.9	0.0	0.0	5.8	0.2	61%
+High / Haut	42.0	45.9	14.0	0.0	0.0	6.2	0.3	
+								
+Low / Bas	46.1	16.2	11.6	0.0	0.0	2.2	9.5	
+Renfrew – Nipissing – Pembroke	48.5	18.1	12.1	0.0	0.0	2.4	19.0	94%
+High / Haut	53.4	19.3	13.0	0.0	0.0	2.6	28.4	
+ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 23, 2015
+Low / Bas	30.6	43.2	13.9	0.0	0.0	4.6	0.1	
+Richmond Hill	32.3	47.9	14.5	0.0	0.0	5.1	0.2	81%
+High / Haut	35.5	51.3	15.7	0.0	0.0	5.5	0.3	
+								
+Low / Bas	42.7	25.8	20.1	0.0	0.0	4.7	0.1	
+St. Catharines	44.9	28.7	21.0	0.0	0.0	5.2	0.2	82%
+High / Haut	49.4	30.7	22.7	0.0	0.0	5.6	0.3	
+								
+Low / Bas	42.6	19.5	28.2	0.0	0.0	3.4	0.1	
+Sarnia – Lambton	44.9	21.7	29.4	0.0	0.0	3.8	0.2	81%
+High / Haut	49.4	23.2	31.7	0.0	0.0	4.1	0.3	
+								
+Low / Bas	32.7	27.6	29.3	0.0	0.0	3.7	0.1	
+Sault Ste. Marie	34.5	30.6	30.5	0.0	0.0	4.2	0.2	58%
+High / Haut	37.9	32.8	33.0	0.0	0.0	4.4	0.3	
+								
+Low / Bas	26.5	50.7	12.6	0.0	0.0	2.1	0.1	
+Scarborough – Agincourt	27.9	56.4	13.2	0.0	0.0	2.4	0.2	93%
+High / Haut	30.7	60.3	14.2	0.0	0.0	2.5	0.3	
+								
+Low / Bas	27.8	37.6	24.4	0.0	0.0	3.0	0.1	
+Scarborough Centre	29.2	41.8	25.5	0.0	0.0	3.4	0.2	77%
+High / Haut	32.1	44.7	27.5	0.0	0.0	3.6	0.3	
+								
+Low / Bas	26.2	41.9	21.8	0.0	0.0	2.6	0.1	
+Scarborough – Guildwood	27.6	46.6	22.7	0.0	0.0	2.9	0.2	86%
+High / Haut	30.3	49.9	24.5	0.0	0.0	3.1	0.3	
+								
+Low / Bas	25.2	34.9	31.2	0.0	0.0	1.9	0.1	
+Scarborough North	26.5	38.7	32.5	0.0	0.0	2.1	0.2	65%
+High / Haut	29.2	41.4	35.1	0.0	0.0	2.3	0.3	
+								
+Low / Bas	23.5	41.4	24.9	0.0	0.0	2.8	0.1	
+Scarborough – Rouge Park	24.7	46.0	26.0	0.0	0.0	3.1	0.2	87%
+High / Haut	27.2	49.2	28.0	0.0	0.0	3.4	0.3	
+								
+Low / Bas	22.1	37.7	28.5	0.0	0.0	4.5	0.1	
+Scarborough Southwest	23.3	41.8	29.6	0.0	0.0	5.0	0.2	77%
+High / Haut	25.6	44.8	32.0	0.0	0.0	5.4	0.3	
+								
+Low / Bas	48.8	19.0	17.6	0.0	0.0	8.2	0.1	
+Simcoe – Grey	51.3	21.1	18.3	0.0	0.0	9.1	0.2	94%
+High / Haut	56.5	22.5	19.8	0.0	0.0	9.7	0.4	
+								
+Low / Bas	45.1	23.9	17.1	0.0	0.0	7.2	0.1	
+Simcoe North	47.5	26.5	17.8	0.0	0.0	8.0	0.2	87%
+High / Haut	52.2	28.4	19.2	0.0	0.0	8.5	0.3	
+								
+Low / Bas	12.8	33.4	42.5	0.0	0.0	4.4	0.1	
+Spadina – Fort York	13.5	37.1	44.3	0.0	0.0	4.9	0.2	67%
+High / Haut	14.8	39.7	47.8	0.0	0.0	5.3	0.3	
+								
+Low / Bas	53.1	22.7	15.0	0.0	0.0	2.7	0.1	
+Stormont – Dundas – South Glengarry	55.9	25.2	15.6	0.0	0.0	3.0	0.2	94%
+High / Haut	61.5	27.0	16.8	0.0	0.0	3.2	0.3	
+								
+Low / Bas	23.7	24.1	42.0	0.0	0.0	4.0	0.1	
+Sudbury	24.9	26.7	43.7	0.0	0.0	4.4	0.2	82%
+High / Haut	27.4	28.6	47.2	0.0	0.0	4.7	0.3	
+								
+Low / Bas	52.7	27.8	9.6	0.0	0.0	3.1	0.1	
+Thornhill	55.5	30.9	10.0	0.0	0.0	3.4	0.2	90%
+High / Haut	61.1	33.1	10.8	0.0	0.0	3.6	0.3	
+								
+Low / Bas	20.8	26.5	43.4	0.0	0.0	2.9	0.1	
+Thunder Bay – Rainy River	21.9	29.5	45.2	0.0	0.0	3.2	0.2	81%
+High / Haut	24.1	31.6	48.8	0.0	0.0	3.5	0.3	
+								
+Low / Bas	24.6	22.0	42.0	0.0	0.0	5.2	0.1	
+Thunder Bay – Superior North	25.9	24.4	43.7	0.0	0.0	5.7	0.2	84%
+High / Haut	28.5	26.1	47.2	0.0	0.0	6.1	0.3	
+								
+Low / Bas	25.2	20.2	45.9	0.0	0.0	2.7	0.1	
+Timmins – James Bay	26.5	22.4	47.9	0.0	0.0	3.1	0.2	88%
+High / Haut	29.1	24.0	51.7	0.0	0.0	3.3	0.3	
+								
+Low / Bas	11.1	42.6	33.8	0.0	0.0	5.0	0.1	
+Toronto Centre	11.7	47.4	35.2	0.0	0.0	5.5	0.2	77%
+High / Haut	12.8	50.7	38.1	0.0	0.0	5.9	0.3	
+								
+Low / Bas	8.5	25.7	53.2	0.0	0.0	6.2	0.1	
+Toronto – Danforth	9.0	28.5	55.4	0.0	0.0	6.9	0.2	92%
+High / Haut	9.9	30.5	59.8	0.0	0.0	7.4	0.3	
+								
+Low / Bas	23.7	45.4	17.9	0.0	0.0	5.2	0.1	
+Toronto – St. Paul's	25.0	50.4	18.6	0.0	0.0	5.8	0.2	91%
+High / Haut	27.5	53.9	20.1	0.0	0.0	6.2	0.3	
+								
+Low / Bas	17.1	36.3	32.9	0.0	0.0	6.5	0.1	
+University – Rosedale	18.0	40.3	34.2	0.0	0.0	7.2	0.2	65%
+High / Haut	19.8	43.1	37.0	0.0	0.0	7.7	0.3	
+								
+Low / Bas	45.4	36.5	8.6	0.0	0.0	2.3	0.1	
+Vaughan – Woodbridge	47.8	40.5	8.9	0.0	0.0	2.6	0.2	67%
+High / Haut	52.5	43.3	9.7	0.0	0.0	2.8	0.3	
+								
+Low / Bas	31.7	39.7	17.2	0.0	0.0	3.9	0.1	
+Waterloo	33.4	44.1	17.9	0.0	0.0	4.4	0.2	73%
+High / Haut	36.7	47.2	19.4	0.0	0.0	4.7	0.3	
+								
+Low / Bas	53.9	20.4	11.0	0.0	0.0	7.9	0.1	
+Wellington – Halton Hills	56.8	22.7	11.5	0.0	0.0	8.8	0.2	96%
+High / Haut	62.5	24.3	12.4	0.0	0.0	9.4	0.3	
+								
+Low / Bas	50.4	23.5	15.1	0.0	0.0	4.4	0.1	
+Whitby	53.0	26.1	15.7	0.0	0.0	4.9	0.2	92%
+High / Haut	58.3	27.9	17.0	0.0	0.0	5.3	0.3	
+								
+Low / Bas	32.2	41.1	15.7	0.0	0.0	3.4	0.1	
+Willowdale	33.9	45.7	16.4	0.0	0.0	3.8	0.2	75%
+High / Haut	37.3	48.9	17.7	0.0	0.0	4.1	0.3	
+								
+Low / Bas	28.9	17.8	43.2	0.0	0.0	4.1	0.1	
+Windsor – Tecumseh	30.5	19.8	45.0	0.0	0.0	4.5	0.2	80%
+High / Haut	33.5	21.1	48.6	0.0	0.0	4.9	0.3	
+								
+Low / Bas	25.5	14.1	51.2	0.0	0.0	3.6	0.1	
+Windsor West	26.9	15.6	53.3	0.0	0.0	4.0	0.2	92%
+High / Haut	29.5	16.7	57.6	0.0	0.0	4.3	0.3	
+								
+Low / Bas	38.4	39.0	12.6	0.0	0.0	2.7	0.1	
+York Centre	40.4	43.3	13.1	0.0	0.0	3.0	0.2	56%
+High / Haut	44.5	46.3	14.2	0.0	0.0	3.2	0.3	
+								
+Low / Bas	55.8	14.7	16.3	0.0	0.0	6.9	0.1	
+York – Simcoe	58.8	16.3	17.0	0.0	0.0	7.7	0.2	98%
+High / Haut	64.7	17.4	18.4	0.0	0.0	8.2	0.3	
+ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 23, 2015
+Low / Bas	17.6	38.1	34.0	0.0	0.0	3.2	0.1	
+York South – Weston	18.6	42.3	35.4	0.0	0.0	3.6	0.2	65%
+High / Haut	20.4	45.3	38.2	0.0	0.0	3.8	0.3	
 QUEBEC / QUÉBEC								
-Low / Bas	19.6	16.5	42.2	9.8	0.0	4.3	0.7	
-Abitibi – Baie-James – Nunavik – Eeyou	20.6	18.4	44.0	10.9	0.0	4.8	1.4	90%
-High / Haut	22.7	19.7	47.5	11.6	0.0	5.1	2.0	
+Low / Bas	22.3	15.3	40.7	10.6	0.0	3.1	0.9	
+Abitibi – Baie-James – Nunavik – Eeyou	23.5	17.0	42.4	11.8	0.0	3.4	1.8	85%
+High / Haut	25.9	18.2	45.8	12.6	0.0	3.7	2.8	
 								
-Low / Bas	9.4	10.2	52.8	18.4	0.0	1.7	0.7	
-Abitibi – Témiscamingue	9.9	11.3	55.0	20.5	0.0	1.9	1.5	96%
-High / Haut	10.9	12.1	59.4	21.9	0.0	2.1	2.2	
+Low / Bas	10.7	9.4	50.7	19.9	0.0	1.2	1.0	
+Abitibi – Témiscamingue	11.2	10.4	52.8	22.2	0.0	1.4	2.0	94%
+High / Haut	12.4	11.2	57.0	23.7	0.0	1.5	3.0	
 								
-Low / Bas	6.2	46.7	24.9	11.7	0.0	1.3	0.6	
-Ahuntsic – Cartierville	6.5	51.9	26.0	13.0	0.0	1.5	1.1	91%
-High / Haut	7.2	55.5	28.1	13.9	0.0	1.6	1.7	
+Low / Bas	7.2	44.5	24.7	13.0	0.0	1.0	0.8	
+Ahuntsic – Cartierville	7.6	49.5	25.7	14.5	0.0	1.1	1.6	90%
+High / Haut	8.4	53.0	27.8	15.5	0.0	1.2	2.3	
 								
-Low / Bas	9.1	32.8	37.2	11.2	0.0	1.4	0.6	
-Alfred-Pellan	9.5	36.4	38.7	12.4	0.0	1.6	1.3	56%
-High / Haut	10.5	39.0	41.8	13.3	0.0	1.7	1.9	
+Low / Bas	10.5	30.9	36.4	12.3	0.0	1.1	0.9	
+Alfred-Pellan	11.1	34.4	37.9	13.7	0.0	1.2	1.7	58%
+High / Haut	12.2	36.8	41.0	14.7	0.0	1.3	2.6	
 								
-Low / Bas	13.6	23.0	38.9	13.3	0.0	3.1	0.7	
-Argenteuil – La Petite-Nation	14.3	25.6	40.5	14.7	0.0	3.4	1.4	80%
-High / Haut	15.7	27.3	43.8	15.8	0.0	3.7	2.2	
+Low / Bas	15.6	21.4	37.7	14.5	0.0	2.2	1.0	
+Argenteuil – La Petite-Nation	16.4	23.8	39.3	16.1	0.0	2.5	2.0	81%
+High / Haut	18.0	25.5	42.4	17.2	0.0	2.7	2.9	
 								
-Low / Bas	9.2	29.5	18.8	13.9	0.0	2.2	10.0	
-Avignon – La Mitis – Matane – Matapédia*	9.7	32.8	19.5	15.4	0.0	2.5	20.1	77%
-High / Haut	10.7	35.1	21.1	16.5	0.0	2.7	30.1	
+Low / Bas	10.6	27.7	18.3	15.2	0.0	1.6	10.1	
+Avignon – La Mitis – Matane – Matapédia*	11.2	30.8	19.0	16.9	0.0	1.8	20.2	73%
+High / Haut	12.3	32.9	20.6	18.1	0.0	1.9	30.4	
 							*Other is Jean-François Fortin only	
-Low / Bas	45.7	16.7	25.2	3.5	0.0	1.7	0.7	
-Beauce	48.1	18.5	26.3	3.8	0.0	1.9	1.3	88%
-High / Haut	52.9	19.8	28.4	4.1	0.0	2.0	2.0	
-								
-Low / Bas	22.1	9.3	40.0	18.8	0.0	2.1	0.8	
-Beauport – Côte-de-Beaupré – Île d'Orléans – Charlevoix	23.3	10.3	41.7	20.9	0.0	2.3	1.5	85%
-High / Haut	25.6	11.0	45.0	22.4	0.0	2.5	2.3	
-								
-Low / Bas	23.1	10.6	45.6	11.3	0.0	2.2	0.7	
-Beauport – Limoilou	24.3	11.8	47.5	12.6	0.0	2.5	1.4	90%
-High / Haut	26.7	12.6	51.3	13.5	0.0	2.6	2.1	
-								
-Low / Bas	12.5	17.6	34.5	24.6	0.0	2.3	0.8	
-Bécancour – Nicolet – Saurel	13.1	19.6	35.9	27.3	0.0	2.6	1.5	69%
-High / Haut	14.5	21.0	38.8	29.2	0.0	2.8	2.3	
-								
-Low / Bas	42.7	9.5	30.7	8.3	0.0	1.7	0.7	
-Bellechasse – Les Etchemins – Lévis	45.0	10.5	32.0	9.2	0.0	1.9	1.4	78%
-High / Haut	49.5	11.3	34.5	9.9	0.0	2.0	2.1	
-								
-Low / Bas	8.1	16.8	47.6	17.4	0.0	2.1	0.8	
-Beloeil – Chambly	8.5	18.7	49.6	19.3	0.0	2.3	1.6	94%
-High / Haut	9.4	20.0	53.5	20.7	0.0	2.5	2.4	
-								
-Low / Bas	11.5	19.9	40.5	17.3	0.0	2.6	0.7	
-Berthier – Maskinongé	12.1	22.1	42.2	19.2	0.0	2.9	1.4	87%
-High / Haut	13.3	23.6	45.6	20.6	0.0	3.1	2.1	
-								
-Low / Bas	5.7	45.7	29.7	8.4	0.0	1.6	0.6	
-Bourassa	6.0	50.8	30.9	9.3	0.0	1.7	1.2	86%
-High / Haut	6.6	54.4	33.4	10.0	0.0	1.9	1.8	
-								
-Low / Bas	10.1	34.1	33.9	11.2	0.0	2.3	0.7	
-Brome – Missisquoi	10.6	37.8	35.3	12.4	0.0	2.5	1.3	56%
-High / Haut	11.7	40.5	38.1	13.3	0.0	2.7	2.0	
-								
-Low / Bas	9.4	43.8	29.4	7.2	0.0	1.4	0.6	
-Brossard – Saint-Lambert	9.9	48.7	30.7	8.0	0.0	1.6	1.1	85%
-High / Haut	10.9	52.1	33.1	8.6	0.0	1.7	1.7	
-								
-Low / Bas	27.3	10.6	44.1	9.1	0.0	1.8	0.7	
-Charlesbourg – Haute-Saint-Charles	28.7	11.8	45.9	10.1	0.0	2.0	1.4	84%
-High / Haut	31.6	12.6	49.6	10.8	0.0	2.2	2.1	
-								
-Low / Bas	10.8	16.7	47.7	15.0	0.0	2.2	0.7	
-Châteauguay – Lacolle	11.4	18.5	49.7	16.6	0.0	2.4	1.4	95%
-High / Haut	12.5	19.8	53.6	17.8	0.0	2.6	2.1	
-								
-Low / Bas	22.3	12.4	38.3	17.5	0.0	1.8	0.7	
-Chicoutimi – Le Fjord	23.5	13.8	39.9	19.4	0.0	2.0	1.5	82%
-High / Haut	25.8	14.7	43.1	20.8	0.0	2.1	2.2	
-								
-Low / Bas	10.5	19.2	45.4	14.4	0.0	2.7	0.7	
-Compton – Stanstead	11.0	21.4	47.3	16.0	0.0	3.0	1.4	91%
-High / Haut	12.1	22.8	51.0	17.1	0.0	3.2	2.1	
-								
-Low / Bas	10.6	39.7	33.2	5.3	0.0	2.8	0.6	
-Dorval – Lachine – LaSalle	11.1	44.1	34.6	5.9	0.0	3.2	1.2	71%
-High / Haut	12.2	47.2	37.4	6.3	0.0	3.4	1.7	
-								
-Low / Bas	14.2	13.6	50.2	12.2	0.0	2.4	0.7	
-Drummond	15.0	15.2	52.3	13.5	0.0	2.7	1.4	97%
-High / Haut	16.5	16.2	56.5	14.5	0.0	2.8	2.1	
-								
-Low / Bas	16.7	27.0	27.4	17.9	0.0	2.2	0.7	
-Gaspésie – Les Îles-de-la-Madeleine	17.6	30.1	28.6	19.9	0.0	2.5	1.4	53%
-High / Haut	19.4	32.2	30.9	21.3	0.0	2.7	2.1	
-								
-Low / Bas	6.7	20.9	56.3	7.7	0.0	1.2	0.7	
-Gatineau	7.0	23.2	58.6	8.5	0.0	1.3	1.3	96%
-High / Haut	7.7	24.8	63.3	9.1	0.0	1.4	2.0	
-								
-Low / Bas	6.5	19.3	46.9	17.3	0.0	2.0	0.7	
-Hochelaga	6.9	21.4	48.9	19.2	0.0	2.2	1.4	93%
-High / Haut	7.6	22.9	52.8	20.5	0.0	2.3	2.1	
-								
-Low / Bas	9.6	44.7	28.2	7.3	0.0	1.5	0.6	
-Honoré-Mercier	10.1	49.7	29.3	8.1	0.0	1.7	1.1	87%
-High / Haut	11.1	53.2	31.7	8.6	0.0	1.8	1.7	
-								
-Low / Bas	7.8	28.9	49.6	4.2	0.0	2.0	0.6	
-Hull – Aylmer	8.2	32.1	51.7	4.6	0.0	2.2	1.2	86%
-High / Haut	9.0	34.3	55.8	5.0	0.0	2.3	1.8	
-								
-Low / Bas	9.8	11.8	44.5	20.6	0.0	5.2	0.8	
-Joliette	10.3	13.1	46.3	22.9	0.0	5.7	1.6	90%
-High / Haut	11.4	14.0	50.0	24.5	0.0	6.1	2.4	
-								
-Low / Bas	30.2	8.5	37.8	14.5	0.0	1.6	0.8	
-Jonquière	31.7	9.4	39.4	16.1	0.0	1.8	1.5	67%
-High / Haut	34.9	10.1	42.6	17.2	0.0	1.9	2.3	
-								
-Low / Bas	6.9	16.4	46.1	20.5	0.0	2.2	0.7	
-La Pointe-de-l'Île	7.2	18.2	48.0	22.8	0.0	2.4	1.4	91%
-High / Haut	7.9	19.5	51.8	24.4	0.0	2.6	2.1	
-								
-Low / Bas	8.5	21.7	45.7	14.4	0.0	1.7	0.7	
-La Prairie	9.0	24.1	47.6	16.0	0.0	1.9	1.4	90%
-High / Haut	9.9	25.8	51.4	17.1	0.0	2.1	2.1	
-ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 22, 2015
-Low / Bas	40.4	6.9	29.1	14.7	0.0	1.5	0.7	
-Lac-Saint-Jean	42.5	7.7	30.3	16.3	0.0	1.7	1.4	77%
-High / Haut	46.8	8.2	32.7	17.5	0.0	1.8	2.2	
-								
-Low / Bas	20.6	43.5	22.0	1.4	0.0	4.0	0.6	
-Lac-Saint-Louis	21.7	48.4	22.9	1.5	0.0	4.4	1.1	91%
-High / Haut	23.8	51.8	24.7	1.6	0.0	4.7	1.7	
-								
-Low / Bas	8.1	27.8	41.1	12.1	0.0	2.8	0.7	
-LaSalle – Émard – Verdun	8.5	30.9	42.8	13.4	0.0	3.1	1.3	75%
-High / Haut	9.4	33.0	46.2	14.4	0.0	3.3	2.0	
-								
-Low / Bas	8.9	22.0	39.1	18.6	0.0	3.0	0.7	
-Laurentides – Labelle	9.3	24.4	40.8	20.6	0.0	3.4	1.5	82%
-High / Haut	10.3	26.1	44.0	22.1	0.0	3.6	2.2	
-								
-Low / Bas	3.6	17.5	45.6	22.1	0.0	3.0	0.7	
-Laurier – Sainte-Marie	3.8	19.4	47.5	24.6	0.0	3.3	1.4	89%
-High / Haut	4.2	20.8	51.2	26.3	0.0	3.5	2.1	
-								
-Low / Bas	13.1	29.9	41.0	6.4	0.0	1.8	0.6	
-Laval-Les Îles	13.8	33.2	42.7	7.1	0.0	2.0	1.2	71%
-High / Haut	15.2	35.5	46.1	7.6	0.0	2.2	1.9	
-								
-Low / Bas	39.1	8.4	35.2	8.3	0.0	2.0	0.7	
-Lévis – Lotbinière	41.1	9.3	36.6	9.3	0.0	2.2	1.4	61%
-High / Haut	45.3	10.0	39.6	9.9	0.0	2.3	2.1	
-								
-Low / Bas	9.2	21.2	43.4	15.4	0.0	2.7	0.7	
-Longueuil – Charles-LeMoyne	9.7	23.6	45.2	17.1	0.0	3.0	1.4	88%
-High / Haut	10.7	25.3	48.9	18.3	0.0	3.2	2.1	
-								
-Low / Bas	7.9	16.6	49.2	16.1	0.0	2.5	0.7	
-Longueuil – Saint-Hubert	8.3	18.4	51.2	17.9	0.0	2.8	1.4	95%
-High / Haut	9.1	19.7	55.3	19.1	0.0	3.0	2.1	
-								
-Low / Bas	19.1	21.3	36.8	13.1	0.0	1.8	0.7	
-Louis-Hébert	20.1	23.7	38.4	14.5	0.0	2.0	1.4	80%
-High / Haut	22.1	25.3	41.4	15.6	0.0	2.1	2.1	
-								
-Low / Bas	39.0	10.5	33.7	8.0	0.0	1.7	0.7	
-Louis-Saint-Laurent	41.0	11.6	35.1	8.9	0.0	1.9	1.4	63%
-High / Haut	45.1	12.5	37.9	9.5	0.0	2.0	2.1	
-								
-Low / Bas	11.1	9.5	49.5	19.3	0.0	3.0	0.7	
-Manicouagan	11.6	10.6	51.5	21.4	0.0	3.4	1.5	94%
-High / Haut	12.8	11.3	55.6	22.9	0.0	3.6	2.2	
-								
-Low / Bas	9.6	23.2	42.5	13.9	0.0	2.7	0.7	
-Marc-Aurèle-Fortin	10.1	25.8	44.2	15.4	0.0	3.0	1.4	85%
-High / Haut	11.1	27.6	47.8	16.5	0.0	3.2	2.2	
-								
-Low / Bas	44.4	10.6	25.8	10.0	0.0	1.9	0.8	
-Mégantic – L'Érable	46.7	11.8	26.8	11.1	0.0	2.1	1.5	86%
-High / Haut	51.4	12.6	29.0	11.9	0.0	2.2	2.3	
-								
-Low / Bas	8.6	13.1	50.3	17.9	0.0	2.4	0.7	
-Mirabel	9.1	14.5	52.4	19.9	0.0	2.6	1.5	95%
-High / Haut	10.0	15.5	56.6	21.3	0.0	2.8	2.2	
-								
-Low / Bas	8.7	20.5	43.7	16.2	0.0	2.8	0.7	
-Montarville	9.1	22.8	45.6	18.0	0.0	3.1	1.4	89%
-High / Haut	10.0	24.4	49.2	19.3	0.0	3.3	2.1	
-								
-Low / Bas	8.1	9.1	49.9	19.9	0.0	5.0	0.8	
-Montcalm	8.5	10.2	52.0	22.1	0.0	5.5	1.6	94%
-High / Haut	9.4	10.9	56.2	23.7	0.0	5.9	2.4	
-								
-Low / Bas	33.4	9.7	36.5	11.4	0.0	1.8	0.7	
-Montmagny – L'Islet – Kamouraska – Rivière-du-Loup	35.2	10.8	38.0	12.7	0.0	2.0	1.4	56%
-High / Haut	38.7	11.5	41.0	13.6	0.0	2.1	2.2	
-								
-Low / Bas	28.1	48.0	12.4	1.2	0.0	1.6	0.5	
-Mont-Royal	29.6	53.3	12.9	1.4	0.0	1.7	1.1	90%
-High / Haut	32.5	57.1	13.9	1.5	0.0	1.9	1.6	
-								
-Low / Bas	12.5	47.8	25.1	1.8	0.0	4.0	0.6	
-Notre-Dame-de-Grâce – Westmount	13.2	53.1	26.2	2.0	0.0	4.4	1.1	92%
-High / Haut	14.5	56.9	28.3	2.1	0.0	4.7	1.7	
-								
-Low / Bas	5.7	30.4	49.1	5.1	0.0	2.0	0.6	
-Outremont	6.0	33.8	51.1	5.7	0.0	2.2	1.1	84%
-High / Haut	6.6	36.1	55.2	6.1	0.0	2.4	1.7	
-								
-Low / Bas	6.5	45.7	25.2	11.5	0.0	1.9	0.6	
-Papineau	6.9	50.8	26.2	12.8	0.0	2.1	1.2	90%
-High / Haut	7.6	54.3	28.3	13.7	0.0	2.2	1.8	
-								
-Low / Bas	8.4	17.9	41.7	21.0	0.0	2.7	0.8	
-Pierre-Boucher – Les Patriotes – Verchères	8.8	19.9	43.5	23.3	0.0	3.0	1.6	87%
-High / Haut	9.7	21.3	47.0	25.0	0.0	3.2	2.3	
-								
-Low / Bas	19.4	40.0	26.8	2.2	0.0	3.3	0.6	
-Pierrefonds – Dollard	20.4	44.4	27.9	2.5	0.0	3.7	1.1	82%
-High / Haut	22.5	47.5	30.1	2.6	0.0	3.9	1.7	
-								
-Low / Bas	24.9	25.6	34.4	5.4	0.0	1.9	0.7	
-Pontiac	26.2	28.4	35.8	6.0	0.0	2.1	1.4	67%
-High / Haut	28.8	30.4	38.7	6.5	0.0	2.2	2.2	
-								
-Low / Bas	25.3	10.9	42.2	11.5	0.0	2.8	0.7	
-Portneuf – Jacques Cartier	26.6	12.1	44.0	12.8	0.0	3.1	1.4	84%
-High / Haut	29.3	13.0	47.5	13.7	0.0	3.3	2.1	
-								
-Low / Bas	16.3	15.0	42.5	15.9	0.0	2.6	0.7	
-Québec	17.2	16.7	44.3	17.6	0.0	2.9	1.4	92%
-High / Haut	18.9	17.8	47.8	18.9	0.0	3.1	2.1	
-								
-Low / Bas	7.5	14.4	48.9	19.1	0.0	2.2	0.8	
-Repentigny	7.9	16.0	51.0	21.2	0.0	2.4	1.6	94%
-High / Haut	8.7	17.1	55.0	22.7	0.0	2.6	2.3	
-								
-Low / Bas	27.2	12.2	31.4	18.6	0.0	2.6	0.7	
-Richmond – Arthabaska	28.7	13.6	32.7	20.7	0.0	2.9	1.5	61%
-High / Haut	31.5	14.5	35.3	22.1	0.0	3.1	2.2	
-								
-Low / Bas	13.4	16.0	42.9	17.5	0.0	2.3	0.7	
-Rimouski-Neigette – Témiscouata – Les Basques	14.1	17.8	44.7	19.4	0.0	2.6	1.4	91%
-High / Haut	15.5	19.0	48.3	20.7	0.0	2.8	2.2	
-								
-Low / Bas	9.2	17.9	47.5	14.9	0.0	2.7	0.7	
-Rivière-des-Mille-Îles	9.6	19.9	49.5	16.5	0.0	3.0	1.4	94%
-High / Haut	10.6	21.3	53.4	17.7	0.0	3.2	2.1	
-								
-Low / Bas	7.8	10.9	55.6	16.1	0.0	2.1	0.7	
-Rivière-du-Nord	8.2	12.2	57.9	17.9	0.0	2.4	1.4	97%
-High / Haut	9.0	13.0	62.5	19.2	0.0	2.5	2.2	
-ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 22, 2015
-Low / Bas	4.0	15.4	51.8	18.9	0.0	2.0	0.7	
-Rosemont – La Petite-Patrie	4.2	17.1	54.0	21.0	0.0	2.2	1.5	95%
-High / Haut	4.6	18.3	58.3	22.5	0.0	2.4	2.2	
-								
-Low / Bas	15.7	9.8	49.2	15.2	0.0	2.4	0.8	
-Saint-Hyacinthe – Bagot	16.6	10.9	51.3	16.9	0.0	2.7	1.6	96%
-High / Haut	18.2	11.7	55.4	18.1	0.0	2.9	2.4	
-								
-Low / Bas	10.6	15.8	43.9	18.6	0.0	3.1	0.8	
-Saint-Jean	11.1	17.5	45.7	20.6	0.0	3.5	1.5	91%
-High / Haut	12.2	18.7	49.4	22.1	0.0	3.7	2.3	
-								
-Low / Bas	13.3	52.7	20.4	2.8	0.0	1.9	0.5	
-Saint-Laurent	14.0	58.5	21.3	3.1	0.0	2.1	1.1	97%
-High / Haut	15.4	62.6	23.0	3.3	0.0	2.2	1.6	
-								
-Low / Bas	9.8	51.6	23.6	4.3	0.0	1.7	0.6	
-Saint-Léonard – Saint-Michel	10.4	57.4	24.5	4.8	0.0	1.8	1.1	95%
-High / Haut	11.4	61.4	26.5	5.1	0.0	2.0	1.7	
-								
-Low / Bas	16.4	19.0	37.1	16.9	0.0	2.4	0.7	
-Saint-Maurice – Champlain	17.3	21.1	38.7	18.8	0.0	2.7	1.5	84%
-High / Haut	19.0	22.6	41.8	20.1	0.0	2.9	2.2	
-								
-Low / Bas	11.9	13.8	44.6	19.6	0.0	2.2	0.7	
-Salaberry – Suroît	12.6	15.4	46.5	21.7	0.0	2.4	1.5	90%
-High / Haut	13.8	16.4	50.2	23.3	0.0	2.6	2.2	
-								
-Low / Bas	14.2	15.7	46.1	13.9	0.0	2.3	0.8	
-Shefford	14.9	17.5	48.0	15.5	0.0	2.6	1.5	94%
-High / Haut	16.4	18.7	51.9	16.6	0.0	2.8	2.3	
-								
-Low / Bas	8.6	16.6	44.2	20.4	0.0	2.0	0.7	
-Sherbrooke	9.1	18.5	46.1	22.7	0.0	2.2	1.5	90%
-High / Haut	10.0	19.8	49.8	24.2	0.0	2.4	2.2	
-								
-Low / Bas	7.5	11.7	52.2	17.7	0.0	3.2	0.7	
-Terrebonne	7.9	13.0	54.4	19.7	0.0	3.6	1.5	96%
-High / Haut	8.7	13.9	58.7	21.1	0.0	3.8	2.2	
-								
-Low / Bas	8.8	16.8	48.8	15.4	0.0	2.4	0.7	
-Thérèse-De Blainville	9.3	18.7	50.9	17.1	0.0	2.7	1.4	95%
-High / Haut	10.2	20.0	54.9	18.3	0.0	2.9	2.1	
-								
-Low / Bas	11.8	16.3	48.6	13.4	0.0	2.2	0.7	
-Trois-Rivières	12.4	18.2	50.7	14.9	0.0	2.4	1.4	95%
-High / Haut	13.6	19.4	54.7	16.0	0.0	2.6	2.1	
-								
-Low / Bas	15.4	19.6	41.3	12.8	0.0	3.1	0.7	
-Vaudreuil – Soulanges	16.2	21.8	43.0	14.2	0.0	3.5	1.4	88%
-High / Haut	17.8	23.4	46.4	15.2	0.0	3.7	2.0	
-								
-Low / Bas	9.5	40.0	31.1	7.9	0.0	2.9	0.6	
-Ville-Marie – Le Sud-Ouest – L'Île-des-Soeurs	10.0	44.4	32.4	8.8	0.0	3.2	1.3	77%
-High / Haut	11.0	47.5	35.0	9.4	0.0	3.4	1.9	
-								
-Low / Bas	11.1	32.0	34.7	11.6	0.0	2.1	0.7	
-Vimy	11.7	35.5	36.2	12.9	0.0	2.3	1.4	50%
-High / Haut	12.9	38.0	39.0	13.8	0.0	2.5	2.0	
+Low / Bas	47.3	15.6	24.5	3.8	0.0	1.2	0.9	
+Beauce	49.7	17.4	25.5	4.2	0.0	1.4	1.8	90%
+High / Haut	54.7	18.6	27.6	4.5	0.0	1.5	2.7	
+								
+Low / Bas	24.6	8.4	37.5	19.9	0.0	1.5	1.0	
+Beauport – Côte-de-Beaupré – Île d'Orléans – Charlevoix	25.9	9.3	39.1	22.1	0.0	1.6	2.0	78%
+High / Haut	28.5	10.0	42.2	23.7	0.0	1.7	3.0	
+								
+Low / Bas	25.9	9.7	43.2	12.1	0.0	1.6	0.9	
+Beauport – Limoilou	27.2	10.7	44.9	13.4	0.0	1.7	1.9	84%
+High / Haut	30.0	11.5	48.5	14.4	0.0	1.9	2.8	
+								
+Low / Bas	14.1	16.2	32.8	26.3	0.0	1.6	1.0	
+Bécancour – Nicolet – Saurel	14.8	17.9	34.2	29.2	0.0	1.8	2.0	61%
+High / Haut	16.3	19.2	36.9	31.3	0.0	2.0	3.0	
+								
+Low / Bas	43.8	8.8	29.6	9.0	0.0	1.2	1.0	
+Bellechasse – Les Etchemins – Lévis	46.1	9.8	30.8	10.0	0.0	1.4	1.9	81%
+High / Haut	50.7	10.5	33.3	10.7	0.0	1.5	2.9	
+								
+Low / Bas	9.3	15.6	46.0	18.9	0.0	1.5	1.1	
+Beloeil – Chambly	9.8	17.4	47.9	21.0	0.0	1.7	2.2	92%
+High / Haut	10.8	18.6	51.8	22.5	0.0	1.8	3.3	
+								
+Low / Bas	13.1	18.5	39.1	18.8	0.0	1.9	1.0	
+Berthier – Maskinongé	13.8	20.5	40.7	20.9	0.0	2.1	1.9	86%
+High / Haut	15.2	22.0	44.0	22.4	0.0	2.3	2.9	
+								
+Low / Bas	6.8	43.8	29.5	9.4	0.0	1.2	0.8	
+Bourassa	7.1	48.7	30.8	10.5	0.0	1.3	1.7	84%
+High / Haut	7.8	52.1	33.2	11.2	0.0	1.4	2.5	
+								
+Low / Bas	11.7	32.2	33.2	12.3	0.0	1.7	0.9	
+Brome – Missisquoi	12.3	35.7	34.6	13.7	0.0	1.8	1.8	53%
+High / Haut	13.6	38.2	37.3	14.7	0.0	2.0	2.7	
+								
+Low / Bas	11.0	41.7	29.1	8.0	0.0	1.0	0.8	
+Brossard – Saint-Lambert	11.6	46.4	30.3	8.9	0.0	1.2	1.6	82%
+High / Haut	12.8	49.6	32.8	9.6	0.0	1.2	2.4	
+								
+Low / Bas	30.4	9.6	41.5	9.6	0.0	1.3	0.9	
+Charlesbourg – Haute-Saint-Charles	32.0	10.7	43.3	10.7	0.0	1.4	1.9	75%
+High / Haut	35.2	11.5	46.7	11.4	0.0	1.5	2.8	
+								
+Low / Bas	12.4	15.5	46.1	16.3	0.0	1.6	1.0	
+Châteauguay – Lacolle	13.0	17.2	48.0	18.1	0.0	1.7	1.9	94%
+High / Haut	14.3	18.5	51.8	19.4	0.0	1.9	2.9	
+								
+Low / Bas	24.8	11.2	36.0	18.5	0.0	1.3	1.0	
+Chicoutimi – Le Fjord	26.1	12.5	37.5	20.6	0.0	1.4	1.9	75%
+High / Haut	28.8	13.3	40.5	22.0	0.0	1.5	2.9	
+								
+Low / Bas	12.1	18.0	44.0	15.7	0.0	1.9	0.9	
+Compton – Stanstead	12.7	20.0	45.9	17.5	0.0	2.2	1.9	91%
+High / Haut	14.0	21.3	49.5	18.7	0.0	2.3	2.8	
+								
+Low / Bas	12.4	37.9	33.0	5.9	0.0	2.1	0.8	
+Dorval – Lachine – LaSalle	13.0	42.1	34.3	6.6	0.0	2.3	1.6	67%
+High / Haut	14.3	45.1	37.1	7.0	0.0	2.5	2.4	
+								
+Low / Bas	16.2	12.7	48.4	13.2	0.0	1.7	0.9	
+Drummond	17.1	14.1	50.4	14.7	0.0	1.9	1.9	95%
+High / Haut	18.8	15.1	54.4	15.7	0.0	2.0	2.8	
+								
+Low / Bas	18.9	24.9	26.2	19.3	0.0	1.6	0.9	
+Gaspésie – Les Îles-de-la-Madeleine	19.9	27.7	27.3	21.4	0.0	1.8	1.8	50%
+High / Haut	21.9	29.6	29.5	22.9	0.0	1.9	2.8	
+								
+Low / Bas	7.8	19.8	55.4	8.5	0.0	0.9	0.9	
+Gatineau	8.2	22.0	57.7	9.4	0.0	1.0	1.8	96%
+High / Haut	9.0	23.5	62.3	10.1	0.0	1.0	2.7	
+								
+Low / Bas	7.5	18.1	45.6	18.9	0.0	1.4	1.0	
+Hochelaga	7.9	20.1	47.5	21.0	0.0	1.6	1.9	92%
+High / Haut	8.7	21.5	51.3	22.5	0.0	1.7	2.9	
+								
+Low / Bas	11.2	42.6	27.9	8.1	0.0	1.1	0.8	
+Honoré-Mercier	11.8	47.4	29.0	9.0	0.0	1.2	1.6	85%
+High / Haut	13.0	50.7	31.3	9.6	0.0	1.3	2.4	
+								
+Low / Bas	9.1	27.6	49.2	4.7	0.0	1.5	0.8	
+Hull – Aylmer	9.6	30.7	51.3	5.2	0.0	1.6	1.7	87%
+High / Haut	10.5	32.8	55.4	5.5	0.0	1.7	2.5	
+								
+Low / Bas	11.2	11.0	43.0	22.5	0.0	3.7	1.1	
+Joliette	11.8	12.2	44.8	25.0	0.0	4.1	2.1	86%
+High / Haut	13.0	13.0	48.4	26.7	0.0	4.4	3.2	
+								
+Low / Bas	33.2	7.6	35.1	15.1	0.0	1.1	1.0	
+Jonquière	34.9	8.4	36.6	16.8	0.0	1.2	2.0	53%
+High / Haut	38.4	9.0	39.5	18.0	0.0	1.3	3.0	
+								
+Low / Bas	7.9	15.2	44.5	22.3	0.0	1.6	0.9	
+La Pointe-de-l'Île	8.3	16.9	46.4	24.8	0.0	1.7	1.9	88%
+High / Haut	9.1	18.1	50.1	26.6	0.0	1.8	2.8	
+								
+Low / Bas	9.8	20.3	44.4	15.8	0.0	1.3	1.0	
+La Prairie	10.3	22.6	46.2	17.5	0.0	1.4	1.9	90%
+High / Haut	11.4	24.2	49.9	18.7	0.0	1.5	2.9	
+ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 23, 2015
+Low / Bas	41.6	6.3	27.5	15.6	0.0	1.1	1.0	
+Lac-Saint-Jean	43.8	7.0	28.7	17.4	0.0	1.2	1.9	81%
+High / Haut	48.2	7.5	31.0	18.6	0.0	1.3	2.9	
+								
+Low / Bas	23.9	41.2	21.6	1.5	0.0	2.9	0.8	
+Lac-Saint-Louis	25.2	45.8	22.5	1.7	0.0	3.2	1.6	87%
+High / Haut	27.7	49.0	24.3	1.8	0.0	3.5	2.3	
+								
+Low / Bas	9.4	26.3	40.3	13.4	0.0	2.0	0.9	
+LaSalle – Émard – Verdun	9.9	29.2	42.0	14.8	0.0	2.2	1.8	77%
+High / Haut	10.9	31.2	45.4	15.9	0.0	2.4	2.7	
+								
+Low / Bas	10.2	20.5	37.9	20.3	0.0	2.2	1.0	
+Laurentides – Labelle	10.7	22.8	39.5	22.5	0.0	2.4	2.0	82%
+High / Haut	11.8	24.4	42.7	24.1	0.0	2.6	3.0	
+								
+Low / Bas	4.1	16.4	44.3	24.2	0.0	2.2	1.0	
+Laurier – Sainte-Marie	4.4	18.2	46.2	26.9	0.0	2.4	1.9	86%
+High / Haut	4.8	19.5	49.8	28.8	0.0	2.6	2.9	
+								
+Low / Bas	15.2	28.1	40.1	7.0	0.0	1.3	0.9	
+Laval-Les Îles	16.0	31.3	41.8	7.8	0.0	1.5	1.7	73%
+High / Haut	17.6	33.5	45.1	8.3	0.0	1.6	2.6	
+								
+Low / Bas	40.2	7.8	34.0	9.1	0.0	1.4	1.0	
+Lévis – Lotbinière	42.3	8.7	35.4	10.1	0.0	1.6	1.9	65%
+High / Haut	46.5	9.3	38.3	10.8	0.0	1.7	2.9	
+								
+Low / Bas	10.6	19.9	42.2	16.8	0.0	1.9	0.9	
+Longueuil – Charles-LeMoyne	11.2	22.1	44.0	18.7	0.0	2.2	1.9	88%
+High / Haut	12.3	23.6	47.5	20.0	0.0	2.3	2.8	
+								
+Low / Bas	9.0	15.5	47.8	17.6	0.0	1.8	1.0	
+Longueuil – Saint-Hubert	9.5	17.2	49.7	19.5	0.0	2.0	1.9	94%
+High / Haut	10.5	18.4	53.7	20.9	0.0	2.2	2.9	
+								
+Low / Bas	21.6	19.6	35.2	14.1	0.0	1.3	0.9	
+Louis-Hébert	22.7	21.8	36.7	15.6	0.0	1.4	1.8	78%
+High / Haut	25.0	23.3	39.6	16.7	0.0	1.5	2.8	
+								
+Low / Bas	42.6	9.3	31.1	8.3	0.0	1.2	0.9	
+Louis-Saint-Laurent	44.8	10.4	32.4	9.3	0.0	1.3	1.8	77%
+High / Haut	49.3	11.1	35.0	9.9	0.0	1.4	2.7	
+								
+Low / Bas	12.6	8.8	47.5	20.8	0.0	2.2	1.0	
+Manicouagan	13.2	9.8	49.4	23.1	0.0	2.4	2.0	92%
+High / Haut	14.5	10.5	53.4	24.7	0.0	2.6	3.0	
+								
+Low / Bas	11.1	21.7	41.4	15.2	0.0	2.0	1.0	
+Marc-Aurèle-Fortin	11.7	24.2	43.1	16.9	0.0	2.2	2.0	85%
+High / Haut	12.8	25.9	46.5	18.1	0.0	2.3	3.0	
+								
+Low / Bas	47.9	9.3	23.5	10.2	0.0	1.3	1.0	
+Mégantic – L'Érable	50.5	10.3	24.5	11.4	0.0	1.4	1.9	91%
+High / Haut	55.5	11.1	26.4	12.2	0.0	1.5	2.9	
+								
+Low / Bas	9.8	12.2	48.6	19.5	0.0	1.7	1.0	
+Mirabel	10.3	13.5	50.6	21.6	0.0	1.9	2.0	93%
+High / Haut	11.4	14.5	54.7	23.1	0.0	2.0	3.0	
+								
+Low / Bas	10.0	19.2	42.5	17.8	0.0	2.0	1.0	
+Montarville	10.5	21.3	44.3	19.7	0.0	2.2	1.9	89%
+High / Haut	11.6	22.8	47.8	21.1	0.0	2.4	2.9	
+								
+Low / Bas	9.3	8.5	48.4	21.7	0.0	3.6	1.1	
+Montcalm	9.8	9.5	50.4	24.2	0.0	4.0	2.2	92%
+High / Haut	10.8	10.1	54.4	25.8	0.0	4.3	3.3	
+								
+Low / Bas	36.7	8.7	33.8	11.9	0.0	1.2	0.9	
+Montmagny – L'Islet – Kamouraska – Rivière-du-Loup	38.6	9.6	35.2	13.3	0.0	1.4	1.9	58%
+High / Haut	42.5	10.3	38.1	14.2	0.0	1.4	2.8	
+								
+Low / Bas	32.1	44.6	11.9	1.3	0.0	1.1	0.7	
+Mont-Royal	33.8	49.6	12.4	1.5	0.0	1.3	1.5	81%
+High / Haut	37.2	53.0	13.4	1.6	0.0	1.3	2.2	
+								
+Low / Bas	14.8	46.0	25.1	2.0	0.0	3.0	0.8	
+Notre-Dame-de-Grâce – Westmount	15.6	51.2	26.2	2.3	0.0	3.3	1.6	90%
+High / Haut	17.1	54.7	28.3	2.4	0.0	3.5	2.3	
+								
+Low / Bas	6.9	28.0	49.8	5.9	0.0	1.5	0.8	
+Outremont	7.2	31.1	51.8	6.5	0.0	1.7	1.6	87%
+High / Haut	8.0	33.3	56.0	7.0	0.0	1.8	2.4	
+								
+Low / Bas	7.7	43.6	24.9	12.9	0.0	1.4	0.8	
+Papineau	8.1	48.4	26.0	14.3	0.0	1.5	1.7	89%
+High / Haut	8.9	51.8	28.0	15.3	0.0	1.7	2.5	
+								
+Low / Bas	9.5	16.6	40.2	22.8	0.0	1.9	1.1	
+Pierre-Boucher – Les Patriotes – Verchères	10.0	18.5	41.9	25.4	0.0	2.1	2.1	82%
+High / Haut	11.0	19.7	45.3	27.1	0.0	2.3	3.2	
+								
+Low / Bas	22.5	37.8	26.3	2.5	0.0	2.4	0.8	
+Pierrefonds – Dollard	23.7	42.0	27.3	2.7	0.0	2.7	1.6	80%
+High / Haut	26.1	44.9	29.5	2.9	0.0	2.9	2.3	
+								
+Low / Bas	28.2	23.5	32.8	5.9	0.0	1.3	1.0	
+Pontiac	29.7	26.2	34.2	6.5	0.0	1.5	1.9	61%
+High / Haut	32.7	28.0	37.0	7.0	0.0	1.6	2.9	
+								
+Low / Bas	28.3	9.9	39.9	12.3	0.0	2.0	0.9	
+Portneuf – Jacques Cartier	29.8	11.0	41.6	13.6	0.0	2.2	1.9	75%
+High / Haut	32.7	11.8	44.9	14.6	0.0	2.3	2.8	
+								
+Low / Bas	18.5	13.8	40.6	17.1	0.0	1.8	1.0	
+Québec	19.4	15.3	42.3	19.0	0.0	2.0	1.9	89%
+High / Haut	21.4	16.4	45.7	20.3	0.0	2.2	2.9	
+								
+Low / Bas	8.6	13.4	47.2	20.7	0.0	1.6	1.1	
+Repentigny	9.0	14.9	49.2	23.0	0.0	1.7	2.1	92%
+High / Haut	9.9	15.9	53.1	24.7	0.0	1.9	3.2	
+								
+Low / Bas	30.1	11.0	29.3	19.6	0.0	1.8	1.0	
+Richmond – Arthabaska	31.7	12.2	30.5	21.7	0.0	2.0	2.0	53%
+High / Haut	34.8	13.0	32.9	23.3	0.0	2.1	2.9	
+								
+Low / Bas	15.2	14.8	41.1	18.8	0.0	1.7	1.0	
+Rimouski-Neigette – Témiscouata – Les Basques	16.0	16.4	42.9	20.9	0.0	1.9	1.9	88%
+High / Haut	17.6	17.6	46.3	22.4	0.0	2.0	2.9	
+								
+Low / Bas	10.5	16.8	46.2	16.3	0.0	2.0	0.9	
+Rivière-des-Mille-Îles	11.1	18.6	48.1	18.1	0.0	2.2	1.9	94%
+High / Haut	12.2	19.9	51.9	19.4	0.0	2.3	2.8	
+								
+Low / Bas	8.9	10.2	53.8	17.6	0.0	1.5	1.0	
+Rivière-du-Nord	9.4	11.3	56.0	19.6	0.0	1.7	2.0	96%
+High / Haut	10.3	12.1	60.5	20.9	0.0	1.8	3.0	
+ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 23, 2015
+Low / Bas	4.6	14.4	50.4	20.7	0.0	1.5	1.0	
+Rosemont – La Petite-Patrie	4.9	16.0	52.5	23.0	0.0	1.6	2.0	94%
+High / Haut	5.3	17.2	56.7	24.6	0.0	1.7	3.0	
+								
+Low / Bas	17.8	9.0	47.0	16.4	0.0	1.7	1.1	
+Saint-Hyacinthe – Bagot	18.7	10.1	49.0	18.2	0.0	1.9	2.1	94%
+High / Haut	20.6	10.8	52.9	19.5	0.0	2.1	3.2	
+								
+Low / Bas	12.0	14.6	42.3	20.2	0.0	2.3	1.0	
+Saint-Jean	12.7	16.3	44.1	22.4	0.0	2.5	2.1	88%
+High / Haut	13.9	17.4	47.6	24.0	0.0	2.7	3.1	
+								
+Low / Bas	15.6	50.3	20.3	3.1	0.0	1.4	0.8	
+Saint-Laurent	16.5	55.9	21.1	3.4	0.0	1.5	1.5	96%
+High / Haut	18.1	59.9	22.8	3.7	0.0	1.6	2.3	
+								
+Low / Bas	11.6	49.5	23.5	4.8	0.0	1.2	0.8	
+Saint-Léonard – Saint-Michel	12.2	55.0	24.4	5.4	0.0	1.4	1.6	94%
+High / Haut	13.4	58.9	26.4	5.7	0.0	1.5	2.4	
+								
+Low / Bas	18.5	17.5	35.5	18.2	0.0	1.7	1.0	
+Saint-Maurice – Champlain	19.5	19.4	36.9	20.2	0.0	1.9	2.0	82%
+High / Haut	21.5	20.8	39.9	21.6	0.0	2.1	3.0	
+								
+Low / Bas	13.5	12.7	42.7	21.1	0.0	1.5	1.0	
+Salaberry – Suroît	14.2	14.2	44.5	23.4	0.0	1.7	2.0	88%
+High / Haut	15.7	15.2	48.0	25.1	0.0	1.8	3.0	
+								
+Low / Bas	16.1	14.6	44.3	15.1	0.0	1.7	1.0	
+Shefford	17.0	16.2	46.2	16.8	0.0	1.9	2.0	94%
+High / Haut	18.7	17.3	49.9	17.9	0.0	2.0	3.1	
+								
+Low / Bas	9.8	15.4	42.6	22.1	0.0	1.5	1.0	
+Sherbrooke	10.3	17.1	44.4	24.6	0.0	1.6	2.0	86%
+High / Haut	11.4	18.3	47.9	26.3	0.0	1.7	3.0	
+								
+Low / Bas	8.7	10.9	50.6	19.4	0.0	2.3	1.0	
+Terrebonne	9.1	12.1	52.7	21.5	0.0	2.6	2.0	95%
+High / Haut	10.0	13.0	56.9	23.0	0.0	2.8	3.0	
+								
+Low / Bas	10.1	15.7	47.4	16.8	0.0	1.7	1.0	
+Thérèse-De Blainville	10.6	17.4	49.4	18.7	0.0	1.9	1.9	94%
+High / Haut	11.7	18.7	53.3	20.0	0.0	2.1	2.9	
+								
+Low / Bas	13.5	15.2	47.0	14.6	0.0	1.6	1.0	
+Trois-Rivières	14.2	16.9	49.0	16.3	0.0	1.7	1.9	95%
+High / Haut	15.6	18.1	52.9	17.4	0.0	1.9	2.9	
+								
+Low / Bas	17.5	18.3	39.8	13.9	0.0	2.2	0.9	
+Vaudreuil – Soulanges	18.5	20.3	41.5	15.4	0.0	2.5	1.8	88%
+High / Haut	20.3	21.7	44.8	16.5	0.0	2.7	2.8	
+								
+Low / Bas	11.2	38.1	30.8	8.8	0.0	2.1	0.9	
+Ville-Marie – Le Sud-Ouest – L'Île-des-Soeurs	11.7	42.3	32.1	9.8	0.0	2.3	1.7	73%
+High / Haut	12.9	45.3	34.6	10.5	0.0	2.5	2.6	
+								
+Low / Bas	12.8	30.1	33.9	12.8	0.0	1.5	0.9	
+Vimy	13.5	33.4	35.3	14.2	0.0	1.7	1.9	53%
+High / Haut	14.9	35.8	38.1	15.2	0.0	1.8	2.8	
 NEW BRUNSWICK / NOUVEAU-BRUNSWICK								
-Low / Bas	8.5	21.7	61.0	0.0	0.0	2.5	0.4	
-Acadie – Bathurst	9.0	24.1	63.5	0.0	0.0	2.7	0.7	97%
-High / Haut	9.9	25.8	68.6	0.0	0.0	2.9	1.1	
+Low / Bas	8.0	20.2	63.0	0.0	0.0	3.0	0.1	
+Acadie – Bathurst	8.4	22.4	65.6	0.0	0.0	3.4	0.2	98%
+High / Haut	9.3	24.0	70.8	0.0	0.0	3.6	0.3	
 								
-Low / Bas	14.7	53.8	19.9	0.0	0.0	3.1	0.3	
-Beauséjour	15.4	59.7	20.8	0.0	0.0	3.4	0.6	97%
-High / Haut	17.0	63.9	22.4	0.0	0.0	3.7	1.0	
+Low / Bas	14.4	52.2	21.4	0.0	0.0	3.9	0.1	
+Beauséjour	15.1	57.9	22.3	0.0	0.0	4.4	0.2	96%
+High / Haut	16.7	62.0	24.1	0.0	0.0	4.7	0.3	
 								
-Low / Bas	29.6	35.5	21.5	0.0	0.0	5.6	0.4	
-Fredericton	31.1	39.5	22.4	0.0	0.0	6.3	0.7	69%
-High / Haut	34.2	42.3	24.2	0.0	0.0	6.7	1.1	
+Low / Bas	28.6	34.1	22.9	0.0	0.0	7.1	0.1	
+Fredericton	30.2	37.9	23.8	0.0	0.0	7.9	0.2	67%
+High / Haut	33.2	40.5	25.7	0.0	0.0	8.5	0.3	
 								
-Low / Bas	38.9	19.0	30.7	0.0	0.0	4.6	0.4	
-Fundy Royal	40.9	21.1	32.0	0.0	0.0	5.1	0.9	69%
-High / Haut	45.0	22.6	34.5	0.0	0.0	5.5	1.3	
+Low / Bas	37.4	18.1	32.4	0.0	0.0	5.8	0.1	
+Fundy Royal	39.4	20.1	33.8	0.0	0.0	6.5	0.2	63%
+High / Haut	43.3	21.5	36.5	0.0	0.0	6.9	0.4	
 								
-Low / Bas	21.7	50.8	17.6	0.0	0.0	1.4	0.3	
-Madawaska – Restigouche	22.9	56.5	18.4	0.0	0.0	1.6	0.7	95%
-High / Haut	25.2	60.5	19.8	0.0	0.0	1.7	1.0	
+Low / Bas	21.5	49.7	19.1	0.0	0.0	1.8	0.1	
+Madawaska – Restigouche	22.6	55.2	19.9	0.0	0.0	2.0	0.2	95%
+High / Haut	24.9	59.1	21.5	0.0	0.0	2.2	0.3	
 								
-Low / Bas	31.9	35.0	23.4	0.0	0.0	2.2	0.4	
-Miramichi – Grand Lake	33.6	38.8	24.4	0.0	0.0	2.4	0.8	63%
-High / Haut	36.9	41.6	26.3	0.0	0.0	2.6	1.2	
+Low / Bas	31.2	33.8	25.1	0.0	0.0	2.8	0.1	
+Miramichi – Grand Lake	32.9	37.6	26.2	0.0	0.0	3.1	0.2	61%
+High / Haut	36.2	40.2	28.3	0.0	0.0	3.3	0.3	
 								
-Low / Bas	19.4	43.7	25.6	0.0	0.0	3.3	0.3	
-Moncton – Riverview – Dieppe	20.4	48.6	26.6	0.0	0.0	3.7	0.7	88%
-High / Haut	22.4	52.0	28.8	0.0	0.0	3.9	1.0	
+Low / Bas	18.9	42.1	27.3	0.0	0.0	4.2	0.1	
+Moncton – Riverview – Dieppe	19.9	46.8	28.4	0.0	0.0	4.7	0.2	85%
+High / Haut	21.8	50.1	30.7	0.0	0.0	5.0	0.3	
 								
-Low / Bas	37.4	24.4	26.1	0.0	0.0	4.9	0.4	
-New Brunswick Southwest	39.3	27.1	27.2	0.0	0.0	5.5	0.8	77%
-High / Haut	43.3	29.0	29.4	0.0	0.0	5.9	1.3	
+Low / Bas	36.1	23.3	27.7	0.0	0.0	6.2	0.1	
+New Brunswick Southwest	38.0	25.9	28.9	0.0	0.0	6.9	0.2	71%
+High / Haut	41.8	27.7	31.2	0.0	0.0	7.4	0.4	
 								
-Low / Bas	33.8	28.8	27.7	0.0	0.0	2.5	0.4	
-Saint John – Rothesay	35.5	32.0	28.9	0.0	0.0	2.8	0.7	58%
-High / Haut	39.1	34.3	31.2	0.0	0.0	3.0	1.1	
+Low / Bas	32.8	27.7	29.6	0.0	0.0	3.2	0.1	
+Saint John – Rothesay	34.6	30.8	30.8	0.0	0.0	3.6	0.2	58%
+High / Haut	38.0	33.0	33.3	0.0	0.0	3.8	0.3	
 								
-Low / Bas	37.0	30.5	22.5	0.0	0.0	2.5	0.4	
-Tobique – Mactaquac	38.9	33.9	23.4	0.0	0.0	2.8	0.9	63%
-High / Haut	42.8	36.3	25.3	0.0	0.0	3.0	1.3	
+Low / Bas	36.2	29.6	24.2	0.0	0.0	3.2	0.1	
+Tobique – Mactaquac	38.1	32.8	25.2	0.0	0.0	3.6	0.3	63%
+High / Haut	41.9	35.1	27.2	0.0	0.0	3.9	0.4	
 NOVA SCOTIA / NOUVELLE-ÉCOSSE								
-Low / Bas	14.9	57.3	16.8	0.0	0.0	2.3	0.3	
-Cape Breton – Canso	15.6	63.7	17.5	0.0	0.0	2.6	0.6	98%
-High / Haut	17.2	68.2	18.9	0.0	0.0	2.7	1.0	
+Low / Bas	14.7	56.0	18.1	0.0	0.0	3.0	0.1	
+Cape Breton – Canso	15.4	62.2	18.9	0.0	0.0	3.3	0.2	98%
+High / Haut	17.0	66.5	20.4	0.0	0.0	3.5	0.3	
 								
-Low / Bas	31.0	32.0	25.6	0.0	0.0	3.9	0.4	
-Central Nova	32.7	35.5	26.6	0.0	0.0	4.4	0.8	56%
-High / Haut	36.0	38.0	28.8	0.0	0.0	4.7	1.2	
+Low / Bas	30.1	30.7	27.3	0.0	0.0	5.0	0.1	
+Central Nova	31.7	34.1	28.4	0.0	0.0	5.5	0.2	56%
+High / Haut	34.9	36.5	30.7	0.0	0.0	5.9	0.3	
 								
-Low / Bas	32.0	40.7	15.3	0.0	0.0	4.0	0.4	
-Cumberland – Colchester	33.7	45.2	15.9	0.0	0.0	4.5	0.7	75%
-High / Haut	37.0	48.3	17.2	0.0	0.0	4.8	1.1	
+Low / Bas	31.4	39.4	16.5	0.0	0.0	5.2	0.1	
+Cumberland – Colchester	33.0	43.8	17.2	0.0	0.0	5.7	0.2	73%
+High / Haut	36.3	46.9	18.5	0.0	0.0	6.2	0.3	
 								
-Low / Bas	11.2	45.7	32.4	0.0	0.0	2.7	0.3	
-Dartmouth – Cole Harbour	11.8	50.8	33.8	0.0	0.0	3.0	0.6	84%
-High / Haut	13.0	54.4	36.5	0.0	0.0	3.2	0.9	
+Low / Bas	11.1	44.7	33.2	0.0	0.0	3.5	0.1	
+Dartmouth – Cole Harbour	11.7	49.7	34.6	0.0	0.0	3.9	0.2	81%
+High / Haut	12.8	53.2	37.3	0.0	0.0	4.2	0.3	
 								
-Low / Bas	8.2	34.5	46.9	0.0	0.0	3.2	0.3	
-Halifax	8.7	38.3	48.9	0.0	0.0	3.5	0.6	73%
-High / Haut	9.5	41.0	52.8	0.0	0.0	3.8	1.0	
+Low / Bas	8.3	34.2	46.4	0.0	0.0	4.2	0.1	
+Halifax	8.7	38.1	48.4	0.0	0.0	4.7	0.2	73%
+High / Haut	9.6	40.7	52.3	0.0	0.0	5.0	0.3	
 								
-Low / Bas	14.2	49.9	24.6	0.0	0.0	3.0	0.3	
-Halifax West	14.9	55.4	25.6	0.0	0.0	3.4	0.7	94%
-High / Haut	16.4	59.3	27.7	0.0	0.0	3.6	1.0	
+Low / Bas	13.8	48.2	26.3	0.0	0.0	3.9	0.1	
+Halifax West	14.6	53.5	27.4	0.0	0.0	4.3	0.2	92%
+High / Haut	16.0	57.3	29.6	0.0	0.0	4.6	0.3	
 								
-Low / Bas	17.4	53.7	17.5	0.0	0.0	2.8	0.3	
-Kings – Hants	18.3	59.6	18.2	0.0	0.0	3.2	0.7	98%
-High / Haut	20.2	63.8	19.7	0.0	0.0	3.4	1.0	
-ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 22, 2015
-Low / Bas	15.9	17.5	56.8	0.0	0.0	3.5	0.4	
-Sackville – Preston – Chezzetcook	16.7	19.5	59.2	0.0	0.0	3.9	0.7	97%
-High / Haut	18.4	20.8	63.9	0.0	0.0	4.2	1.1	
+Low / Bas	17.1	52.2	18.9	0.0	0.0	3.7	0.1	
+Kings – Hants	18.0	58.0	19.7	0.0	0.0	4.1	0.2	97%
+High / Haut	19.8	62.1	21.3	0.0	0.0	4.4	0.3	
+ThreeHundredEight.com projections (these are not polls or necessarily reflective of current voting intentions)								September 23, 2015
+Low / Bas	16.0	17.4	56.2	0.0	0.0	4.6	0.1	
+Sackville – Preston – Chezzetcook	16.8	19.3	58.6	0.0	0.0	5.1	0.2	97%
+High / Haut	18.5	20.7	63.2	0.0	0.0	5.5	0.3	
 								
-Low / Bas	22.0	29.8	37.4	0.0	0.0	3.6	0.4	
-South Shore – St. Margaret's	23.2	33.1	39.0	0.0	0.0	4.0	0.8	63%
-High / Haut	25.5	35.5	42.1	0.0	0.0	4.2	1.2	
+Low / Bas	21.1	28.3	39.4	0.0	0.0	4.5	0.1	
+South Shore – St. Margaret's	22.3	31.5	41.1	0.0	0.0	5.0	0.2	71%
+High / Haut	24.5	33.7	44.3	0.0	0.0	5.3	0.3	
 								
-Low / Bas	18.0	54.3	16.7	0.0	0.0	2.4	0.3	
-Sydney – Victoria	19.0	60.3	17.4	0.0	0.0	2.7	0.7	98%
-High / Haut	20.9	64.5	18.8	0.0	0.0	2.9	1.0	
+Low / Bas	17.8	52.9	18.1	0.0	0.0	3.1	0.1	
+Sydney – Victoria	18.7	58.8	18.8	0.0	0.0	3.5	0.2	98%
+High / Haut	20.6	62.9	20.3	0.0	0.0	3.7	0.3	
 								
-Low / Bas	22.1	54.2	12.2	0.0	0.0	2.8	0.4	
-West Nova	23.3	60.2	12.7	0.0	0.0	3.1	0.7	96%
-High / Haut	25.6	64.4	13.7	0.0	0.0	3.3	1.1	
+Low / Bas	21.9	53.0	13.3	0.0	0.0	3.6	0.1	
+West Nova	23.1	58.9	13.8	0.0	0.0	4.0	0.2	96%
+High / Haut	25.4	63.1	14.9	0.0	0.0	4.3	0.3	
 PRINCE EDWARD ISLAND / ÎLE-DU-PRINCE-ÉDOUARD								
-Low / Bas	17.3	63.8	8.5	0.0	0.0	1.3	0.3	
-Cardigan	18.2	70.9	8.8	0.0	0.0	1.4	0.6	99%
-High / Haut	20.0	75.9	9.5	0.0	0.0	1.5	0.9	
+Low / Bas	17.3	63.1	9.3	0.0	0.0	1.7	0.1	
+Cardigan	18.2	70.1	9.7	0.0	0.0	1.9	0.2	99%
+High / Haut	20.0	75.0	10.4	0.0	0.0	2.0	0.3	
 								
-Low / Bas	14.9	54.0	21.0	0.0	0.0	1.7	0.3	
-Charlottetown	15.7	60.0	21.9	0.0	0.0	1.8	0.6	97%
-High / Haut	17.2	64.2	23.6	0.0	0.0	2.0	1.0	
+Low / Bas	14.7	52.5	22.7	0.0	0.0	2.1	0.1	
+Charlottetown	15.4	58.4	23.6	0.0	0.0	2.4	0.2	96%
+High / Haut	17.0	62.5	25.5	0.0	0.0	2.5	0.3	
 								
-Low / Bas	30.1	47.0	13.4	0.0	0.0	1.4	0.4	
-Egmont	31.7	52.2	13.9	0.0	0.0	1.5	0.7	87%
-High / Haut	34.8	55.8	15.0	0.0	0.0	1.6	1.1	
+Low / Bas	29.8	46.1	14.6	0.0	0.0	1.8	0.1	
+Egmont	31.4	51.2	15.2	0.0	0.0	2.0	0.2	86%
+High / Haut	34.6	54.8	16.4	0.0	0.0	2.1	0.3	
 								
-Low / Bas	18.5	57.1	12.7	0.0	0.0	2.9	0.3	
-Malpeque	19.4	63.5	13.2	0.0	0.0	3.2	0.7	98%
-High / Haut	21.4	67.9	14.3	0.0	0.0	3.5	1.0	
+Low / Bas	18.3	55.9	13.8	0.0	0.0	3.8	0.1	
+Malpeque	19.2	62.1	14.3	0.0	0.0	4.2	0.2	98%
+High / Haut	21.1	66.4	15.5	0.0	0.0	4.5	0.3	
 NEWFOUNDLAND & LABRADOR / TERRE-NEUVE-ET-LABRADOR								
-Low / Bas	15.5	39.7	20.2	0.0	0.0	1.0	8.7	
-Avalon	16.3	44.1	21.0	0.0	0.0	1.1	17.4	90%
-High / Haut	17.9	47.2	22.7	0.0	0.0	1.2	26.2	
+Low / Bas	15.1	38.3	21.6	0.0	0.0	1.3	8.7	
+Avalon	15.9	42.6	22.5	0.0	0.0	1.5	17.5	87%
+High / Haut	17.5	45.6	24.3	0.0	0.0	1.6	26.2	
 								
-Low / Bas	13.0	66.3	10.9	0.0	0.0	0.6	0.3	
-Bonavista – Burin – Trinity	13.7	73.7	11.4	0.0	0.0	0.7	0.6	99%
-High / Haut	15.1	78.8	12.3	0.0	0.0	0.7	0.9	
+Low / Bas	13.0	65.5	12.0	0.0	0.0	0.8	0.1	
+Bonavista – Burin – Trinity	13.7	72.8	12.4	0.0	0.0	0.9	0.2	99%
+High / Haut	15.0	77.9	13.4	0.0	0.0	0.9	0.3	
 								
-Low / Bas	12.9	66.7	10.6	0.0	0.0	0.6	0.3	
-Coast of Bays – Central – Notre Dame	13.6	74.1	11.1	0.0	0.0	0.7	0.6	99%
-High / Haut	14.9	79.3	12.0	0.0	0.0	0.7	0.9	
+Low / Bas	12.9	65.9	11.7	0.0	0.0	0.8	0.1	
+Coast of Bays – Central – Notre Dame	13.6	73.2	12.2	0.0	0.0	0.9	0.2	99%
+High / Haut	14.9	78.3	13.1	0.0	0.0	0.9	0.3	
 								
-Low / Bas	24.0	47.4	19.5	0.0	0.0	1.0	0.3	
-Labrador	25.3	52.6	20.3	0.0	0.0	1.1	0.7	93%
-High / Haut	27.8	56.3	21.9	0.0	0.0	1.2	1.0	
+Low / Bas	23.7	46.3	21.1	0.0	0.0	1.3	0.1	
+Labrador	25.0	51.4	22.0	0.0	0.0	1.4	0.2	92%
+High / Haut	27.5	55.0	23.7	0.0	0.0	1.5	0.3	
 								
-Low / Bas	10.9	65.2	14.1	0.0	0.0	0.7	0.3	
-Long Range Mountains	11.5	72.4	14.7	0.0	0.0	0.8	0.6	99%
-High / Haut	12.6	77.5	15.9	0.0	0.0	0.8	0.9	
+Low / Bas	10.9	64.2	15.4	0.0	0.0	0.9	0.1	
+Long Range Mountains	11.4	71.3	16.1	0.0	0.0	1.0	0.2	99%
+High / Haut	12.6	76.3	17.4	0.0	0.0	1.1	0.3	
 								
-Low / Bas	10.4	11.7	71.4	0.0	0.0	0.9	0.4	
-St. John's East	11.0	12.9	74.4	0.0	0.0	1.0	0.7	99%
-High / Haut	12.1	13.9	80.3	0.0	0.0	1.1	1.1	
+Low / Bas	10.6	11.7	71.4	0.0	0.0	1.2	0.1	
+St. John's East	11.1	13.0	74.4	0.0	0.0	1.3	0.2	99%
+High / Haut	12.2	13.9	80.3	0.0	0.0	1.4	0.3	
 								
-Low / Bas	10.4	41.9	39.7	0.0	0.0	0.5	0.3	
-St. John's South – Mount Pearl	11.0	46.5	41.3	0.0	0.0	0.5	0.6	63%
-High / Haut	12.1	49.8	44.6	0.0	0.0	0.6	0.9	
+Low / Bas	10.4	41.1	40.8	0.0	0.0	0.6	0.1	
+St. John's South – Mount Pearl	10.9	45.7	42.5	0.0	0.0	0.7	0.2	58%
+High / Haut	12.0	48.9	45.9	0.0	0.0	0.7	0.3	
 NORTHERN TERRITORIES / TERRITOIRES DU NORD								
-Low / Bas	24.2	24.7	41.3	0.0	0.0	2.9	0.4	
-Northwest Territories	25.5	27.4	43.0	0.0	0.0	3.3	0.8	81%
-High / Haut	28.0	29.3	46.5	0.0	0.0	3.5	1.2	
+Low / Bas	25.2	24.1	40.7	0.0	0.0	3.3	0.4	
+Northwest Territories	26.5	26.7	42.4	0.0	0.0	3.6	0.7	81%
+High / Haut	29.2	28.6	45.8	0.0	0.0	3.9	1.1	
 								
-Low / Bas	35.4	38.6	16.2	0.0	0.0	1.9	0.4	
-Nunavut	37.3	42.8	16.9	0.0	0.0	2.1	0.8	63%
-High / Haut	41.0	45.8	18.3	0.0	0.0	2.3	1.2	
+Low / Bas	36.7	37.5	15.9	0.0	0.0	2.1	0.4	
+Nunavut	38.7	41.7	16.6	0.0	0.0	2.3	0.7	56%
+High / Haut	42.5	44.6	17.9	0.0	0.0	2.5	1.1	
 								
-Low / Bas	23.8	39.2	18.0	0.0	0.0	10.7	0.4	
-Yukon	25.0	43.6	18.7	0.0	0.0	11.9	0.8	85%
-High / Haut	27.5	46.6	20.2	0.0	0.0	12.7	1.2	
+Low / Bas	24.5	37.9	17.5	0.0	0.0	11.8	0.4	
+Yukon	25.8	42.1	18.2	0.0	0.0	13.1	0.7	82%
+High / Haut	28.4	45.1	19.7	0.0	0.0	14.0	1.1	
