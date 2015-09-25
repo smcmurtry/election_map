@@ -360,8 +360,17 @@ function init_acknowledgement() {
     .attr('class', 'text')
     .html("Interactive map &copy; <a href='http://stephenmcmurtry.org/'>Stephen McMurtry</a>");
 
-  d3.select('.footer')
+  d3.select('.footer .button')
     .on('click', function() {
+
+      if (+d3.select('.footer').style('height').slice(0, -2) > 30) {
+        d3.select('.footer')
+          .transition()
+          .duration(600)
+          .style('height', 27 + 'px');
+        d3.select('.fa').attr('class', 'fa fa-angle-up');
+      } else {
+
         d3.select('.footer')
           .transition()
           .duration(600)
@@ -369,15 +378,15 @@ function init_acknowledgement() {
 
         d3.select('.fa').attr('class', 'fa fa-angle-down');
 
-      d3.select('.overlay')
-        .on('mouseover', function() {
-          d3.select('.footer')
-            .transition()
-            .duration(600)
-            .style('height', 27 + 'px');
-          d3.select('.fa').attr('class', 'fa fa-angle-up');
-
-        })
+        d3.select('.overlay')
+          .on('mouseover', function() {
+            d3.select('.footer')
+              .transition()
+              .duration(600)
+              .style('height', 27 + 'px');
+            d3.select('.fa').attr('class', 'fa fa-angle-up');
+          });
+      }
     });
 }
 
