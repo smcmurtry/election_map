@@ -1,0 +1,339 @@
+riding_number,FEDNUM,riding_utf8
+0,59001,Abbotsford
+1,59002,Burnaby North – Seymour
+2,59003,Burnaby South
+3,59004,Cariboo – Prince George
+4,59005,Central Okanagan – Similkameen – Nicola
+5,59006,Chilliwack – Hope
+6,59007,Cloverdale – Langley City
+7,59008,Coquitlam – Port Coquitlam
+8,59009,Courtenay – Alberni
+9,59010,Cowichan – Malahat – Langford
+10,59011,Delta
+11,59026,Esquimalt – Saanich – Sooke
+12,59012,Fleetwood – Port Kells
+13,59013,Kamloops – Thompson – Cariboo
+14,59014,Kelowna – Lake Country
+15,59015,Kootenay – Columbia
+16,59016,Langley – Aldergrove
+17,59017,Mission – Matsqui – Fraser Canyon
+18,59018,Nanaimo – Ladysmith
+19,59019,New Westminster – Burnaby
+20,59037,North Island – Powell River
+21,59020,North Okanagan – Shuswap
+22,59021,North Vancouver
+23,59022,Pitt Meadows – Maple Ridge
+24,59023,Port Moody – Coquitlam
+25,59024,Prince George – Peace River – Northern Rockies
+26,59025,Richmond Centre
+27,59027,Saanich – Gulf Islands
+28,59028,Skeena – Bulkley Valley
+29,59029,South Okanagan – West Kootenay
+30,59030,South Surrey – White Rock
+31,59031,Steveston – Richmond East
+32,59032,Surrey Centre
+33,59033,Surrey – Newton
+34,59034,Vancouver Centre
+35,59035,Vancouver East
+36,59036,Vancouver Granville
+37,59038,Vancouver Kingsway
+38,59039,Vancouver Quadra
+39,59040,Vancouver South
+40,59041,Victoria
+41,59042,West Vancouver – Sunshine Coast – Sea to Sky Country
+42,48001,Banff – Airdrie
+43,48002,Battle River – Crowfoot
+44,48003,Bow River
+45,48004,Calgary Centre
+46,48005,Calgary Confederation
+47,48006,Calgary Forest Lawn
+48,48007,Calgary Heritage
+49,48008,Calgary Midnapore
+50,48009,Calgary Nose Hill
+51,48010,Calgary Rocky Ridge
+52,48011,Calgary Shepard
+53,48012,Calgary Signal Hill
+54,48013,Calgary Skyview
+55,48014,Edmonton Centre
+56,48015,Edmonton Griesbach
+57,48016,Edmonton Manning
+58,48017,Edmonton Mill Woods
+59,48018,Edmonton Riverbend
+60,48019,Edmonton Strathcona
+61,48020,Edmonton West
+62,48021,Edmonton – Wetaskiwin
+63,48022,Foothills
+64,48023,Fort McMurray – Cold Lake
+65,48024,Grande Prairie – Mackenzie
+66,48025,Lakeland
+67,48026,Lethbridge
+68,48027,Medicine Hat – Cardston – Warner
+69,48028,Peace River – Westlock
+70,48030,Red Deer – Lacombe
+71,48029,Red Deer – Mountain View
+74,48033,Sturgeon River
+75,48034,Yellowhead
+76,47001,Battlefords – Lloydminster
+77,47004,Carlton Trail – Eagle Creek
+78,47002,Cypress Hills – Grasslands
+79,47003,Desnethé – Missinippi – Churchill River
+80,47005,Moose Jaw – Lake Centre – Lanigan
+81,47006,Prince Albert
+82,47007,Regina – Lewvan
+83,47008,Regina – Qu'Appelle
+84,47009,Regina – Wascana
+85,47010,Saskatoon – Grasswood
+86,47011,Saskatoon – University
+87,47012,Saskatoon West
+88,47013,Souris – Moose Mountain
+89,47014,Yorkton – Melville
+90,46001,Brandon – Souris
+91,46002,Charleswood – St. James – Assiniboia – Headingley
+92,46003,Churchill – Keewatinook Aski
+94,46005,Elmwood – Transcona
+95,46006,Kildonan – St. Paul
+96,46007,Portage – Lisgar
+97,46008,Provencher
+98,46009,Saint Boniface – Saint Vital
+99,46010,Selkirk – Interlake – Eastman
+100,46011,Winnipeg Centre
+101,46012,Winnipeg North
+102,46013,Winnipeg South
+103,46014,Winnipeg South Centre
+104,35001,Ajax
+105,35002,Algoma – Manitoulin – Kapuskasing
+106,35003,Aurora – Oak Ridges – Richmond Hill
+107,35004,Barrie – Innisfil
+108,35005,Barrie – Springwater – Oro-Medonte
+109,35006,Bay of Quinte
+110,35007,Beaches – East York
+111,35008,Brampton Centre
+112,35009,Brampton East
+113,35010,Brampton North
+114,35011,Brampton South
+115,35012,Brampton West
+116,35013,Brantford – Brant
+117,35014,Bruce – Grey – Owen Sound
+118,35015,Burlington
+119,35016,Cambridge
+120,35088,Carleton
+121,35017,Chatham-Kent – Leamington
+122,35018,Davenport
+123,35019,Don Valley East
+124,35020,Don Valley North
+125,35021,Don Valley West
+126,35022,Dufferin – Caledon
+127,35023,Durham
+128,35024,Eglinton – Lawrence
+129,35025,Elgin – Middlesex – London
+130,35026,Essex
+131,35027,Etobicoke Centre
+132,35028,Etobicoke – Lakeshore
+133,35029,Etobicoke North
+134,35030,Flamborough – Glanbrook
+135,35031,Glengarry – Prescott – Russell
+136,35032,Guelph
+137,35033,Haldimand – Norfolk
+138,35034,Haliburton – Kawaratha Lakes – Brock
+139,35035,Hamilton Centre
+140,35036,Hamilton East – Stoney Creek
+141,35037,Hamilton Mountain
+142,35038,Hamilton West – Ancaster – Dundas
+143,35039,Hastings – Lennox and Addington
+144,35121,Humber River – Black Creek
+145,35040,Huron – Bruce
+146,35041,Kanata – Carleton
+147,35042,Kenora
+148,35044,Kingston and the Islands
+149,35043,King – Vaughan
+150,35045,Kitchener Centre
+151,35046,Kitchener – Conestoga
+152,35047,Kitchener South – Hespeler
+153,35048,Lambton – Kent – Middlesex
+154,35049,Lanark – Frontenac – Kingston
+155,35050,Leeds – Grenville – Thousand Islands and Rideau Lakes
+156,35051,London – Fanshawe
+157,35052,London North Centre
+158,35053,London West
+159,35054,Markham – Stouffville
+160,35055,Markham – Thornhill
+161,35056,Markham – Unionville
+162,35057,Milton
+163,35058,Mississauga Centre
+164,35059,Mississauga East – Cooksville
+165,35060,Mississauga – Erin Mills
+166,35061,Mississauga – Lakeshore
+167,35062,Mississauga – Malton
+168,35063,Mississauga – Streetsville
+169,35064,Nepean
+170,35065,Newmarket – Aurora
+171,35066,Niagara Centre
+172,35067,Niagara Falls
+173,35068,Niagara West
+174,35069,Nickel Belt
+175,35070,Nipissing – Timiskaming
+176,35071,Northumberland – Peterborough South
+177,35072,Oakville
+178,35073,Oakville North – Burlington
+179,35076,Orléans
+180,35074,Oshawa
+181,35075,Ottawa Centre
+182,35077,Ottawa South
+183,35078,Ottawa – Vanier
+184,35079,Ottawa West – Nepean
+185,35080,Oxford
+186,35081,Parkdale – High Park
+187,35082,Parry Sound – Muskoka
+188,35083,Perth – Wellington
+189,35084,Peterborough – Kawartha
+190,35085,Pickering – Uxbridge
+191,35086,Renfrew – Nipissing – Pembroke
+192,35087,Richmond Hill
+193,35089,St. Catharines
+194,35091,Sarnia – Lambton
+195,35092,Sault Ste. Marie
+196,35093,Scarborough – Agincourt
+197,35094,Scarborough Centre
+198,35095,Scarborough – Guildwood
+199,35096,Scarborough North
+200,35097,Scarborough – Rouge Park
+201,35098,Scarborough Southwest
+202,35099,Simcoe – Grey
+203,35100,Simcoe North
+204,35101,Spadina – Fort York
+205,35102,Stormont – Dundas – South Glengarry
+206,35103,Sudbury
+207,35104,Thornhill
+208,35105,Thunder Bay – Rainy River
+209,35106,Thunder Bay – Superior North
+210,35107,Timmins – James Bay
+211,35108,Toronto Centre
+212,35109,Toronto – Danforth
+213,35090,Toronto – St. Paul's
+214,35110,University – Rosedale
+215,35111,Vaughan – Woodbridge
+216,35112,Waterloo
+217,35113,Wellington – Halton Hills
+218,35114,Whitby
+219,35115,Willowdale
+220,35116,Windsor – Tecumseh
+221,35117,Windsor West
+222,35118,York Centre
+223,35119,York – Simcoe
+224,35120,York South – Weston
+225,24001,Abitibi – Baie-James – Nunavik – Eeyou
+226,24002,Abitibi – Témiscamingue
+227,24003,Ahuntsic – Cartierville
+228,24004,Alfred-Pellan
+229,24005,Argenteuil – La Petite-Nation
+230,24006,Avignon – La Mitis – Matane – Matapédia*
+231,24007,Beauce
+232,24020,Beauport – Côte-de-Beaupré – Île d'Orléans – Charlevoix
+233,24008,Beauport – Limoilou
+234,24009,Bécancour – Nicolet – Saurel
+235,24010,Bellechasse – Les Etchemins – Lévis
+236,24011,Beloeil – Chambly
+237,24012,Berthier – Maskinongé
+238,24015,Bourassa
+239,24016,Brome – Missisquoi
+240,24017,Brossard – Saint-Lambert
+241,24019,Charlesbourg – Haute-Saint-Charles
+242,24021,Châteauguay – Lacolle
+243,24022,Chicoutimi – Le Fjord
+244,24023,Compton – Stanstead
+245,24024,Dorval – Lachine – LaSalle
+246,24025,Drummond
+247,24026,Gaspésie – Les Îles-de-la-Madeleine
+248,24027,Gatineau
+249,24028,Hochelaga
+250,24029,Honoré-Mercier
+251,24030,Hull – Aylmer
+252,24031,Joliette
+253,24032,Jonquière
+254,24033,La Pointe-de-l'Île
+255,24034,La Prairie
+256,24035,Lac-Saint-Jean
+257,24036,Lac-Saint-Louis
+258,24037,LaSalle – Émard – Verdun
+259,24038,Laurentides – Labelle
+260,24039,Laurier – Sainte-Marie
+261,24040,Laval-Les Îles
+262,24042,Lévis – Lotbinière
+263,24041,Longueuil – Charles-LeMoyne
+264,24043,Longueuil – Saint-Hubert
+265,24044,Louis-Hébert
+266,24045,Louis-Saint-Laurent
+267,24046,Manicouagan
+268,24065,Marc-Aurèle-Fortin
+269,24047,Mégantic – L'Érable
+270,24048,Mirabel
+271,24049,Montarville
+272,24050,Montcalm
+273,24051,Montmagny – L'Islet – Kamouraska – Rivière-du-Loup
+274,24052,Mont-Royal
+275,24053,Notre-Dame-de-Grâce – Westmount
+276,24054,Outremont
+277,24055,Papineau
+278,24014,Pierre-Boucher – Les Patriotes – Verchères
+279,24056,Pierrefonds – Dollard
+280,24057,Pontiac
+281,24058,Portneuf – Jacques Cartier
+282,24059,Québec
+283,24060,Repentigny
+284,24061,Richmond – Arthabaska
+285,24018,Rimouski-Neigette – Témiscouata – Les Basques
+286,24062,Rivière-des-Mille-Îles
+287,24063,Rivière-du-Nord
+288,24064,Rosemont – La Petite-Patrie
+289,24066,Saint-Hyacinthe – Bagot
+290,24067,Saint-Jean
+291,24068,Saint-Laurent
+292,24069,Saint-Léonard – Saint-Michel
+293,24070,Saint-Maurice – Champlain
+294,24071,Salaberry – Suroît
+295,24072,Shefford
+296,24073,Sherbrooke
+297,24075,Terrebonne
+298,24013,Thérèse-De Blainville
+299,24076,Trois-Rivières
+300,24074,Vaudreuil – Soulanges
+301,24077,Ville-Marie – Le Sud-Ouest – L'Île-des-Soeurs
+302,24078,Vimy
+303,13001,Acadie – Bathurst
+304,13002,Beauséjour
+305,13003,Fredericton
+306,13004,Fundy Royal
+307,13005,Madawaska – Restigouche
+308,13006,Miramichi – Grand Lake
+309,13007,Moncton – Riverview – Dieppe
+310,13008,New Brunswick Southwest
+311,13009,Saint John – Rothesay
+312,13010,Tobique – Mactaquac
+313,12001,Cape Breton – Canso
+314,12002,Central Nova
+315,12003,Cumberland – Colchester
+316,12004,Dartmouth – Cole Harbour
+317,12005,Halifax
+318,12006,Halifax West
+319,12007,Kings – Hants
+320,12008,Sackville – Preston – Chezzetcook
+321,12009,South Shore – St. Margaret's
+322,12010,Sydney – Victoria
+323,12011,West Nova
+324,11001,Cardigan
+325,11002,Charlottetown
+326,11003,Egmont
+327,11004,Malpeque
+329,10002,Bonavista – Burin – Trinity
+330,10003,Coast of Bays – Central – Notre Dame
+331,10004,Labrador
+332,10005,Long Range Mountains
+333,10006,St. John's East
+334,10007,St. John's South – Mount Pearl
+335,61001,Northwest Territories
+336,62001,Nunavut
+337,60001,Yukon
+72,48031,St. Albert – Edmonton
+73,48032,Sherwood Park – Fort Saskatchewan
+93,46004,Dauphin – Swan River – Neepawa
+328,10001,Avalon

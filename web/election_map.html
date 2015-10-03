@@ -55,7 +55,7 @@ var dropdown_opts = [{'value': 'none', 'text': 'Current Average Projections'},
                      {'value': 'ndp', 'text': 'NDP High Range'},
                      {'value': 'blc', 'text': 'Bloc Que. High Range'},
                      {'value': 'grn', 'text': 'Green High Range'},
-                     {'value': 'swing', 'text': 'Swing Ridings'}
+                     {'value': 'swing', 'text': 'Projected Close Races'}
                     ]
 var transition_width = 600; // width at which the tooltip stops moving around. in px
 var isTouchDevice = 'ontouchstart' in document.documentElement;
@@ -132,13 +132,12 @@ svg2.call(zoom)
 
 d3.json(data_path + "ca_only_land.json", function(error, ca) {
   if (error) throw error;
-  d3.csv(data_path + 'riding_name_dict_2.csv', function (dict) {
+  d3.csv(data_path + 'new_dict.csv', function (dict) {
     var d2 = {};
     for (var i = 0; i < dict.length; i++) {
-      d2[dict[i].riding] = {"FEDNUM": dict[i].FEDNUM, 
+      d2[dict[i].riding_number] = {"FEDNUM": dict[i].FEDNUM, 
                             "riding_utf8": dict[i].riding_utf8};
     };
-
     d3.text('https://raw.githubusercontent.com/smcmurtry/election_map/master/data/current_projections.txt', function(dat) {
       parse_data();
       feature = topojson.feature(ca, ca.objects.intersection_3);
@@ -163,8 +162,8 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
           dataz['name'] = name;
           dataz['likelyhood'] = rows[riding*3+1][8];
           dataz['details'] = {};
-          dataz['FEDNUM'] = +d2[name].FEDNUM;
-          dataz['riding_utf8'] = d2[name].riding_utf8;
+          dataz['FEDNUM'] = +d2[riding].FEDNUM; 
+          dataz['riding_utf8'] = d2[riding].riding_utf8;
 
           var max = 0;
           var leader;
@@ -179,7 +178,7 @@ d3.json(data_path + "ca_only_land.json", function(error, ca) {
             }
           };
           dataz['leader'] = leader;
-          predictions[+d2[name].FEDNUM] = dataz;
+          predictions[+d2[riding].FEDNUM] = dataz;
         }
       };
 
