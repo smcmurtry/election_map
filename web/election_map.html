@@ -44,7 +44,9 @@ var opts = {
 var target = document.getElementById('spin')
 var spinner = new Spinner(opts).spin(target);
 
+// var data_path = 'dir_election_map/'; 
 var data_path = '../data/'; // dir_election_map/
+
 var predictions = {};  
 
 var parties = ['con', 'lib', 'ndp', 'blc', 'unk', 'grn', 'oth'];
@@ -82,7 +84,7 @@ var party_colours = {'ndp': '#F78320', 'con': '#263893', 'lib': '#D71921',
                      'grn': '#3D9B35', 'blc': '#00A7EC', 'oth': 'grey'};
 var init_zoom = 0.16,
     max_zoom = 15;
-var feature, borders;
+var feature;
 
 var zoom = d3.behavior.zoom()
     .scaleExtent([init_zoom, max_zoom])
@@ -130,18 +132,8 @@ svg2.call(zoom)
     });
 
 
-// d3.json(data_path + "ca_only_land.json", function(error, ca) {
-d3.json(data_path + "ca_refigured_2.json", function(error, ca) {
+d3.json(data_path + "ca_only_land.json", function(error, ca) {
   if (error) throw error;
-
-
-  d3.json(data_path + "ca_refigured_borders.json", function(err, border_data) {
-    if (err) throw err;
-    borders = topojson.feature(border_data, border_data.objects['Canada Elections Map Borders']);
-
-
-
-
   d3.csv(data_path + 'new_dict.csv', function (dict) {
     var d2 = {};
     for (var i = 0; i < dict.length; i++) {
@@ -150,8 +142,7 @@ d3.json(data_path + "ca_refigured_2.json", function(error, ca) {
     };
     d3.text('https://raw.githubusercontent.com/smcmurtry/election_map/master/data/current_projections.txt', function(dat) {
       parse_data();
-      // feature = topojson.feature(ca, ca.objects.intersection_3);
-      feature = topojson.feature(ca, ca.objects.EncodedRidingMap338);
+      feature = topojson.feature(ca, ca.objects.intersection_3);
       spinner.stop();
       draw_map();
       initialize_zoom();
@@ -194,8 +185,6 @@ d3.json(data_path + "ca_refigured_2.json", function(error, ca) {
       };
 
       function draw_map() {
-
-
         g.append("g")
           .selectAll("path")
             .data(feature.features)
@@ -206,11 +195,6 @@ d3.json(data_path + "ca_refigured_2.json", function(error, ca) {
               var leader = predictions[d.properties.FEDNUM]['leader'];
               return party_colours[leader];
             });
-        g.selectAll(".borders")
-          .data(borders.features)
-        .enter().append("path")
-          .attr("class", 'borders')
-          .attr("d", path);
 
         g2.append("g")
           .selectAll("path")
@@ -235,8 +219,6 @@ d3.json(data_path + "ca_refigured_2.json", function(error, ca) {
     });
   });
 });
-  });
-
 
 function zoomed() {
   g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");

@@ -103,34 +103,15 @@ svg {
   background: white url("angle-down_000000_14.png") no-repeat 98% 50%;
 }
 
-.hex-div {
-  position: absolute;
-  z-index: 1000;
-  left: 10px;
-  top: 10px;
-}
-
-.hex-div svg {
-  background: none;
-}
-
-.hex {
-  /*fill: white;*/
-  opacity: 0.5;
-  display: block;
-}
-
-.drpdwn1 {
+.drpdwn {
+  width: 240px;
   height: 27px;
   margin-left: 10px;
   font-weight: bold;
   font-size: 14px;
-}
 
-.drpdwn1 {
-  width: 240px;
+  /*text-align: center;*/
 }
-
 
 .select-style select {
   /*text-align: center;*/
@@ -196,13 +177,3 @@ svg {
   font-size: 14px;
   /*font-weight: bold;*/
 }
-
-.provincial, .borders {
-  stroke-width: 4px;
-  fill: none;
-}
-
-.provincial { stroke: black; }
-/*.borders { stroke: black; }*/
-
-
