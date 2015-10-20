@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
+
+<style>
+
+.hex {
+  opacity: 0.5;
+}
+
+</style>
+
+<body>
+</body>
+
+<script>
+
+function add_hex_button () {
+  var height = 628,
+      width = 726,
+      target_height = 27,
+      scale_factor = height/target_height,
+      on_colour = 'orange',
+      off_colour = 'grey';
+
+  var svg = d3.select("body").append("svg")
+      .attr('viewBox', "0 0 " + width + ' ' + height)
+      .attr("width", width/scale_factor)
+      .attr("height", height/scale_factor);
+
+  svg.append('polygon')
+    .attr('points', "723,314 543,625.769145 183,625.769145 3,314 183,2.230855 543,2.230855 723,314")
+    .attr('class', 'hex')
+    .attr('value', 'off')
+    .style('fill', off_colour);
+
+  d3.select('.hex')
+    .on('click', function() {
+      if (d3.select(this).attr('value') == 'off') {
+        d3.select(this).style('fill', on_colour).attr('value', 'on');
+      } else {
+        d3.select(this).style('fill', off_colour).attr('value', 'off');
+      }
+    });
+}
+
+add_hex_button();
+
+</script>

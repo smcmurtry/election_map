@@ -9,7 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
-  <link rel="stylesheet" type="text/css" href="election_map.css"/>
+  <link rel="stylesheet" type="text/css" href="election_map_hex.css"/>
 
   <title>2015 Canadian Election Map</title>
   <meta name="description" content="This interactive map shows the current projections from ThreeHundredEight.com for the 2015 Canadian federal election.">
@@ -45,25 +45,29 @@ var target = document.getElementById('spin')
 var spinner = new Spinner(opts).spin(target);
 
 var data_path = '../data/'; // dir_election_map/
+// var data_path = 'dir_election_map/'; // dir_election_map/
 var predictions = {};  
 
 var parties = ['con', 'lib', 'ndp', 'blc', 'unk', 'grn', 'oth'];
 var parties2display = ['con', 'lib', 'ndp', 'blc', 'grn', 'oth'];
-var dropdown_opts = [{'value': 'none', 'text': 'Current Average Projections'}, 
+var dropdown_opts1 = [{'value': 'none', 'text': 'Current Average Projections'}, 
                      {'value': 'con', 'text': 'Conservative High Range'},
                      {'value': 'lib', 'text': 'Liberal High Range'},
                      {'value': 'ndp', 'text': 'NDP High Range'},
                      {'value': 'blc', 'text': 'Bloc Que. High Range'},
                      {'value': 'grn', 'text': 'Green High Range'},
                      {'value': 'swing', 'text': 'Projected Close Races'}
-                    ]
+                    ];
+
 var transition_width = 600; // width at which the tooltip stops moving around. in px
 var isTouchDevice = 'ontouchstart' in document.documentElement;
 // var isTouchDevice = true;
 var width = window.innerWidth;
 var height = window.innerHeight;
 var ack_font_size = (width < 400 ? 11 : 12),
-    text_w = ack_font_size*29;
+    text_w = ack_font_size*29,
+    footer_expanded_h = 220,
+    top_button_padding = 5;
 
 if (!inIframe()) {
   // only send pageview if not in iframe
@@ -129,112 +133,178 @@ svg2.call(zoom)
       }
     });
 
+  d3.json(data_path + "ca_refigured_merged2.json", function(error_hex, ca_hex) {
+    if (error_hex) throw error_hex;
 
-// d3.json(data_path + "ca_only_land.json", function(error, ca) {
-d3.json(data_path + "ca_refigured_2.json", function(error, ca) {
-  if (error) throw error;
+    borders = topojson.feature(ca_hex, ca_hex.objects['Canada Elections Map Borders']);
 
-
-  d3.json(data_path + "ca_refigured_borders.json", function(err, border_data) {
-    if (err) throw err;
-    borders = topojson.feature(border_data, border_data.objects['Canada Elections Map Borders']);
-
-
-
-
-  d3.csv(data_path + 'new_dict.csv', function (dict) {
-    var d2 = {};
-    for (var i = 0; i < dict.length; i++) {
-      d2[dict[i].riding_number] = {"FEDNUM": dict[i].FEDNUM, 
-                            "riding_utf8": dict[i].riding_utf8};
-    };
-    d3.text('https://raw.githubusercontent.com/smcmurtry/election_map/master/data/current_projections.txt', function(dat) {
-      parse_data();
-      // feature = topojson.feature(ca, ca.objects.intersection_3);
-      feature = topojson.feature(ca, ca.objects.EncodedRidingMap338);
-      spinner.stop();
-      draw_map();
-      initialize_zoom();
-
-      window.onresize = function(event) {
-        on_resize();
+    d3.csv(data_path + 'new_dict.csv', function (dict) {
+      var d2 = {};
+      for (var i = 0; i < dict.length; i++) {
+        d2[dict[i].riding_number] = {"FEDNUM": dict[i].FEDNUM, 
+                              "riding_utf8": dict[i].riding_utf8};
       };
-
-      function parse_data() {
-        var rows = [];
-        d3.tsv.parseRows(dat, function(pdata) {
-          var results = pdata.filter(function(x) { return x == ''; });
-          if (results.length < 2) { rows.push(pdata); }
-        });
-
-        for (var riding = 0; riding < 338; riding++) {
-          var dataz = {};
-          var name = rows[riding*3+1][0];
-          dataz['name'] = name;
-          dataz['likelyhood'] = rows[riding*3+1][8];
-          dataz['details'] = {};
-          dataz['FEDNUM'] = +d2[riding].FEDNUM; 
-          dataz['riding_utf8'] = d2[riding].riding_utf8;
-
-          var max = 0;
-          var leader;
-          for (var i = 0; i < parties.length; i++) {
-            dataz['details'][parties[i]] = {};
-            dataz['details'][parties[i]]['low'] = rows[riding*3][i+1];
-            dataz['details'][parties[i]]['med'] = rows[riding*3+1][i+1];
-            dataz['details'][parties[i]]['high'] = rows[riding*3+2][i+1];
-            if (max < +rows[riding*3+1][i+1]) {
-              max = +rows[riding*3+1][i+1];
-              leader = parties[i];
-            }
-          };
-          dataz['leader'] = leader;
-          predictions[+d2[riding].FEDNUM] = dataz;
-        }
-      };
-
-      function draw_map() {
+      d3.text('https://raw.githubusercontent.com/smcmurtry/election_map/master/data/current_projections.txt', function(dat) {
+        parse_data();
+        feature_hex = topojson.feature(ca_hex, ca_hex.objects.EncodedRidingMap338);
 
 
-        g.append("g")
-          .selectAll("path")
-            .data(feature.features)
-          .enter().append("path")
+        window.onresize = function(event) {
+          on_resize();
+        };
+
+        function parse_data() {
+          var rows = [];
+          d3.tsv.parseRows(dat, function(pdata) {
+            var results = pdata.filter(function(x) { return x == ''; });
+            if (results.length < 2) { rows.push(pdata); }
+          });
+
+          for (var riding = 0; riding < 338; riding++) {
+            var dataz = {};
+            var name = rows[riding*3+1][0];
+            dataz['name'] = name;
+            dataz['likelyhood'] = rows[riding*3+1][8];
+            dataz['details'] = {};
+            dataz['FEDNUM'] = +d2[riding].FEDNUM; 
+            dataz['riding_utf8'] = d2[riding].riding_utf8;
+
+            var max = 0;
+            var leader;
+            for (var i = 0; i < parties.length; i++) {
+              dataz['details'][parties[i]] = {};
+              dataz['details'][parties[i]]['low'] = rows[riding*3][i+1];
+              dataz['details'][parties[i]]['med'] = rows[riding*3+1][i+1];
+              dataz['details'][parties[i]]['high'] = rows[riding*3+2][i+1];
+              if (max < +rows[riding*3+1][i+1]) {
+                max = +rows[riding*3+1][i+1];
+                leader = parties[i];
+              }
+            };
+            dataz['leader'] = leader;
+            predictions[+d2[riding].FEDNUM] = dataz;
+          }
+        };
+
+        function draw_map(feature, hex) {
+
+          g.selectAll('g').remove();
+          g2.selectAll('g').remove();
+
+          g.append("g")
+            .selectAll("path")
+              .data(feature.features)
+            .enter().append("path")
             .attr("class", "riding")
             .attr("d", path)
-            .attr("fill", function(d) {
-              var leader = predictions[d.properties.FEDNUM]['leader'];
-              return party_colours[leader];
-            });
-        g.selectAll(".borders")
-          .data(borders.features)
-        .enter().append("path")
-          .attr("class", 'borders')
-          .attr("d", path);
+          colour_ridings();
 
-        g2.append("g")
-          .selectAll("path")
-            .data(feature.features)
-          .enter().append("path")
-            .attr("d", path)
-            .attr("class", "overlay-riding")
-            .on("mouseover", function(d) {
-              tooltip.style("display", "block");
-              data = predictions[d.properties.FEDNUM];
-              d3.selectAll(".riding")
-                .filter(function(d) { return d.properties.FEDNUM == data.FEDNUM; })
-                .attr("opacity", 0.5)
+          if (hex) {
+            g.append("g")
+              .selectAll("path")
+              .data(borders.features)
+              .enter().append("path")
+              .attr("class", function(d) {
+                if (d.properties.BorderType == 2) 
+                  return "provincial";
+                else
+                  return "borders";
+              })
+              .attr("d", path)
+              .attr("fill", "none");
+          }
+             
+          g2.append("g")
+            .selectAll("path")
+              .data(feature.features)
+            .enter().append("path")
+              .attr("d", path)
+              .attr("class", "overlay-riding")
+                .on("mouseover", function(d) {
+            if ( typeof d.properties.FEDNUM !== 'undefined') {
+                tooltip.style("display", "block");
+                data = predictions[d.properties.FEDNUM];
+                d3.selectAll(".riding")
+                  .filter(function(d) { return d.properties.FEDNUM == data.FEDNUM; })
+                  .attr("opacity", 0.5)
+            }})
+              .on("mouseout", function(d) {
+            if ( typeof d.properties.FEDNUM !== 'undefined') {
+                tooltip.style("display", "none");
+                d3.selectAll(".riding")
+                  .filter(function(d) { return d.properties.FEDNUM == data.FEDNUM; })
+                  .attr("opacity", 1)
+            }})
+
+          initialize_zoom(feature);
+
+        };
+
+        function init_dropdown() {
+          var dropdown_w1 = 225;
+
+          var drpdwn1 = d3.select("body")
+            .append("div")
+            .attr("class", "select-style")
+            .style("width", dropdown_w1 + 'px')
+            .style("height", 27 + 'px')
+            .style("left", ((width-dropdown_w1)/2) + 'px')
+            .style("top", top_button_padding + 'px');
+
+          drpdwn1.append("select")
+            .attr("class", "drpdwn1")
+
+          d3.selectAll(".drpdwn1")
+            .selectAll("option")
+            .data(dropdown_opts1)
+            .enter()
+            .append("option")
+            .attr("value", function(d) { return d.value; })
+            .html(function(d) { return d.text; });
+
+          d3.select(".drpdwn1")
+            .on("change", function() {
+              colour_ridings();
             })
-            .on("mouseout", function(d) {
-              tooltip.style("display", "none");
-              d3.selectAll(".riding")
-                .filter(function(d) { return d.properties.FEDNUM == data.FEDNUM; })
-                .attr("opacity", 1)
-            })
-      };
-    });
+        }
+
+        function colour_ridings() {
+          var val = get_selected(".drpdwn1");
+          if (val == 'none') {
+            d3.selectAll(".riding")
+              .attr("fill", function(d) {
+                var proj_data = predictions[d.properties.FEDNUM];
+                return party_colours[proj_data['leader']];
+              });
+          } else if (val == 'swing') {
+            d3.selectAll(".riding")
+              .attr("fill", function(d) {
+                var proj_data = predictions[d.properties.FEDNUM];
+                for (var i = parties2display.length - 1; i >= 0; i--) {
+                  if (best_case(parties2display[i], proj_data) != proj_data['leader']) {
+                    return '#252525';
+                  }
+                };
+                return '#d9d9d9';
+              });
+          } else {
+            d3.selectAll(".riding")
+              .attr("fill", function(d) {
+                var proj_data = predictions[d.properties.FEDNUM];
+                var leader = best_case(val, proj_data);
+                return party_colours[leader];
+              });
+          }
+        }
+
+        spinner.stop();
+        init_dropdown();
+        draw_map(feature_hex, true);
+
+      });
+
+
   });
-});
   });
 
 
@@ -243,7 +313,7 @@ function zoomed() {
   g2.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
 }
 
-function initialize_zoom() {
+function initialize_zoom(feature) {
   var init_height = (width<=transition_width || isTouchDevice) ? height-tooltip_h : height;
   var blocked_top = 37;
   var blocked_bottom = 29;
@@ -377,6 +447,12 @@ function init_acknowledgement() {
   d3.select('.footer')
     .append('div')
     .attr('class', 'text')
+    .html("Hexagon cartogram design by Richard Martin-Nielsen.")
+  
+
+  d3.select('.footer')
+    .append('div')
+    .attr('class', 'text')
     .html("Interactive map &copy; <a href='http://stephenmcmurtry.org/'>Stephen McMurtry</a>");
 
   d3.select('.footer .button')
@@ -393,7 +469,7 @@ function init_acknowledgement() {
         d3.select('.footer')
           .transition()
           .duration(600)
-          .style('height', 180 + 'px');
+          .style('height', footer_expanded_h + 'px');
 
         d3.select('.fa').attr('class', 'fa fa-angle-down');
 
@@ -450,61 +526,7 @@ function get_selected(id) {
   return options[0][index].value;
 }
 
-function init_dropdown() {
-  var dropdown_w = 240;
-  d3.select("body")
-    .append("div")
-    .attr("class", "select-style")
-    .style("width", dropdown_w + 'px')
-    .style("height", 27 + 'px')
-    .style("left", ((width-dropdown_w)/2) + 'px')
-    .style("top", 5 + 'px');
 
-  d3.select('.select-style')
-    .append("select")
-    .attr("class", "drpdwn")
-
-  d3.selectAll(".drpdwn")
-    .selectAll("option")
-    .data(dropdown_opts)
-    .enter()
-    .append("option")
-    .attr("value", function(d) { return d.value; })
-    .html(function(d) { return d.text; });
-
-  d3.select(".drpdwn")
-    .on("change", function() {
-      var val = get_selected(".drpdwn");
-      
-      if (val == 'none') {
-        d3.selectAll(".riding")
-          .attr("fill", function(d) {
-            var proj_data = predictions[d.properties.FEDNUM];
-            return party_colours[proj_data['leader']];
-          });
-      } else if (val == 'swing') {
-        d3.selectAll(".riding")
-          .attr("fill", function(d) {
-            var proj_data = predictions[d.properties.FEDNUM];
-            for (var i = parties2display.length - 1; i >= 0; i--) {
-              if (best_case(parties2display[i], proj_data) != proj_data['leader']) {
-                return '#252525';
-              }
-            };
-            return '#d9d9d9';
-          });
-      } else {
-        d3.selectAll(".riding")
-          .attr("fill", function(d) {
-            var proj_data = predictions[d.properties.FEDNUM];
-            var leader = best_case(val, proj_data);
-            return party_colours[leader];
-          });
-      }
-    })
-}
-
-init_dropdown();
 
 d3.select(self.frameElement).style("height", height + "px");
 on_resize();
